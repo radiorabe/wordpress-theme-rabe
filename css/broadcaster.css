@@ -1,0 +1,13 @@
+/* Taxonomy Single Term
+------------------------*/
+.taxonomy-broadcast #col-left,
+.taxonomy-broadcast .tablenav,
+.taxonomy-broadcast .term-parent-wrap {
+	display: none;
+}
+.taxonomy-broadcast #col-left {
+	width: 0%;
+}
+.taxonomy-broadcast #col-right {
+	width: 100%;
+}

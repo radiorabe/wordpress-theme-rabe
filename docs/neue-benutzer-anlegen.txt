@@ -1,0 +1,51 @@
+Vorgehen zum Erstellen eines neuen Benutzers
+********************************************
+
+
+0 - Informationen und Vorbereitung
+
+Momentan müssen die Benutzer der Webseite noch manuell hinzugefügt werden. Je 
+nach Entwicklung des IT-Projekts wird das in Zukunft automatisiert.
+
+Benutzername auf dem RaBe-System muss bekannt sein. Meistens bestehen die 
+Benutzernamen aus den ersten zwei Buchstaben des Vor- und Nachnamens.
+
+Besipiel: Hans Muster -> hamu
+
+
+1 - Sendungskategorie erstellen
+
+Falls die Sendung noch nicht vorhanden ist, muss unter "Beiträge -> Sendungen" 
+eine Sendung erstellt werden. Dabei 
+
+
+2 - Benutzer erstellen
+
+Unter "Benutzer -> Neu hinzufügen" kann jetzt ein neuer Benutzer erstellt 
+werden. Dabei muss auf die richtige Rollenverteilung geachtet werden.
+
+Es gibt eigentlich drei wichtige Rollen für die RaBe-Webseite:
+
+Sendungsmachende (broadcaster): Eine sendungsmachende Person, die ähnliche 
+Rechte wie ein Autor hat, aber ihre eigene Sendung noch verändern kann und 
+eigene Artikel schreiben kann.
+
+Sendungsmachende Light (broadcaster_light): Eine sendungsmachende Person, die 
+alles machen kann wie Sendungsmachende, aber nicht veröffentlichen kann.
+
+Webteam (rabe_webteam): Markus, Michael und allenfalls weitere ... Das Webteam kann relativ 
+viele Einstellungen vornehmen, die ein Administrator auch machen kann, aber 
+keine Plugins/Themes installieren, aktivieren oder deaktivieren. Das Webteam 
+erstellt auch neue Benutzer.
+
+Redakteur (rabe_staff): Die Redakteuren-Rolle bleibt so, wie sie vom 
+Wordpress-System vorgesehen ist. Das ist für den Staff vom RaBe gedacht.
+
+Superadmin: Der kann (fast) alles.
+
+
+3 - Rechte erteilen (Restrict Taxonomies plugin)
+
+Wenn ein Benutzer von Hand (nicht automatisch) erstellt wird und der neue Benutzer eine 
+sendungsmachende Person ist, müssen die entsprechenden Rechte für die Sendungen 
+angegeben werden.

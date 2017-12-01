@@ -1,0 +1,22 @@
+Sticky- und Special-Posts
+*************************
+
+0 - Sticky-Post im Header
+
+Oben in der Mitte nimmt es jeweils den letzten/aktuellsten Sticky-Post. 
+Broadcaster und Autoren können keine Sticky- oder Specialsposts machen, nur 
+Leute aus der Staff-Gruppe (und weitere Gruppen mit dieser Berechtigung).
+
+
+1 - Weiter Sticky-Posts
+
+Weitere Sticky-Posts werden einfach zuoberst auf deiner Blog-Seite/Startseite 
+dargestellt.
+
+
+2 - Specialposts
+
+Wenn bei einem Artikel oder Termin das Häckchen "Specialpost" gesetzt wird, 
+dann wird von diesem Artikel auf einer Blog-Seite nur der Titel angezeigt und 
+die Kachel wird speziell hervorgehoben und der Termin wird im Kalender speziell 
+hervorgehoben.

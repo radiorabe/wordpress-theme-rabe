@@ -1,0 +1,143 @@
+.live-player {
+	float: right;
+	line-height: 1.2;
+	width: 33.33%;
+	height: 150px;
+	padding: 25px 25px;
+	font-size: 16	px;
+    background: rgb( 18, 26, 44 );
+    background: rgba( 18, 26, 44, 0.75 );
+    color: #fff;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+.home .live-player {
+	background: #fff;
+	color: #000;
+}
+
+.live-player .broadcast-show a {
+	font-size: 30px;
+	font-family: 'Fjalla One', sans-serif;
+	word-wrap: break-word;
+	line-height: 1.1;
+	font-style: normal;
+	color: rgb( 0, 225, 212 );
+	text-transform: uppercase;
+}
+
+.live-player .mejs-container.wp-audio-shortcode .mejs-controls .mejs-time,
+.live-player .mejs-container.wp-audio-shortcode .mejs-controls .mejs-time-rail {
+	display: none;
+}
+
+.home .live-player .mejs-container.wp-audio-shortcode .mejs-playpause-button button,
+.live-player .mejs-container.wp-audio-shortcode .mejs-playpause-button button {
+	background: transparent url('../images/live-player.svg') no-repeat;
+    background-position: 0 0;
+	border: none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	height: 80px;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 80px;
+	right: 2px;
+	transition: background 0.2s ease-in-out;
+}
+
+.home .live-player .mejs-container.wp-audio-shortcode .mejs-pause button,
+.live-player .mejs-container.wp-audio-shortcode .mejs-pause button {
+	background-position: 0 -80px;
+	transition: background 0.2s ease-in-out;
+}
+
+/* Volume Slider */
+.live-player .mejs-container.wp-audio-shortcode .mejs-controls .mejs-volume-button,
+.home .live-player .mejs-container.wp-audio-shortcode .mejs-controls .mejs-volume-button {
+	top: 80px;
+	right: 58px;
+	position: absolute;
+}
+.live-player .mejs-container.wp-audio-shortcode .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+	background: rgba( 0, 225, 212, .3 );
+}
+.live-player .mejs-container.wp-audio-shortcode .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+	background: rgba( 0, 225, 212, 1 );
+}
+
+.live-player .mejs-container.wp-audio-shortcode .mejs-controls .mejs-mute button {
+	background: transparent url('../images/mute-cyan.svg') no-repeat;
+	background-position: 0 -16px;
+}
+.live-player .mejs-container.wp-audio-shortcode .mejs-controls .mejs-unmute button {
+	background: transparent url('../images/mute-cyan.svg') no-repeat;
+	background-position: 0 0;
+}
+
+.live-player .mejs-container.wp-audio-shortcode .mejs-controls .mejs-horizontal-volume-slider,
+.home .live-player .mejs-container.wp-audio-shortcode .mejs-controls .mejs-horizontal-volume-slider {
+	position: absolute;
+	top: 80px;
+	right: 0;
+}
+
+#ticker {
+	position: relative;
+	height: 115px;
+	width: 72%;
+	float: left;
+}
+#webplayer {
+	width: 28%;
+	float: right;
+}
+
+.home #live-player-links {
+	background: #fff; /* Hides "Live!" when there is a three liner */
+}
+#live-player-links {
+	position: absolute;
+	bottom: 0;
+	background: transparent;
+}
+
+#live-player-links a {
+	font-size: 12px;
+	padding: 0 20px 0 0;
+	font-style: normal;
+}
+
+@media (max-width: 1050px) { /* Zwei Spalten */
+
+	.live-player {
+		width: 100%;
+		height: 120px;
+		line-height: 1;
+		padding: 10px 25px;
+	}
+	
+	#ticker {
+		height: 100px;
+	}
+
+	.live-player .mejs-container.wp-audio-shortcode .mejs-controls .mejs-horizontal-volume-slider,
+	.live-player .mejs-container.wp-audio-shortcode .mejs-controls .mejs-unmute,
+	.live-player .mejs-container.wp-audio-shortcode .mejs-controls .mejs-mute {
+		margin: 0 5px;
+	}
+}
+
+@media (max-width: 550px) { /* Zwei Spalten */
+
+	.live-player {
+		font-size: 16px;
+	}
+	.live-player .broadcast-show a {
+		font-size: 26px;
+	}
+}

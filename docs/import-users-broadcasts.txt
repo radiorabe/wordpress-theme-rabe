@@ -1,0 +1,56 @@
+Benutzer & Sendungen importieren
+--------------------------------
+
+
+0 - Vorbereitung
+
+Aus dem Membertool kann eine CSV-Liste generiert werden mit allen 
+RaBe-Benutzerinnen und -Benutzern mit ihren Sendungen und ihrer 
+Funktion.
+
+Die CSV-Datei muss momentan manuell so angepasst werden, so dass nur 
+noch folgende Informationen enthalten sind: Benutzername, E-Mail, 
+Vorname, Nachname, Benutzerrolle (des Wordpress-Systems), Sendung(en)
+
+
+1 - Plugin aktivieren
+
+Mit dem angepassten Plugin "Import users from CSV with meta" können 
+Benutzer mit Meta-Informationen aus einer CSV-Datei importiert werden.
+
+Der Import passiert über "Werkzeuge -> Import users from CSV"
+
+
+2 - CSV-Datei
+
+
+Die CSV-Datei enthält eine Liste mit Benutzern und ihren Eigenschaften. 
+Die Datei muss momentan vor dem Import noch von Hand angepasst werden. 
+Wichtig dabei ist die erste Zeile, welche folgende Informationen 
+enthalten sollte:
+
+- Username: Benutzername zum Anmelden am System
+- Email: Mail-Adresse des Benutzers, kann vom Benutzer selbst im 
+Wordpress-System 
+nicht geändert werden.
+- first_name: Vorname
+- last_name: Nachname
+- role: Rolle im Wordpress-System (siehe auch neue-benutzer-anlegen.txt)
+- broadcast: Sendungen, bei welcher die Person mitwirkt
+
+So sieht die manuell vorbereitete Datei am Schluss ungefähr aus:
+
+Username,Email,first_name,last_name,role,broadcast
+hamu,hans.mueller@emaildomain.tld,Hans,Müller,broadcaster,"Erschti Sändig, Zwöiti Sändig"
+kain,karin@emaildomain.tld,Karin,Indermühle,staff,"Nume ei Sändig"
+
+Wichtig ist, dass der erste Buchstabe von Username und Email gross 
+geschrieben sind.
+
+
+3 - Import
+
+Beim Import kann gleich ein Mail mit einem Passwort verschickt werden 
+und auch eine Rolle (Berechtigungen) vergeben werden. Die 
+Berechtigungen für die Sendungsmachenden für ihre Sendungen werden 
+automatisch gesetzt.

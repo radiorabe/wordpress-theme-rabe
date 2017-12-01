@@ -1,0 +1,17 @@
+#live-player-links {
+	display: none;
+}
+.site-inner {
+	background-image: none !important;
+}
+.site-inner .wrap {
+	background: none !important;
+}
+.home .live-player {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.live-player {
+	width: 100%;
+}

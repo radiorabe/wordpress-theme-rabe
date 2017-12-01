@@ -1,0 +1,126 @@
+#+TITLE: RaBe -*- mode: org; -*-
+
+#+TODO: TODO(t) WIP(w) | DONE(d)
+#+TODO: | CANCELED(c) OBSOLETE(o)
+#+TAGS: michu(m) remo(r)
+
+* Fragen
+** DONE Programm vs. Agenda
+   Es ist beides das Gleiche und wird mit dem Event Organiser gemacht.
+** TODO Kategorien definieren
+   Siehe https://pad.momou.ch/p/ctchAaeyGz
+** DONE Klangbecken
+   Seite oder Sendung? Auf was soll der Live-Player verlinken
+* Vorarbeiten
+** Server und Domain
+*** DONE Test-Domain rabeta.abelo.ch.ch einrichten
+*** DONE Wordpress-Theme anfangen
+** Nachforschungen
+*** DONE lightbox: eine schöne bilder-lightbox, möglichst nur mit css finden. wir brauchen simple-colorbox
+*** DONE Webplayer für MP3-Stream suchen und finden
+    Standard: mediaelementjs.com
+*** DONE Mixcloud einbinden?
+* Funktionalität
+** System
+*** DONE Admin-Interface für normale Benutzer vereinfachen
+*** DONE Taxonomy für Sendungsname
+**** DONE Sendungsmachende sind in Kategorie(n) Broadcast und dürfen nur diese Posts sehen/ändern/löschen.
+     Das ist mit dem Plugin Restrict Taxonomies gelöst.
+**** DONE Zusätzliches Felder in Broadcast
+     - [X] Sendungs-Bild
+     - [X] allenfalls Sendungsbild als Hintergrund
+           Noch nicht aktiv, aber funktioniert
+     - [X] Sendungsmachende (Wordpress-User)
+     - [X] Links zu externer Seite
+     - [X] Sendungszeit
+     - [X] allenfalls Liste der nächsten Sendungen
+*** DONE Editor: Unnötige/ungewollte Funktionen löschen
+*** DONE Webplayer für Live-Streaming suchen
+    u.u. gleicher Player für Live und für Podcast Wichtig:
+    Sendungsname und Song (Song-Ticker)
+*** DONE Songticker
+    Lucas fragen. Als Inspiration evt. On-Air-Now Plugin
+    Check https://github.com/purplehazech/rabe-songticker for now
+    - [X] Länge der Songtitel testen
+    - [X] Wenn eine Sendung im Event Organiser ist, ein Overlay
+*** TODO Playlist
+**** TODO Durchsuchbare Playlist
+*** DONE Hintergrundbild kann von Administrator geändert werden
+*** DONE Event-Organiser
+    Zusätzliches Feld zum standardmässigen Verweisen auf Broadcast Taxonomy
+    anstelle von Termin-Post
+*** DONE Zusätzliche Bildgrössen
+    z.B. für Kacheln auf Index
+*** DONE Tschampi-Poscht (Werde-Mitglied)
+    Random wäre hübsch, aber momentan sind es einfach die Specialposts
+*** DONE Custom post field with URL to point directly to URL and not post
+*** TODO Rewrite from broadcastname.rabe.ch to rabe.ch/broadcastname
+** Templates
+*** DONE Category-Template für Sendung
+   - [X] Was wird angezeigt, wenn keine Posts vorhanden sind?
+         Nur der Titel, Sendungsportrait, Zeiten und Bildli
+*** DONE Kopf Menu						    :Bäschtu:
+    Im Kopfmenu sind nur drei Links: Kontaktseite, Empfang, Suche
+*** DONE Untermenu Sendungen: Suchen-nach Feldli			    :Bäschtu:
+    Es gibt neu einen shortcode namens searchable_broadcast_list, der eine
+    Liste aller Sendungen erzeugt, die durchsuchbar ist
+*** DONE Template für Single-Events
+** TODO Drei Footer Widget-Areas
+*** WIP Social-Icon-Widget
+*** Allgemein
+**** DONE Responsive-Grössen
+     inner-wrap (max-width) 1200. mal so zu starten.
+**** DONE Design Live-Player und mediaelement.js Sachen
+     mediaelement.js stylen und neue grafische Umsetzung
+**** DONE Ajax-Call to refresh Live-Player
+     Kommt Klangbecken oder Kalender?
+**** DONE Update mediaplayer randomly, check
+     https://github.com/johndyer/mediaelement/issues/1321
+**** DONE Mp3-Player (in Kacheln)
+     Man bräuchte hier u.U. ein "Artikel-mp3" analog zum featured
+     image. Dieses könnte man dann in den Kacheln ausgeben.
+*** DONE Haupt Menu						    :Bäschtu:
+*** DONE Drei Dings, home.php
+**** DONE Info (Noch Postcast machen... und falls leer...)
+**** DONE Sticky
+**** DONE Player
+*** DONE Kacheln									   :Marius:
+    Noch Broadcast und Datum machen
+*** DONE More-Tag									   :Marius:
+    Weiterlesen-Button muss möglich und aktiviert sein, wegen anderen
+    Archiv-Seiten
+*** DONE Kalender für Grafiker
+    Eine simple Seite, die den Kalender wie im Stattradio generiert
+** Layout + Design
+*** irgendwie stimmt in diesem org-file so einiges nicht mehr. habe wohl ein puff gemacht.
+*** DONE ähm. auf index: vertikale post-bildli. genau.
+*** DONE ellipsen nach excerpt vermeiden
+*** DONE Event Organiser-Templates
+*** DONE style.css aufräumen
+*** DONE Alle Seiten/Sachen responsive machen
+*** DONE Neues Farbeschema (Ende Mai 2016)
+*** DONE Neuer Header
+*** DONE Fullcalendar CSS Styling
+* Aufräumen
+** DONE Fonts optimieren, nicht mehr Google-Fonts
+** TODO Alles optimieren
+** DONE Responsive Trigger definieren
+   Breiten 1200, 1050, 550 und 450 Pixel
+* Test
+* Bugfixes
+* Prio 1: MUST-HAVE (neuer Fahrplan bis Juni 2016)
+** DONE Songticker
+** TODO Playliste
+*** TODO Nach bestimmten Tagen suchen
+** DONE Import aus TYPO3 von Subkutan- und Info-Beiträgen
+   Siehe typo3-migration.txt
+** DONE Zahlen mit Postfinance
+** DONE Import von Benutzern mit CSV
+* Prio 2
+** DONE Übertragung des Wahnsinnsradios
+** DONE Real-Archiv: Erzeugung von Real-ARchiv-Links auf einer Seite
+** WIP Einfacher Export des Monatprogramms via Excel
+* Prio 3: Zukunft/Nice-to-have
+** DONE Import users from CSV
+** LDAP-Benutzeranbindung
+** Jegliche Interaktion mit der neuen IT-Umgebun g

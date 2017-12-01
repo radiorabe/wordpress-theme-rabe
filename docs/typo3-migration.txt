@@ -1,0 +1,83 @@
+Migration from Typo3
+--------------------
+
+
+0 - Vorbereitung
+
+Info- und Subkutan-Beiträge müssen von einem älteren Typo3-System migriert 
+werden.
+Ein Plugin namens typo3-importer hilft dabei, das Ding läuft aber nur bis und 
+Wordpress Version 4.3. Wir importieren die Sache auf Wordpress 4.1. (Standard 
+von Debian Jessie).
+
+Zuerst muss ein Dump von der alten Typo3-Datenbank gemacht werden (mindestens 
+die Tabellen tt_news und tt_news_cat_mm). Dummerweise sind die MP3-Dateien zu 
+den Beiträgen in der Tabelle tx_mcpodcast_mp3 als BLOB gespeichert. Wir ändern 
+das für einen leichteren Import in ein TEXT um.
+
+ALTER TABLE tt_news CHANGE tx_mcpodcast_mp3 tx_mcpodcast_mp3 TEXT NULL DEFAULT NULL
+
+Ordner für das Heraufladen der MP3-Podcast-Dateien erstellen und alle Podcasts 
+reinkopieren.
+
+
+1 - Plugin installieren
+
+Plugin "TYPO3 tt_news Importer" installieren 
+(https://wordpress.org/plugins/typo3-importer/). Das Plugin Version 2.3.1 hat 
+kleinere Fehler (UTF8-Import), die von uns korrigiert wurden 
+(https://github.com/brknkfr/typo3-importer).
+
+
+2 - MP3-Dateien kopieren
+
+Jetzt müssen noch alle Dateien an den korrekten Pfad, also unter XXXXX auf den 
+Webserver kopiert/importiert werden.
+
+
+3 - Datenbank ändern
+
+Wenn ohne die Datenbank vorzubereiten direkt importiert wird, dann wird der 
+Podcast der jeweiligen Beiträge, also die MP3-Datei, ignoriert. Mit ein paar 
+SQL-Statements wird ein Audio-Tag mit dem Podcast an die Zellen in der bodytext-
+Spalte angefügt.
+
+# combined table hinzufügen
+ALTER TABLE tt_news ADD COLUMN mp3string MEDIUMTEXT;
+# mp3 als string hinzufügen
+UPDATE tt_news SET mp3string = CONCAT(tx_mcpodcast_mp3);
+# combinedbody hinzufügen
+ALTER TABLE tt_news ADD COLUMN combinedbody MEDIUMTEXT;
+# Ganzer Body kopieren
+UPDATE tt_news SET bodytext = CONCAT(tt_news.bodytext, '[audio  mp3="XXXXX', mp3string, '"][/audio]') WHERE mp3string !="";
+ALTER TABLE tt_news DROP bodytext;
+ALTER TABLE `tt_news` CHANGE `combinedbody` `bodytext` MEDIUMTEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL;
+
+XXXXX steht als Platzhalter für den Pfad, der dann noch eingefügt werden muss. 
+Das wird irgendwo auf dem Server im Wordpress-Ordner "uploads" sein.
+
+
+4 - Beiträge importieren
+
+Die Typo3-News-Kategorien sind in der Tabelle tt_news_cat. Wir wollen nur noch 
+nicht gelöschte und keine Beiträge der Kategorie "Playlist, Klangbecken, Live-
+Sendung, Störung" importieren.
+
+Beim "News Where Clause" setzen wir ein "AND tt_news.deleted = 0 AND tt_news.bodytext IS NOT NULL"
+ein.
+
+Bei "Categories to import" setzen wir die Kategorien-IDs 
+"2,3,4,7,8,9,11,12,14,18"
+
+
+6 - Aufräumen
+
+Alle Entwürfe und Test-Posts löschen, Kategorien anpassen. Alle Artikel 
+anschauen, allenfalls unsaubere Artikel bearbeiten.
+
+
+7 - Notes
+
+category column in the tt_news table signifies the number of categories assigned to the news article while the relations between news and categories is in the tt_news_cat_mm table.
+Therefore, check the tt_news_cat_mm table and see whether the relations are truly there as they are supposed to. The uid_local column contains UIDs of the news articles while the uid_foreign column contains UIDs of the news categories.
+

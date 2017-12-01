@@ -1,0 +1,5064 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: RaBe\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-01 10:14+0100\n"
+"PO-Revision-Date: 2017-12-01 10:15+0100\n"
+"Last-Translator: Sebastian L. <sebastian@abelo.ch>\n"
+"Language-Team: Sebastian L., Marius G. <webmaster@momou.ch>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ../omega\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: ../omega/404.php:12 404.php:20
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ups! Diese Seite gibt es nicht."
+
+#: ../omega/404.php:15 404.php:23
+#, php-format
+msgid ""
+"It looks like nothing was found at this location. Perhaps you can return "
+"back to the site's <a href=\"%s\">homepage</a> and see if you can find what "
+"you are looking for. Or, you can try finding it by using the search form "
+"below."
+msgstr ""
+"Sieht aus, als gibt es hier nichts... Geh mal <a href=\"%s\">Seite</a> "
+"zurück oder such mal."
+
+#: ../omega/comment.php:16
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: ../omega/comment.php:19
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s at %2$s"
+
+#: ../omega/comment.php:20
+msgid "(Edit)"
+msgstr "Bearbeiten"
+
+#: ../omega/lib/admin/omega-upgrade.php:58
+#: ../omega/lib/admin/omega-upgrade.php:75
+#, php-format
+msgid ""
+"Thanks for updating Omega Theme.  Please <a href=\"%1$s\" target=\"_blank"
+"\">read about important changes</a> in this version and give your site a "
+"quick check. <a href=\"%2$s\">Dismiss notice</a>"
+msgstr ""
+
+#: ../omega/lib/classes/customize-control-background-image.php:37
+msgctxt "theme customizer tab"
+msgid "Default"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:333
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3641
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:334
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3642
+msgid "Install Plugins"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:335
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3643
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Installiere Plugin: %s"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:336
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3644
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:338
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3645
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:343
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3646
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:348
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugins."
+msgstr[0] ""
+"Sie verfügen nicht über ausreichende Berechtigungen, um %1$s zu installieren."
+msgstr[1] ""
+"Sie verfügen nicht über ausreichende Berechtigungen, um %1$s zu installieren."
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:353
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3651
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:358
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:363
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %1$s "
+"plugins."
+msgstr[0] ""
+"Sie verfügen nicht über ausreichende Berechtigungen, um %1$s zu "
+"aktualisieren."
+msgstr[1] ""
+"Sie verfügen nicht über ausreichende Berechtigungen, um %1$s zu "
+"aktualisieren."
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:368
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3648
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:373
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3649
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:378
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugins."
+msgstr[0] ""
+"Sie verfügen nicht über ausreichende Berechtigungen, um %1$s zu aktivieren."
+msgstr[1] ""
+"Sie verfügen nicht über ausreichende Berechtigungen, um %1$s zu aktivieren."
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:383
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3653
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:388
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:393
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:397
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3655
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr "Zum Dashboard zurückkehren"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:399
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3031
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3656
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:400
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2834
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:402
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:403
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr "Mitteilung ignorieren"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:524
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:525
+msgid "Update Required"
+msgstr "Aktualisierung erforderlich"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:639
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:830
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3440
+msgid "Return to the Dashboard"
+msgstr "Zum Dashboard zurückkehren"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:937
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:940
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:940
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:1118
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2830
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "und"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:1883
+#, php-format
+msgctxt "%s = version number"
+msgid "TGMPA v%s"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2169
+msgid "Required"
+msgstr "Erforderlich"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2172
+msgid "Recommended"
+msgstr "Empfohlen"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2188
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2191
+msgid "External Source"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2194
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2211
+msgid "Not Installed"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2215
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2217
+msgid "Active"
+msgstr "Aktiv"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2223
+msgid "Required Update not Available"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2226
+msgid "Requires Update"
+msgstr "Benötigt Aktualisierung"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2229
+msgid "Update recommended"
+msgstr "Aktualisierung empfohlen"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2237
+#, php-format
+msgctxt "%1$s = install status, %2$s = update status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2282
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Alle <span class=\"count\">(%s)</span>"
+msgstr[1] "Alle <span class=\"count\">(%s)</span>"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2285
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "Zum Installieren <span class=\"count\">(%s)</span>"
+msgstr[1] "Zum Installieren <span class=\"count\">(%s)</span>"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2288
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "Aktualisierung vorhanden <span class=\"count\">(%s)</span>"
+msgstr[1] "Spätere Termine <span class=\"count\">(%s)</span>"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2291
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "Zum Aktivieren <span class=\"count\">(%s)</span>"
+msgstr[1] "Spätere Termine <span class=\"count\">(%s)</span>"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2373
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "(Unbekannt)"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2381
+msgid "Installed version:"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2389
+msgid "Minimum required version:"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2401
+msgid "Available version:"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2424
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2438
+msgid "Plugin"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2439
+msgid "Source"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2440
+msgid "Type"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2444
+msgid "Version"
+msgstr "Version"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2445
+msgid "Status"
+msgstr "Status"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2493
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Install %2$s"
+msgstr "Installiere %2$s"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2497
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Update %2$s"
+msgstr "Aktualisiere %2$s"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2502
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Activate %2$s"
+msgstr "Aktiviere %2$s"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2572
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2605
+msgid "Install"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2611
+msgid "Update"
+msgstr "Aktualisieren"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2614
+msgid "Activate"
+msgstr "Aktivieren"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2645
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2647
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2683
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2685
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2790
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:2816
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3030
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3364
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3366
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3367
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3371
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3372
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3372
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3378
+msgid "Show Details"
+msgstr "Details anzeigen"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3372
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3378
+msgid "Hide Details"
+msgstr "Details verbergen"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3373
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3374
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3377
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3378
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3379
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3380
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3647
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3650
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3652
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3654
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] "Aktiviere installierte Plugins"
+msgstr[1] "Aktiviere installierte Plugins"
+
+#: ../omega/lib/extensions/class-tgm-plugin-activation.php:3657
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../omega/lib/extensions/custom-comment.php:20
+msgid "Comments"
+msgstr "Kommentare"
+
+#: ../omega/lib/extensions/custom-comment.php:45
+msgid "Enable comments on pages "
+msgstr ""
+
+#: ../omega/lib/extensions/custom-comment.php:48
+msgid ""
+"This option will enable comments on pages. Comments can also be disabled per "
+"page basis when creating/editing pages."
+msgstr ""
+
+#: ../omega/lib/extensions/custom-css.php:58
+msgid "CSS"
+msgstr "CSS"
+
+#: ../omega/lib/extensions/custom-footer.php:65
+msgid "Footer"
+msgstr "Fusszeile"
+
+#: ../omega/lib/extensions/custom-logo.php:20
+msgid "Branding"
+msgstr "Branding"
+
+#: ../omega/lib/extensions/custom-logo.php:45
+msgid "Logo"
+msgstr "Logo"
+
+#: ../omega/lib/extensions/custom-logo.php:73
+msgid "Favicon"
+msgstr "Favicon"
+
+#: ../omega/lib/extensions/custom-post.php:20
+msgid "Posts"
+msgstr "Artikel"
+
+#: ../omega/lib/extensions/custom-post.php:72
+msgid "More Link Page Scroll"
+msgstr ""
+
+#: ../omega/lib/extensions/custom-post.php:75
+msgid ""
+"By default, clicking the .more-link anchor opens and scrolls the page to "
+"section of the document containing the named anchor. This section is where "
+"you put the <!--more--> tag within a post type."
+msgstr ""
+
+#: ../omega/lib/extensions/custom-post.php:98
+msgid "Limit content to"
+msgstr "Limitiere Inhalt auf"
+
+#: ../omega/lib/extensions/custom-post.php:101
+msgid ""
+"Select \"Display post excerpts\" will limit the text and strip all "
+"formatting from the text displayed. Set 0 characters will display the first "
+"55 words (default)"
+msgstr ""
+
+#: ../omega/lib/extensions/custom-post.php:123
+msgid "More Text"
+msgstr "Weiterer Text"
+
+#: ../omega/lib/extensions/custom-post.php:146
+msgid "Include the Featured Image?"
+msgstr "Ausgewähltes Bild einbeziehen?"
+
+#: ../omega/lib/extensions/custom-post.php:175
+msgid "Image size"
+msgstr "Bildgrösse"
+
+#: ../omega/lib/extensions/custom-post.php:198
+msgid "Enable single post Prev Next navigation links?"
+msgstr "Aktiviere Einzelartikel Vorwärts- und Zurück-Navigation?"
+
+#: ../omega/lib/extensions/footer-widgets.php:30
+#, php-format
+msgid "Footer %d"
+msgstr ""
+
+#: ../omega/lib/extensions/footer-widgets.php:31
+#, php-format
+msgid "Footer %d widget area."
+msgstr ""
+
+#: ../omega/lib/extensions/omega-child-page.php:10
+#: ../omega/lib/extensions/omega-child-page.php:11
+#: ../omega/lib/extensions/omega-child-page.php:83
+#: ../omega/lib/extensions/omega-child-page.php:136
+msgid "Omega Child Themes"
+msgstr ""
+
+#: ../omega/lib/extensions/omega-child-page.php:89
+msgid ""
+"Personalize your Omega powered site using one of Omega child themes below"
+msgstr ""
+
+#: ../omega/lib/extensions/omega-child-page.php:116
+msgid "Child Themes"
+msgstr ""
+
+#: ../omega/lib/functions/attr.php:421
+msgctxt "post time format"
+msgid "l, F j, Y, g:i a"
+msgstr ""
+
+#: ../omega/lib/functions/attr.php:545
+msgctxt "comment time format"
+msgid "l, F j, Y, g:i a"
+msgstr ""
+
+#: ../omega/lib/functions/extras.php:106
+msgid "Home"
+msgstr ""
+
+#: ../omega/lib/functions/hooks.php:56
+msgctxt "nav menu location"
+msgid "Primary"
+msgstr "Hauptmenü"
+
+#: ../omega/lib/functions/hooks.php:71
+msgctxt "sidebar"
+msgid "Primary"
+msgstr "Seitenleiste"
+
+#: ../omega/lib/functions/hooks.php:72
+msgid ""
+"The main sidebar. It is displayed on either the left or right side of the "
+"page based on the chosen layout."
+msgstr ""
+"Die Hauptseitenleiste. Sie wird auf der linken Seite des Inhalts angezeigt."
+
+#: ../omega/lib/functions/hooks.php:135 ../omega/lib/functions/hooks.php:137
+msgid "Copyright &#169; "
+msgstr "Copyright &#169; "
+
+#: ../omega/lib/functions/hooks.php:135 ../omega/lib/functions/hooks.php:137
+msgid " WordPress Theme by "
+msgstr "WordPress Theme von"
+
+#: ../omega/lib/functions/hooks.php:275
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Suchresultate für &#8220;%s&#8221;"
+
+#: ../omega/lib/functions/hooks.php:285
+#, php-format
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: ../omega/lib/functions/hooks.php:293
+#, php-format
+msgid "Day: %s"
+msgstr "Tag: %s"
+
+#: ../omega/lib/functions/hooks.php:296
+#, php-format
+msgid "Month: %s"
+msgstr "Monat: %s"
+
+#: ../omega/lib/functions/hooks.php:299
+#, php-format
+msgid "Year: %s"
+msgstr "Jahr: %s"
+
+#: ../omega/lib/functions/hooks.php:302
+#: ../omega/lib/functions/template-general.php:293
+msgid "Archives"
+msgstr "Archive"
+
+#: ../omega/lib/functions/media.php:33
+msgid "Post Thumbnail"
+msgstr "Artikelbild"
+
+#: ../omega/lib/functions/template-general.php:47
+msgid "State-of-the-art semantic personal publishing platform"
+msgstr ""
+
+#: ../omega/lib/functions/template-general.php:47
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../omega/lib/functions/template-general.php:74
+#: ../omega/lib/functions/template-general.php:129
+#, php-format
+msgid "%s WordPress Theme"
+msgstr "%s WordPress Theme"
+
+#: ../omega/lib/functions/template-general.php:92 partials/entry-footer.php:2
+#: partials/entry-footer.php:3
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: ../omega/lib/functions/template-general.php:259
+#, php-format
+msgid "You are browsing the search results for &#8220;%s&#8221;"
+msgstr "Suchresultate für &#8220;%s&#8221;"
+
+#: ../omega/lib/functions/template-general.php:265
+msgid "You are browsing the site archives by time."
+msgstr "Seitenarchive nach Zeit geordnet."
+
+#: ../omega/lib/functions/template-general.php:268
+#: ../omega/lib/functions/template-general.php:271
+#: ../omega/lib/functions/template-general.php:274
+#, php-format
+msgid "You are browsing the site archives for %s."
+msgstr "Seitenarchive für <em>%s</em>."
+
+#: ../omega/lib/functions/template-general.php:277
+msgid "You are browsing the site archives."
+msgstr "Seitenarchiv"
+
+#: ../omega/lib/functions/template-general.php:312
+#: ../omega/lib/functions/template-general.php:332
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: ../omega/lib/functions/template-general.php:332
+#, php-format
+msgid "Week %1$s of %2$s"
+msgstr "Woche %1$s von %2$s"
+
+#: ../omega/lib/functions/template-general.php:332
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: ../omega/lib/functions/template-general.php:351
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: ../omega/lib/functions/template-general.php:370
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: ../omega/lib/functions/template-general.php:390
+#, php-format
+msgid "Minute %s"
+msgstr "Minute %s"
+
+#: ../omega/lib/functions/template-general.php:390
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: ../omega/lib/functions/template-general.php:409
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: ../omega/lib/functions/template-general.php:429
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Suchresultate für &#8220;%s&#8221;"
+
+#: ../omega/lib/functions/template-general.php:461
+msgid "ago"
+msgstr "vor"
+
+#: ../omega/lib/functions/template-media.php:94
+#, php-format
+msgid "%1$s &#215; %2$s"
+msgstr "%1$s &#215; %2$s"
+
+#: ../omega/lib/functions/template-post.php:85
+msgctxt "taxonomy terms separator"
+msgid ", "
+msgstr ""
+
+#: ../omega/lib/functions/template-post.php:126
+#: ../omega/partials/comments-loop.php:2
+msgid "% Comments"
+msgstr "% Comments"
+
+#: ../omega/lib/functions/template-post.php:127
+msgid "1 Comment"
+msgstr "1 Comment"
+
+#: ../omega/lib/functions/template-post.php:128
+msgid "Leave a Comment"
+msgstr "Schreib einen Kommentar"
+
+#: ../omega/lib/functions/utility.php:79
+msgid "(Untitled)"
+msgstr "(ohne Titel)"
+
+#: ../omega/partials/comments-loop-error.php:2
+#, php-format
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+
+#: ../omega/partials/comments-loop-error.php:4
+msgid "Comments are closed."
+msgstr "Comments are closed."
+
+#: ../omega/partials/comments-loop-nav.php:3
+msgid "&larr; Previous"
+msgstr "&larr; Previous"
+
+#: ../omega/partials/comments-loop-nav.php:4
+#, php-format
+msgid "Page %1$s of %2$s"
+msgstr "Seite %1$s von %2$s"
+
+#: ../omega/partials/comments-loop-nav.php:5
+msgid "Next &rarr;"
+msgstr "Weiter &rarr;"
+
+#: ../omega/partials/comments-loop.php:2
+msgid "One Comment"
+msgstr "One Comment"
+
+#: ../omega/partials/entry-byline.php:3 functions.php:544
+msgid "by"
+msgstr "von"
+
+#: ../omega/partials/entry-byline.php:5 partials/entry-byline.php:34
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: ../omega/partials/entry-footer.php:2
+#, php-format
+msgid "Posted in: %s"
+msgstr "%s"
+
+#: ../omega/partials/entry-footer.php:3
+#, php-format
+msgid "Tagged: %s"
+msgstr "%s"
+
+#: ../omega/partials/entry.php:33 partials/entry.php:105
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: ../omega/partials/no-results.php:11
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+#: ../omega/partials/no-results.php:14
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../omega/partials/no-results.php:16
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "Nichts gefunden ... Versuche es mit anderen Suchbegriffen."
+
+#: ../omega/partials/no-results.php:19
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Hier gibt es nichts zu sehen, vielleicht mal die Suche ausprobieren?"
+
+#: ../omega/partials/single-nav.php:1
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr "&larr;"
+
+#: ../omega/partials/single-nav.php:2
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr "&rarr;"
+
+#: ../omega/searchform.php:9 includes/broadcast-list-shortcode.php:33
+#: partials/header-menu.php:18
+msgctxt "placeholder"
+msgid "Search ..."
+msgstr "Suchen ..."
+
+#: ../omega/searchform.php:9
+msgctxt "label"
+msgid "Search for:"
+msgstr "Suchen nach:"
+
+#: ../omega/searchform.php:9 partials/header-menu.php:19
+msgctxt "submit button"
+msgid "Search"
+msgstr "Suchen"
+
+#: classes/Tax-meta-class/Tax-meta-class.php:379
+#: classes/Tax-meta-class/Tax-meta-class.php:427
+msgid "Remove"
+msgstr "Entfernen"
+
+#: classes/Tax-meta-class/Tax-meta-class.php:391
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: classes/Tax-meta-class/Tax-meta-class.php:726
+msgid "Remove Image"
+msgstr "Bild entfernen"
+
+#: classes/Tax-meta-class/Tax-meta-class.php:728
+msgid "Upload Image"
+msgstr "Bild hochladen"
+
+#: classes/class.taxonomy-single-term.php:200 includes/settings.php:697
+#: includes/settings.php:710 includes/settings.php:721
+#: includes/settings.php:733 includes/settings.php:746
+#: includes/settings.php:759 includes/settings.php:774
+#: includes/settings.php:789 includes/settings.php:822
+#: includes/settings.php:882 includes/settings.php:893
+#: includes/settings.php:920 includes/settings.php:937
+#: includes/settings.php:954 includes/si-contact-form-functions.php:201
+#: page-payment.php:76
+msgid "None"
+msgstr "Keine"
+
+#: classes/class.taxonomy-single-term.php:236
+msgid "Clear"
+msgstr "Zurücksetzen"
+
+#: classes/class.taxonomy-single-term.php:271
+msgid "Add New"
+msgstr "Hinzufügen"
+
+#: classes/class.taxonomy-single-term.php:300
+#, php-format
+msgid "There was a problem adding a new %s"
+msgstr "Es gab ein Problem beim Hinzufügen eines neuen %s"
+
+#: event-meta-event-single.php:21
+#, php-format
+msgid ""
+"This event is running from %1$s until %2$s. It is next occurring on %3$s"
+msgstr ""
+"Dieser Termin läuft vom %1$s bis %2$s und findet das nächste Mal am %3$s "
+"statt."
+
+#: event-meta-event-single.php:25
+#, php-format
+msgid "This event finished on %s"
+msgstr "Anlass war am %s fertig."
+
+#: event-meta-event-single.php:33
+msgid "Date and time"
+msgstr "Zeitpunkt"
+
+#: event-meta-event-single.php:34
+msgid "to"
+msgstr "bis"
+
+#: event-meta-event-single.php:34
+msgid "o'clock"
+msgstr "Uhr"
+
+#: event-meta-event-single.php:55
+msgid "Upcoming Dates"
+msgstr "Weitere Daten"
+
+#: functions.php:235
+msgid "Broadcaster"
+msgstr "Sendungsmachende"
+
+#: functions.php:241
+msgid "Broadcaster Light"
+msgstr "Sendungsmachende (light)"
+
+#: functions.php:249
+msgid "Staff"
+msgstr "Staff"
+
+#: functions.php:255
+msgid "Webteam"
+msgstr "Webteam"
+
+#: functions.php:366
+msgid "Not in header"
+msgstr "Nicht in Kopfzeile"
+
+#: functions.php:369
+msgid "Don't show posts of this category in header"
+msgstr "Beiträge dieser Kategorie nicht im Kopfbereich anzeigen"
+
+#: functions.php:541
+msgid "Impressum"
+msgstr "Impressum"
+
+#: functions.php:544
+msgid "Copyright"
+msgstr "Copyright &#169; "
+
+#: functions.php:597
+msgid "Frontpage tile"
+msgstr "Startseiten-Kachel"
+
+#: functions.php:598
+msgid "Large"
+msgstr "Gross"
+
+#: functions.php:599
+msgid "Full width"
+msgstr "Volle Breite"
+
+#: functions.php:817
+msgid "Title probably too long! Title preview:"
+msgstr "Titel wahrscheinlich zu lang! Titelvorschau der Startseite:"
+
+#: includes/broadcast-list-shortcode.php:113
+#, php-format
+msgid "Feed for all posts filed under %s"
+msgstr "Feed für alle Beiträge unter %s"
+
+#: includes/broadcast.php:43
+msgctxt "Taxonomy General Name"
+msgid "Broadcasts"
+msgstr "Sendungen"
+
+#: includes/broadcast.php:44
+msgctxt "Taxonomy Singular Name"
+msgid "Broadcast"
+msgstr "Sendung"
+
+#: includes/broadcast.php:45 includes/broadcast.php:153
+#: includes/restrict-taxonomies-functions.php:88
+msgid "Broadcasts"
+msgstr "Sendungen"
+
+#: includes/broadcast.php:46
+msgid "All Broadcasts"
+msgstr "Alle Sendungen"
+
+#: includes/broadcast.php:47
+msgid "Parent Broadcast"
+msgstr "Sendungskategorie"
+
+#: includes/broadcast.php:48
+msgid "Parent Broadcast:"
+msgstr "Sendungskategorie:"
+
+#: includes/broadcast.php:49
+msgid "New Broadcast Name"
+msgstr "Neuer Sendungsname"
+
+#: includes/broadcast.php:50
+msgid "Add New Broadcast"
+msgstr "Neue Sendung hinzufügen"
+
+#: includes/broadcast.php:51
+msgid "Edit Broadcast"
+msgstr "Sendung bearbeiten"
+
+#: includes/broadcast.php:52
+msgid "Update Broadcast"
+msgstr "Sendung aktualisieren"
+
+#: includes/broadcast.php:53
+msgid "View Item"
+msgstr "Sendung anzeigen"
+
+#: includes/broadcast.php:54
+msgid "Separate genres with commas"
+msgstr "Musikstile mit Kommas trennen"
+
+#: includes/broadcast.php:55
+msgid "Add or remove broadcasts"
+msgstr "Sendungen hinzufügen oder entfernen"
+
+#: includes/broadcast.php:56
+msgid "Choose from the most used broadcasts"
+msgstr "Aus den meist verwendeten Sendungen auswählen"
+
+#: includes/broadcast.php:57
+msgid "Popular Items"
+msgstr "Beliebte Sendungen"
+
+#: includes/broadcast.php:58
+msgid "Search broadcasts"
+msgstr "Sendungen suchen"
+
+#: includes/broadcast.php:59
+msgid "Not Found"
+msgstr "Nicht gefunden"
+
+#: includes/broadcast.php:109 includes/si-contact-form-functions.php:189
+#: includes/si-contact-form-functions.php:199
+#: includes/taxonomy-broadcast-functions.php:375 page-payment.php:74
+msgid "Broadcast"
+msgstr "Sendung"
+
+#: includes/broadcast.php:320
+msgid "No broadcast set."
+msgstr "Keine Sendung eingestellt."
+
+#: includes/broadcast.php:323
+msgid ""
+"There exists already another event at this time/these times. You have to "
+"delete them before saving this event."
+msgstr ""
+"Es existiert schon ein anderer Termin zur gleichen Zeit. Zuerst müssen die "
+"anderen Termine gelöscht werden."
+
+#: includes/broadcast.php:420
+msgid "You cannot add broadcasts!"
+msgstr "Du kannst keine Sendung hinzufügen!"
+
+#: includes/broadcast.php:440
+msgid "Description"
+msgstr "Beschreibung"
+
+#: includes/colorbox.php:24
+#, php-format
+msgid "image %1$s of %2$s"
+msgstr "Bild %1$s von %2$s"
+
+#: includes/colorbox.php:25
+msgid "previous"
+msgstr "zurück"
+
+#: includes/colorbox.php:26
+msgid "next"
+msgstr "weiter"
+
+#: includes/colorbox.php:27
+msgid "close"
+msgstr "schliessen"
+
+#: includes/colorbox.php:28
+msgid "This content failed to load."
+msgstr "This content failed to load."
+
+#: includes/colorbox.php:29
+msgid "This image failed to load."
+msgstr "This image failed to load."
+
+#: includes/colorbox.php:30
+msgid "start slideshow"
+msgstr "Diashow starten"
+
+#: includes/colorbox.php:31
+msgid "stop slideshow"
+msgstr "Diashow stoppen"
+
+#: includes/help-notices.php:35
+msgid "Configure a help notice for posts."
+msgstr "Du musst eine Anleitung für Artikel einstellen."
+
+#: includes/help-notices.php:36
+msgid "Configure a help notice for events."
+msgstr "Du musst eine Anleitung für Termine einstellen."
+
+#: includes/help-notices.php:37
+msgid "Configure a help notice for broadcasts."
+msgstr "Du musst eine Anleitung für Sendungen einstellen."
+
+#: includes/help-notices.php:64
+msgid "Remove help notices"
+msgstr "Anleitungen nicht mehr anzeigen"
+
+#: includes/player-functions.php:48
+msgid "Live!"
+msgstr "Live!"
+
+#: includes/player-functions.php:132
+msgid "No fallback broadcast set! Check"
+msgstr "Keine Standard-Sendung gesetzt! Siehe"
+
+#: includes/player-functions.php:134 includes/player-functions.php:319
+#: includes/settings.php:82
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: includes/player-functions.php:254
+msgid "Couldn't retrieve songticker song data."
+msgstr "Konnte keine Songtickerdaten holen."
+
+#: includes/player-functions.php:317
+msgid "No stream URL set! Check"
+msgstr "Kein Stream-URL gesetzt! Siehe"
+
+#: includes/realarchive-shortcode.php:35
+msgid "Day"
+msgstr "Tag"
+
+#: includes/realarchive-shortcode.php:36 includes/realarchive-shortcode.php:65
+#: includes/specialpost.php:75
+msgid "Time"
+msgstr "Zeit"
+
+#: includes/realarchive-shortcode.php:38
+msgid "Generate real audio link"
+msgstr "Sendung anhören"
+
+#: includes/realarchive-shortcode.php:66 includes/specialpost.php:76
+msgid "Hour"
+msgstr "Stunde"
+
+#: includes/realarchive-shortcode.php:67 includes/specialpost.php:77
+msgid "Minute"
+msgstr "Minute"
+
+#: includes/realarchive-shortcode.php:68 includes/specialpost.php:78
+msgid "Now"
+msgstr "Jetzt"
+
+#: includes/realarchive-shortcode.php:69 includes/specialpost.php:79
+msgid "Ok"
+msgstr "Ok"
+
+#: includes/restrict-taxonomies-functions.php:16
+msgid "Permissions"
+msgstr "Berechtigungen"
+
+#: includes/settings.php:39
+msgid "RaBe Theme Settings"
+msgstr "RaBe-Einstellungen"
+
+#: includes/settings.php:40
+msgid "RaBe settings"
+msgstr "Einstellungen zum RaBe-Theme"
+
+#: includes/settings.php:53
+msgid "RaBe Settings"
+msgstr "RaBe-Einstellungen"
+
+#: includes/settings.php:54
+msgid "Settings for rabe theme"
+msgstr "Theme-Einstellungen für RaBe"
+
+#: includes/settings.php:90
+msgid "Meta description"
+msgstr "Meta-Beschreibung"
+
+#: includes/settings.php:99
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: includes/settings.php:108
+msgid "Phone"
+msgstr "Telefon"
+
+#: includes/settings.php:117
+msgid "Facebook"
+msgstr "Facebook"
+
+#: includes/settings.php:126
+msgid "Twitter"
+msgstr "Twitter"
+
+#: includes/settings.php:135
+msgid "Soundcloud"
+msgstr "Soundcloud"
+
+#: includes/settings.php:144
+msgid "Mixcloud"
+msgstr "Mixcloud"
+
+#: includes/settings.php:153
+msgid "Youtube"
+msgstr "Youtube"
+
+#: includes/settings.php:162
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: includes/settings.php:171
+msgid "Help notices for posts"
+msgstr "Anleitung für Artikel"
+
+#: includes/settings.php:180
+msgid "Help notices for broadcasts"
+msgstr "Anleitung für Sendungen"
+
+#: includes/settings.php:190
+msgid "Help notices for events"
+msgstr "Anleitung für Termine"
+
+#: includes/settings.php:199
+msgid "Mail notification on pending event"
+msgstr "Mail-Hinweis bei hängigem Termin"
+
+#: includes/settings.php:209
+msgid "Receiving options page"
+msgstr "Empfangsmöglichkeiten"
+
+#: includes/settings.php:218
+msgid "Contact page"
+msgstr "Kontaktseite"
+
+#: includes/settings.php:227
+msgid "Impressum page"
+msgstr "Impressum"
+
+#: includes/settings.php:236
+msgid "Broadcast-Support page"
+msgstr "Sendungs-Support-Seite"
+
+#: includes/settings.php:245
+msgid "Mail contact page"
+msgstr "Mail-Kontaktseite"
+
+#: includes/settings.php:254
+msgid "Which is the fallback/default broadcast?"
+msgstr "\"Standard\"-Sendung"
+
+#: includes/settings.php:263
+msgid "Which is info broadcast?"
+msgstr "Info-Sendung"
+
+#: includes/settings.php:272
+msgid "Which is the general broadcast?"
+msgstr "\"Allgemeine\" Sendung?"
+
+#: includes/settings.php:281
+msgid "Short name of site title in top menu"
+msgstr "Kurzname für im Hauptmenü"
+
+#: includes/settings.php:290
+msgid "Maximum of specialposts on the front page?"
+msgstr "Anzahl Spezial-Beiträge"
+
+#: includes/settings.php:299
+msgid "Which category is not shown in header?"
+msgstr "Welche Kategorie wird im Kopfbereich nicht angezeigt?"
+
+#: includes/settings.php:308
+msgid "Live-Stream URL"
+msgstr "Livestream-URL"
+
+#: includes/settings.php:316
+msgid "Postfinance E-Payment - ID"
+msgstr "Postfinance E-Payment - ID"
+
+#: includes/settings.php:324
+msgid "Postfinance E-Payment - URL"
+msgstr "Postfinance E-Payment - URL"
+
+#: includes/settings.php:332
+msgid "Postfinance E-Payment - SHA-Key"
+msgstr "Postfinance E-Payment - SHA-Schlüssel"
+
+#: includes/settings.php:340
+msgid "Paypal-User"
+msgstr "Paypal-Benutzer"
+
+#: includes/settings.php:348
+msgid "Paypal-URL"
+msgstr "Paypal-URL"
+
+#: includes/settings.php:357
+msgid "Displayed page after successful payment?"
+msgstr "Angezeigte Seite nach erfolgreicher Zahlung"
+
+#: includes/settings.php:365
+msgid "Displayed page after failed payment"
+msgstr "Angezeigte Seite nach gescheiterter Zahlung"
+
+#: includes/settings.php:374
+msgid "Supporter form"
+msgstr "Sendungs-Support-Formular"
+
+#: includes/settings.php:383
+msgid "Mail form"
+msgstr "Mail-Kontaktformular"
+
+#: includes/settings.php:392
+msgid "Membership form"
+msgstr "Mitgliedschaftsformular"
+
+#: includes/settings.php:401
+msgid "Donation form"
+msgstr "Spendeformular"
+
+#: includes/settings.php:411
+msgid "Interval of songticker updates"
+msgstr "Intervall der Songticker-Aktualisierung"
+
+#: includes/settings.php:419
+msgid "Songticker URL"
+msgstr "Songticker-URL"
+
+#: includes/settings.php:595
+msgid "Site Settings"
+msgstr "Seiteneinstellunge"
+
+#: includes/settings.php:601
+msgid ""
+"Write a short description of your site. This will be displayed by search "
+"engines."
+msgstr ""
+"Schreibe eine kurze Beschreibung der Internetseite. Das wird bei den "
+"Suchmaschinen angezeigt."
+
+#: includes/settings.php:666
+msgid "Help notice for entering a post"
+msgstr "Anleitung zum Erfassen eines Beitrags"
+
+#: includes/settings.php:673
+msgid "Help notice for entering an event"
+msgstr "Anleitung zum Erfassen eines Termins"
+
+#: includes/settings.php:680
+msgid "Help notice for entering a broadcast"
+msgstr "Anleitung zum Erfassen einer Sendung"
+
+#: includes/settings.php:688
+msgid "Mail address which will be notified upon a pending event"
+msgstr "Welche Mail-Adresse bekommt ein Hinweis bei einem hängigen Termin?"
+
+#: includes/settings.php:701
+msgid "Which page lists all receiving options of the radio?"
+msgstr "Welche Seite listet alle Empfangsmöglichkeiten auf?"
+
+#: includes/settings.php:737
+msgid "Set the page where you can support a specific broadcast."
+msgstr "Auf welcher Seite kann man eine Sendung supporten?"
+
+#: includes/settings.php:750
+msgid "Set the page for sending a mail to a broadcast or a broadcaster."
+msgstr ""
+"Auf welcher Seite ist ein Mailkontakt zu Sendungsmachenden oder Sendungen "
+"möglich?"
+
+#: includes/settings.php:766
+msgid ""
+"Set a fallback broadcast which is shown in the player, when no real "
+"broadcast is scheduled."
+msgstr ""
+"Wähle eine Standard-Sendung, die im Player angezeigt wird, wenn gerade keine "
+"\"richtige\" Sendung läuft."
+
+#: includes/settings.php:781
+msgid ""
+"Set a general broadcast for all broadcasts with no explicit broadcast name."
+msgstr ""
+"Wähle eine \"allgemeine\" Sendung auf für alle Sendungen ohne spezifische "
+"Sendungszugehörigkeit."
+
+#: includes/settings.php:796
+msgid "Set the news magazine."
+msgstr "Welches ist die Nachrichtensendung?"
+
+#: includes/settings.php:803
+msgid ""
+"The short name of the site will be displayed in the header of the mobile "
+"view."
+msgstr ""
+"Der Kurzname der Internetseite wird im Kopfbereich in der mobilen Ansicht "
+"angezeigt."
+
+#: includes/settings.php:811
+msgid "How many specialposts do you want to show on the frontpage?"
+msgstr "Wie viele Spezial-Beiträge sollen auf der Startseite angezeigt werden?"
+
+#: includes/settings.php:849
+msgid "ID for Postfinance E-Payment"
+msgstr "ID für Postfinance E-Payment"
+
+#: includes/settings.php:857
+msgid "SHA-Key for Postfinance E-Payment"
+msgstr "SHA-Schlüssel für Postfinance E-Payment"
+
+#: includes/settings.php:872
+msgid "User for Paypal payment"
+msgstr "Benutzer für Paypal-Bezahlung"
+
+#: includes/settings.php:910 includes/settings.php:926
+#: includes/settings.php:943 includes/settings.php:960
+#, php-format
+msgid "Form %d: %s"
+msgstr "Formular %d: %s"
+
+#: includes/settings.php:913
+msgid "Which form is on the page for supporting a broadcast?"
+msgstr "Welches Formular ist auf der Sendungs-Support-Seite?"
+
+#: includes/settings.php:929
+msgid "Which form for the mail contact page?"
+msgstr "Seite mit Kontaktmöglichkeiten"
+
+#: includes/settings.php:946
+msgid "Which form is on the Membership page?"
+msgstr "Welches Formular ist auf der Mitgliedschaftsseite?"
+
+#: includes/settings.php:963
+msgid "Which form is on the donation page?"
+msgstr "Welches Formular ist auf der Spende-Seite?"
+
+#: includes/settings.php:970
+msgid "Set interval of how often to check for new songs in seconds"
+msgstr "Wie häufig in Sekunden sollen die Songtickerdaten geholt werden?"
+
+#: includes/si-contact-form-functions.php:79
+#: includes/si-contact-form-functions.php:154 page-payment.php:181
+msgid "Request"
+msgstr "Anfrage"
+
+#: includes/si-contact-form-functions.php:116 page-payment.php:201
+#: page-payment.php:223
+msgid "Order ID"
+msgstr "Bestellnummer"
+
+#: includes/specialpost.php:40 includes/specialpost.php:51
+#: includes/specialpost.php:283
+msgid "Special"
+msgstr "Spezial"
+
+#: includes/specialpost.php:151
+msgid "Link to broadcast page"
+msgstr "Verlinke mit Sendungsseite"
+
+#: includes/specialpost.php:160
+msgid "Specialpost"
+msgstr "Special"
+
+#: includes/specialpost.php:162
+msgid "External Link:"
+msgstr "Externer Link:"
+
+#: includes/specialpost.php:163
+msgid "No link (http://example.com)"
+msgstr "Kein Link (http://beispiel.ch)"
+
+#: includes/specialpost.php:177
+msgid "Hide post on frontpage after this specific time:"
+msgstr "Beitrag von Startseite entfernen nach:"
+
+#: includes/specialpost.php:283
+#, php-format
+msgid "<a href=\"%1s\" %2s>"
+msgstr ""
+
+#: includes/taxonomy-broadcast-functions.php:19
+#: includes/taxonomy-broadcast-functions.php:22
+msgid "Feed"
+msgstr ""
+
+#: includes/taxonomy-broadcast-functions.php:20
+#: includes/taxonomy-broadcast-functions.php:23
+msgid "Broadcast Feed"
+msgstr "Sendungs-Feed"
+
+#: includes/taxonomy-broadcast-functions.php:98
+msgid "Broadcast Description"
+msgstr "Über die Sendung"
+
+#: includes/taxonomy-broadcast-functions.php:129
+msgid "Broadcast websites"
+msgstr "Links"
+
+#: includes/taxonomy-broadcast-functions.php:167
+msgid "Broadcast members"
+msgstr "Sendungsmachende"
+
+#: includes/taxonomy-broadcast-functions.php:190
+msgid "Mail to broadcaster"
+msgstr "Mail an Sendungsmachende"
+
+#: includes/taxonomy-broadcast-functions.php:236
+msgid "Next broadcasts"
+msgstr "Nächste Sendungen"
+
+#: includes/taxonomy-broadcast-functions.php:285
+msgid "Broadcast portrait"
+msgstr "Sendungsportrait"
+
+#: includes/taxonomy-broadcast-functions.php:316
+msgid "No $term_id specified in broadcast_info()"
+msgstr "Keine Sendungs-ID angegeben"
+
+#: includes/taxonomy-broadcast-functions.php:358
+msgid "Support"
+msgstr "Unterstütze"
+
+#: includes/taxonomy-broadcast-functions.php:527
+msgid "More of"
+msgstr "Mehr von"
+
+#: includes/tgmpa-functions.php:96
+msgid "Consider installing these plugins for a correctly working theme!"
+msgstr "Installiere diese Plugins für ein funktionierendes Theme."
+
+#: includes/user-settings.php:42
+msgid "Custom user settings"
+msgstr "RaBe-Benutzereinstellungen"
+
+#: includes/user-settings.php:46
+msgid "Display help notices"
+msgstr "Hilfetexte anzeigen"
+
+#: includes/user-settings.php:54
+msgid "Allow mails via form to user"
+msgstr "Erlaube Mails via Kontaktformular"
+
+#: page-mailcontact.php:39
+msgid "No contact specified."
+msgstr "Kein Kontakt angegeben."
+
+#: page-mailcontact.php:47
+msgid "Mail to"
+msgstr "E-Mail an"
+
+#: page-mailcontact.php:56
+msgid "No mail contact form active."
+msgstr "Kein Mailkontakt-Formular aktiv."
+
+#: page-payment.php:48
+msgid "Choose membership"
+msgstr "Mitgliedschaft wählen"
+
+#: page-payment.php:50
+msgid ""
+"Normale Mitgliedschaft <strong>150.- pro Jahr</strong> (Halbjahresbeitrag ab "
+"1. Juli 75.-)"
+msgstr ""
+
+#: page-payment.php:51
+msgid ""
+"Studierende / RentnerInnen (AHV, IV), Besitzende einer Kulturlegi "
+"<strong>75.- pro Jahr</strong> (Halbjahresbeitrag ab 1. Juli 37.50)"
+msgstr ""
+
+#: page-payment.php:52
+msgid "Familien oder WG <strong>250.- pro Jahr</strong>"
+msgstr ""
+
+#: page-payment.php:53
+msgid "Goldmember <strong>ab 500.- pro Jahr</strong>"
+msgstr ""
+
+#: page-payment.php:54
+msgid " Premiummember <strong>ab 2’000.- pro Jahr</strong>"
+msgstr ""
+
+#: page-payment.php:57 page-payment.php:84 page-payment.php:96
+msgid "Submit"
+msgstr "Senden"
+
+#: page-payment.php:63
+msgid "Choose broadcast to support"
+msgstr "Zu unterstützende Sendung wählen"
+
+#: page-payment.php:89 page-payment.php:212
+msgid "Donation"
+msgstr "Spende"
+
+#: page-payment.php:91
+msgid "Donation in swiss francs"
+msgstr "Spende in Schweizer Franken"
+
+#: page-payment.php:100
+msgid "Thank you"
+msgstr "Danke"
+
+#: page-payment.php:101
+msgid "Thank you for your message!"
+msgstr "Danke für die Nachricht!"
+
+#: page-payment.php:184
+msgid "Send payment order!"
+msgstr "Einzahlungsschein verschicken!"
+
+#: page-payment.php:187
+msgid "... wants to support the broadcast:"
+msgstr "... will folgende Sendung supporten:"
+
+#: page-payment.php:192
+msgid "Hello"
+msgstr "Hallo"
+
+#: page-payment.php:198
+msgid "... wants to get an payment order!"
+msgstr "... will einen Einzahlungsschein erhalten!"
+
+#: page-payment.php:200 page-payment.php:228
+msgid "To pay"
+msgstr "Zu bezahlen"
+
+#: page-payment.php:206
+msgid "Thank you for the order."
+msgstr "Danke für die Bestellung."
+
+#: page-payment.php:207
+msgid "You are going to receive a payment order."
+msgstr "Du wirst einen Einzahlungsschein erhalten."
+
+#: page-payment.php:215
+msgid "Pay membership"
+msgstr "Mitgliedschaftsbeitrag"
+
+#: page-payment.php:218
+msgid "Support payment for"
+msgstr "Support-Zahlung für"
+
+#: page-payment.php:231 page-payment.php:232
+msgid "Pay with Postfinance"
+msgstr "Mit Postfinance bezahlen"
+
+#: page-payment.php:255 page-payment.php:256
+msgid "Pay with Paypal"
+msgstr "Mit Paypal bezahlen"
+
+#: page-payment.php:263 page-payment.php:264
+msgid "Pay with payment order"
+msgstr "Mit Einzahlungsschein bezahlen"
+
+#: page-payment.php:269
+msgid "Error"
+msgstr "Fehler"
+
+#: page-payment.php:270
+msgid "You don't want to pay anything, do you?!"
+msgstr "Du willst nichts bezahlen, oder?!"
+
+#: page-stattradio2print.php:78
+msgid "Export to Excel"
+msgstr "Als Excel exportieren"
+
+#: page-stattradio2print.php:79
+msgid "Select calendar"
+msgstr "Kalender auswählen"
+
+#: page-stattradio2print.php:80
+msgid "Previous month"
+msgstr "Vorheriger Monat"
+
+#: page-stattradio2print.php:81
+msgid "Next month"
+msgstr "Nächster Monat"
+
+#: page-stattradio2print.php:101
+msgid "No month or year specified!"
+msgstr "Kein Monat oder Jahr angegeben!"
+
+#: page-stattradio2print.php:124
+msgid "Mo"
+msgstr "Mo"
+
+#: page-stattradio2print.php:125
+msgid "Di"
+msgstr "Di"
+
+#: page-stattradio2print.php:126
+msgid "Mi"
+msgstr "Mi"
+
+#: page-stattradio2print.php:127
+msgid "Do"
+msgstr "Do"
+
+#: page-stattradio2print.php:128
+msgid "Fr"
+msgstr "Fr"
+
+#: page-stattradio2print.php:129
+msgid "Sa"
+msgstr "Sa"
+
+#: page-stattradio2print.php:130
+msgid "So"
+msgstr "So"
+
+#: partials/header-menu.php:18
+msgid "Search for:"
+msgstr "Suchen nach:"
+
+#~ msgid "Amount"
+#~ msgstr "Menge"
+
+#~ msgid "Amount to pay"
+#~ msgstr "Zu bezahlen"
+
+#~ msgid "Hallo"
+#~ msgstr "Hallo"
+
+#~ msgid "rabe Settings"
+#~ msgstr "Einstellungen zum RaBe-Theme"
+
+#~ msgid "RaBe"
+#~ msgstr "RaBe"
+
+#~ msgctxt "rabe"
+#~ msgid "Search for:"
+#~ msgstr "Search for:"
+
+#~ msgid "Event Details"
+#~ msgstr "Details zur Veranstaltung"
+
+#~ msgctxt "placeholder"
+#~ msgid "YYYYMMDD"
+#~ msgstr "JJJJMMTT "
+
+#~ msgctxt "placeholder"
+#~ msgid "HHmm"
+#~ msgstr "HHMM"
+
+#~ msgid "Title length"
+#~ msgstr "Titellänge"
+
+#~ msgid "characters"
+#~ msgstr "Buchstaben"
+
+#~ msgid "No audio file attached to this post"
+#~ msgstr "Keine Audio-Datei verknüpft"
+
+#~ msgid "broadcasts"
+#~ msgstr "Sendungen"
+
+#, fuzzy
+#~ msgid "Terms and conditions for a booking."
+#~ msgstr "Bedingungen"
+
+#~ msgid "Broadcast image "
+#~ msgstr "Bild zur Sendung"
+
+#~ msgid "Broadcast member "
+#~ msgstr "Sendungsmachende"
+
+#, fuzzy
+#~ msgid "Broadcast website "
+#~ msgstr "Webseite"
+
+#, fuzzy
+#~ msgid "Broadcast email "
+#~ msgstr "E-Mail-Adresse"
+
+#, fuzzy
+#~ msgid "Broadcast facebook site "
+#~ msgstr "Facebook"
+
+#, fuzzy
+#~ msgid "Broadcast soundcloud site "
+#~ msgstr "Soundcloud"
+
+#, fuzzy
+#~ msgid "Broadcast mixcloud site "
+#~ msgstr "Mixcloud"
+
+#, fuzzy
+#~ msgid "Broadcast youtube site "
+#~ msgstr "Youtube"
+
+#, fuzzy
+#~ msgid "Broadcast portrait mp3 "
+#~ msgstr "Sendungsportrait als MP3-Datei"
+
+#~ msgid "Contact phone number."
+#~ msgstr "Kontakttelefonnummer."
+
+#~ msgid "Contact mail address."
+#~ msgstr "Kontakt-E-Mail-Adresse"
+
+#~ msgid "URL to your facebook page."
+#~ msgstr "Facebook"
+
+#~ msgid "URL to your Twitter page."
+#~ msgstr "Twitter"
+
+#~ msgid "Broadcast information"
+#~ msgstr "Über die Sendung"
+
+#~ msgid "404 Not Found"
+#~ msgstr "Nicht gefunden"
+
+#~ msgid "Template"
+#~ msgstr "Vorlage"
+
+#, fuzzy
+#~ msgid "Dimensions"
+#~ msgstr "Erweiterungen"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "%s mm"
+#~ msgstr "%s mm"
+
+#~ msgid "Artist"
+#~ msgstr "Band"
+
+#, fuzzy
+#~ msgid "Year"
+#~ msgstr "Jahr: %s"
+
+#~ msgid "Genre"
+#~ msgstr "Musikstil"
+
+#~ msgid "File Name"
+#~ msgstr "Dateiname"
+
+#, fuzzy
+#~ msgid "File Size"
+#~ msgstr "Dateiname"
+
+#, fuzzy
+#~ msgid "File Type"
+#~ msgstr "Dateiname"
+
+#~ msgid "Featured Page"
+#~ msgstr "Ausgewähltes Seite"
+
+#~ msgid "Title"
+#~ msgstr "Titel:"
+
+#, fuzzy
+#~ msgid "Page"
+#~ msgstr "Seitentitel zeigen"
+
+#~ msgid "Show Featured Image"
+#~ msgstr "Ausgewähltes Bild zeigen"
+
+#, fuzzy
+#~ msgid "Right"
+#~ msgstr "Höhe: "
+
+#~ msgid "Show Page Title"
+#~ msgstr "Seitentitel zeigen"
+
+#, fuzzy
+#~ msgid "Show Page Content"
+#~ msgstr "Zeige lange Termine"
+
+#~ msgid "By"
+#~ msgstr "Von"
+
+#~ msgid "[Read More...]"
+#~ msgstr "Weiterlesen ..."
+
+#~ msgid "Featured Posts"
+#~ msgstr "Ausgewählter Artikel"
+
+#~ msgid "Category"
+#~ msgstr "Kategorie"
+
+#~ msgid "All Categories"
+#~ msgstr "Alle Kategorien"
+
+#~ msgid "Number of Posts to Show"
+#~ msgstr "Anzahl Artikel"
+
+#, fuzzy
+#~ msgid "Comment Count"
+#~ msgstr "Kommentare"
+
+#, fuzzy
+#~ msgid "Show Post Title"
+#~ msgstr "Seitentitel zeigen"
+
+#~ msgid "Show Post Info"
+#~ msgstr "Artikel-Infos zeigen"
+
+#, fuzzy
+#~ msgid "Content Type"
+#~ msgstr "Inhalt zeigen"
+
+#~ msgid "Show Content"
+#~ msgstr "Inhalt zeigen"
+
+#~ msgid "Show Excerpt"
+#~ msgstr "Auszug zeigen"
+
+#, fuzzy
+#~ msgid "No Content"
+#~ msgstr "Inhalt zeigen"
+
+#~ msgid "Show Category Archive Link"
+#~ msgstr "Kategoriearchiv-Link zeigen"
+
+#, fuzzy
+#~ msgid "Link Text"
+#~ msgstr "Weiterer Text"
+
+#~ msgid "Something went wrong."
+#~ msgstr "Da ging was schief."
+
+#, fuzzy
+#~ msgid "Install package not available."
+#~ msgstr "Wähle ein gültiges Datum."
+
+#~ msgid "Fonts"
+#~ msgstr "Schriften"
+
+#~ msgid "Permalink"
+#~ msgstr "Permalink"
+
+#~ msgid "Events on "
+#~ msgstr "Bands am "
+
+#~ msgid "Events in "
+#~ msgstr "Bands in "
+
+#~ msgid "Search for events with: %s"
+#~ msgstr "Suche nach Bands mit: %s"
+
+#~ msgid "Events"
+#~ msgstr "Bands"
+
+#~ msgid "Bookings are no longer available for this event."
+#~ msgstr "Keine Buchungsanfrage mehr möglich."
+
+#~ msgid "This event has sold out."
+#~ msgstr "Keine weiteren Buchungen mehr möglich."
+
+#~ msgid "Booking"
+#~ msgstr "Buchungsanfrage"
+
+#~ msgid "Only logged in users can place bookings"
+#~ msgstr "Nur eingeloggte Personen können Buchungen machen"
+
+#~ msgid "Username / Email"
+#~ msgstr "Benutzername / E-Mail"
+
+#~ msgid "Below Header"
+#~ msgstr "Seitenleiste oben"
+
+#~ msgid "MX3"
+#~ msgstr "MX3"
+
+#~ msgid "Manager"
+#~ msgstr "Manager"
+
+#~ msgid "Supermanager"
+#~ msgstr "Supermanager"
+
+#~ msgctxt "Taxonomy General Name"
+#~ msgid "Genre"
+#~ msgstr "Musikstil"
+
+#~ msgctxt "Taxonomy Singular Name"
+#~ msgid "Genre"
+#~ msgstr "Musikstil"
+
+#~ msgid "All Genres"
+#~ msgstr "Alle Musikstile"
+
+#~ msgid "New Genre"
+#~ msgstr "Neuer Musikstil"
+
+#~ msgid "Add New Genre"
+#~ msgstr "Neuer Musikstil hinzufügen"
+
+#~ msgid "Edit Genre"
+#~ msgstr "Musikstil bearbeiten"
+
+#~ msgid "Add or remove genres"
+#~ msgstr "Musikstile hinzufügen oder entfernen"
+
+#~ msgid "Choose from the most used genres"
+#~ msgstr "Aus den meistverwendeten Musikstilen auswählen"
+
+#~ msgid "Search genres"
+#~ msgstr "Musikstile suchen"
+
+#~ msgid "Only search for bands"
+#~ msgstr "Nur nach Bands suchen"
+
+#~ msgid "Advanced artist search"
+#~ msgstr "erweiterte Band-Suche"
+
+#~ msgid "Rules to play"
+#~ msgstr "Spielregeln"
+
+#~ msgid "I have read and agree to the terms and conditions detailed above."
+#~ msgstr "Ich habe die Spielregeln gelesen und bin damit einverstanden."
+
+#~ msgid "Message"
+#~ msgstr "Mehr über den Anlass und Tauschangebot"
+
+#~ msgid ""
+#~ "Thank you for your booking. You shall receive an e-mail containing more "
+#~ "information shortly"
+#~ msgstr ""
+#~ "Vielen Dank für die Buchungsanfrage! In Kürze folgt ein E-Mail mit "
+#~ "weiteren Informationen."
+
+#~ msgid "Choose an valid available date."
+#~ msgstr "Wähle ein gültiges Datum."
+
+#~ msgid "Search for"
+#~ msgstr "Suchen nach"
+
+#~ msgid "Venue"
+#~ msgstr "Veranstaltungsort"
+
+#~ msgid "All venues"
+#~ msgstr "Alle Orte"
+
+#~ msgid "Select dates"
+#~ msgstr "Daten (von/bis)"
+
+#~ msgid "To"
+#~ msgstr "Zu"
+
+#, fuzzy
+#~ msgid "Search"
+#~ msgstr "Suchen"
+
+#~ msgid ""
+#~ "<p class=\"description indicator-hint\">No Artists specified yet! Please "
+#~ "<a href=\""
+#~ msgstr ""
+#~ "<p class=\"description indicator-hint\">Noch keine Band angegeben! Bitte "
+#~ "<a href=\""
+
+#~ msgid "No artist chosen"
+#~ msgstr "Keine Band ausgewählt"
+
+#~ msgid "Displays a calendar of the bands only in august"
+#~ msgstr "Zeigt den Kalender vom Le son d'été im August 2015"
+
+#~ msgid "Le son d’été - August Calendar"
+#~ msgstr "Le son d’été - Augustkalender"
+
+#~ msgid "Link directly to event for days with only one event"
+#~ msgstr "Verlinke direkt zum Termin bei Tage mit nur einem einzelnen Termin"
+
+#~ msgid "Event categories"
+#~ msgstr "Terminkategorien"
+
+#~ msgid "List category slug(s), seperate by comma. Leave blank for all"
+#~ msgstr ""
+#~ "Titelform der Unterrichtskategorien auflisten, durch Komma getrennt. Leer "
+#~ "lassen für alle."
+
+#~ msgid "Event venue"
+#~ msgstr "Veranstaltungsort"
+
+#~ msgid "All Venues"
+#~ msgstr "Alle Veranstaltungsorte"
+
+#~ msgid "A featured image must be set before publishing the event."
+#~ msgstr "Kein Artikelbild ausgewählt."
+
+#~ msgid "An artist must be set before publishing the event."
+#~ msgstr "Keine Band ausgewählt."
+
+#~ msgid "A venue must be set before publishing the event."
+#~ msgstr "Kein Veranstaltungsort gewählt."
+
+#~ msgid "A genre must be set before publishing the event."
+#~ msgstr "Kein Musikstil ausgewählt."
+
+#~ msgid "Choose your genre."
+#~ msgstr "Musikstil wählen"
+
+#~ msgid "Le son d’été - Genres"
+#~ msgstr "Le son d’été - Musikstile"
+
+#~ msgid "Genres"
+#~ msgstr "Musikstil"
+
+#~ msgid "Title:"
+#~ msgstr "Titel:"
+
+#~ msgid "Display as list"
+#~ msgstr "Als Liste anzeigen"
+
+#~ msgid "Display as dropdown"
+#~ msgstr "Als Dropdown-Menü anzeigen"
+
+#~ msgid "Choose your venue."
+#~ msgstr "Veranstaltungsort wählen"
+
+#~ msgid "Le son d’été - Venues"
+#~ msgstr "Le son d’été - Veranstaltungsorte"
+
+#~ msgid "Select Venue"
+#~ msgstr "Veranstaltungsort wählen"
+
+#~ msgid "Display as radio buttons"
+#~ msgstr "Als Radiobuttons anzeigen"
+
+#~ msgid ""
+#~ "No attached media to this post. Please attach some media (images or "
+#~ "videos)."
+#~ msgstr ""
+#~ "Keine angehängten Medien. Bitte diesem Artikel Medien anhängen (Bilder, "
+#~ "Videos)."
+
+#~ msgid "Links"
+#~ msgstr "Links"
+
+#~ msgid "More Dates"
+#~ msgstr "Weitere Daten"
+
+#~ msgid "No artist specified for this event."
+#~ msgstr "Keine Band definiert für diesen Termin."
+
+#~ msgid "Event Category Archives: %s"
+#~ msgstr "Unter %s eingeordnete Bands"
+
+#~ msgid "Event Tag Archives: %s"
+#~ msgstr "Bands mit %s"
+
+#~ msgid "Events at: %s"
+#~ msgstr "Bands in %s"
+
+#~ msgid "Genre Archives: %s"
+#~ msgstr "Bands mit Musikstil %s"
+
+#~ msgid "Search for a band"
+#~ msgstr "Suche nach einer Band"
+
+#~ msgid ""
+#~ "Choose your venue. (Does not work together with \"Le son d’été - Genres-"
+#~ "Widget\")"
+#~ msgstr ""
+#~ "Wähle Musikstil. (Funktioniert nicht zusammen mit \"Le son d’été - "
+#~ "Musikstile-Widget\")"
+
+#~ msgid ""
+#~ "Choose your genre. (Does not work together with \"Le son d’été - Venues-"
+#~ "Widget\")"
+#~ msgstr ""
+#~ "Wähle Musikstil. (Funktioniert nicht zusammen mit \"Le son d’été - "
+#~ "Veranstaltungsorte-Widget\")"
+
+#~ msgid "venue"
+#~ msgstr "Veranstaltungsort"
+
+#~ msgid "Your terms & conditions"
+#~ msgstr "Die Bedingungen"
+
+#~ msgid "Sondete booking form message"
+#~ msgstr "Nachricht"
+
+#~ msgctxt "Taxonomy General Name"
+#~ msgid "Genres"
+#~ msgstr "Musikstile"
+
+#~ msgid "New Genre Name"
+#~ msgstr "Neuer Musikstilname"
+
+#~ msgid "Bookings"
+#~ msgstr "Buchung"
+
+#~ msgid "You are not allowed to cancel this booking."
+#~ msgstr "Sie haben keine Berechtigung, diese Buchung zu stornieren."
+
+#~ msgid "Error in cancelling the booking."
+#~ msgstr "Die Buchung konnte nicht storniert werden."
+
+#~ msgid "You are not allowed to restore this booking."
+#~ msgstr "Sie haben keine Berechtigung, die Buchung wiederherzustellen."
+
+#~ msgid "Error in restoring the booking."
+#~ msgstr "Die Buchung konnte nicht wieder hergestellt werden."
+
+#~ msgid "You do not have permission to delete bookings"
+#~ msgstr "Du hast keine Rechte diesen Veranstaltungsort zu löschen."
+
+#, fuzzy
+#~ msgid "Error in deleting booking."
+#~ msgstr "Die Buchung konnte nicht wieder hergestellt werden."
+
+#~ msgid "Bookee"
+#~ msgstr "teilnehmer"
+
+#~ msgid "Event"
+#~ msgstr "Termin"
+
+#~ msgid "Tickets"
+#~ msgstr "Supportanfrage"
+
+#~ msgid "Price"
+#~ msgstr "Preis"
+
+#~ msgid ""
+#~ "The following bookings could not be automatically confirmed. Please "
+#~ "confirm these manually:"
+#~ msgstr ""
+#~ "Die folgenden Buchungen konnten nicht automatisch bestätigt werden. Bitte "
+#~ "bestätigen Sie diese manuell:"
+
+#~ msgid ""
+#~ "The event associated with this booking could not be found. It may have "
+#~ "been deleted."
+#~ msgstr ""
+#~ "Die mit dieser Buchung verbundene Veranstaltung konnte nicht gefunden "
+#~ "werden. Sie wurde möglicherweise gelöscht."
+
+#~ msgid ""
+#~ "The occurrence date for which this booking was made no longer exists."
+#~ msgstr ""
+#~ "Die Wiederholung für den Event, für den die Buchung erfolgt ist, "
+#~ "existiert nicht mehr."
+
+#~ msgid "This booking could not be confirmed for the following reasons"
+#~ msgstr ""
+#~ "Diese Buchung konnte aus den folgenden Gründen nicht bestätigt werden"
+
+#~ msgid "I want to confirm anyway"
+#~ msgstr "Ich möchte dennoch bestätigen"
+
+#~ msgid "Booking (#%d)"
+#~ msgstr "Buchung (#%d)"
+
+#~ msgid "Back to table view"
+#~ msgstr "Zurück zur Tabellenansicht"
+
+#~ msgid "Resend tickets to bookee"
+#~ msgstr "Tickets erneut an Teilnehmer senden"
+
+#~ msgid "Cancel Booking"
+#~ msgstr "Buchung abbrechen"
+
+#~ msgid "User not found"
+#~ msgstr "Benutzer nicht gefunden"
+
+#~ msgid "No account"
+#~ msgstr "Keine Konten"
+
+#~ msgid "Email"
+#~ msgstr "E-Mail"
+
+#~ msgid "Other Recent bookings"
+#~ msgstr "Andere aktuelle Buchungen"
+
+#~ msgid "Booking Date"
+#~ msgstr "Buchungsdatum"
+
+#~ msgid "Booking Reference"
+#~ msgstr "Buchungsreferenz"
+
+#~ msgid "Change"
+#~ msgstr "Ändern"
+
+#~ msgid "Orphaned booking"
+#~ msgstr "Verwaiste Buchung"
+
+#~ msgid "Select date"
+#~ msgstr "Datum auswählen"
+
+#~ msgid "Payment Gateway"
+#~ msgstr "Bezahlungsgateway"
+
+#~ msgid "Booking Notes"
+#~ msgstr "Buchungsnotizen"
+
+#~ msgid "Booking Meta"
+#~ msgstr "Buchungsinformationen"
+
+#~ msgid "Gateway Response"
+#~ msgstr "Gateway Antwort"
+
+#~ msgid "Show gateway response"
+#~ msgstr "Zeige Gateway-Antwort"
+
+#~ msgid "Hide gateway response"
+#~ msgstr "Gatewayantwort ausblenden"
+
+#~ msgid "Bookings for event &#8220;%s&#8221; (%s)"
+#~ msgstr "Buchungen für Event &#8220;%s&#8220; (%s)"
+
+#~ msgid "Bookings for event &#8220;%s&#8221;"
+#~ msgstr "Buchungen für Termin &#8220;%s&#8221;"
+
+#~ msgid "Bookings for user &#8220;%s&#8221;"
+#~ msgstr "Buchungen für Benutzer &#8220;%s&#8221;"
+
+#~ msgid "Searching for booking ID &#8220;%s&#8221;"
+#~ msgstr "Suche für Buchung-ID &#8220;%s&#8221;"
+
+#~ msgid "Searching for email address &#8220;%s&#8221;"
+#~ msgstr "Suche für E-Mail &#8220;%s&#8221;"
+
+#~ msgid "Searching for bookee &#8220;%s&#8221;"
+#~ msgstr "Suche für Teilnehmer &#8220;%s&#8221;"
+
+#~ msgid "Attending"
+#~ msgstr "nimmt teil"
+
+#~ msgid "View bookings"
+#~ msgstr "Buchungen anschauen"
+
+#~ msgid "Export bookings"
+#~ msgstr "Buchungen exportieren"
+
+#~ msgid "Confirmed"
+#~ msgstr "Bestätigt"
+
+#~ msgid "Total"
+#~ msgstr "Gesamtsumme"
+
+#~ msgid "Capacity"
+#~ msgstr "Kapazität"
+
+#~ msgid "Event Tickets"
+#~ msgstr "Termintickets"
+
+#~ msgid "Ticket"
+#~ msgstr "Ticket"
+
+#~ msgid "Spaces"
+#~ msgstr "Plätze"
+
+#~ msgid "Price (%s)"
+#~ msgstr "Preis (%s)"
+
+#~ msgid "No tickets"
+#~ msgstr "Keine Tickets"
+
+#~ msgid "Add Ticket"
+#~ msgstr "Ticket hinzufügen"
+
+#~ msgid "Delete"
+#~ msgstr "Löschen"
+
+#~ msgid "Ticket name:"
+#~ msgstr "Ticket Bezeichnung:"
+
+#~ msgid "Price:"
+#~ msgstr "Preis:"
+
+#~ msgid "Spaces:"
+#~ msgstr "Spaces:"
+
+#~ msgid ""
+#~ "This indicates the quanity available of this ticket type. If you are "
+#~ "selling tickets for individual occurrences, then this limit applies to "
+#~ "each occurrence."
+#~ msgstr ""
+#~ "Dies zeigt die verfügbare Menge von diesem Ticket-Typ an. Wenn Sie "
+#~ "Tickets für einzelne Termine des Events verkaufen, dann gilt das Limit "
+#~ "für all diese Termine. "
+
+#~ msgid "See this page for more details"
+#~ msgstr "Sehen Sie diese Seite für weitere Details"
+
+#~ msgid "Tickets on sale:"
+#~ msgstr "Tickets im Verkauf:"
+
+#~ msgid "Sale starts"
+#~ msgstr "Verkaufsstart"
+
+#~ msgid "Ticket availability"
+#~ msgstr "Ticket Verfügbarkeit"
+
+#~ msgid ""
+#~ "You can specify a date when this ticket will go on sale, and when it is "
+#~ "no longer available for purchase. Leave blank for no restriction. Tickets "
+#~ "will automatically come off sale when the event starts"
+#~ msgstr ""
+#~ "Sie können ein Datum angeben, wann dieses Ticket in den Verkauf gehen "
+#~ "soll und wenn es nicht mehr zum Kauf angeboten werden soll. Lassen Sie "
+#~ "das Feld leer, wenn Sie keine Einschränkung wollen. Tickets werden "
+#~ "automatisch aus dem Verkauf genommen, wenn das Ereignis beginnt"
+
+#~ msgid "Sale ends"
+#~ msgstr "Verkauf endet"
+
+#~ msgid "Bookings will be closed when an occurrences starts."
+#~ msgstr ""
+#~ "Die Buchung wird geschlossen, wenn ein neuer Wiederholungstermin startet."
+
+#~ msgid "Select all"
+#~ msgstr "Alle auswählen"
+
+#~ msgid "Deselect all"
+#~ msgstr "Auswahl für alle aufheben"
+
+#~ msgid ""
+#~ "Select the dates of the event for which you want this ticket to be sold. "
+#~ "(Default: all dates)."
+#~ msgstr ""
+#~ "Wählen Sie die Termine der Veranstaltung, für die dieses Ticket verkauft "
+#~ "werden soll. (Voreingestellt: alle Termine)"
+
+#~ msgid "Ticket dates"
+#~ msgstr "Ticketdaten"
+
+#~ msgid ""
+#~ "You have the option of selling tickets for only specific dates, for "
+#~ "instance you may wish to make a cheaper tickets available for only the "
+#~ "first occurrence."
+#~ msgstr ""
+#~ "Sie haben die Möglichkeit, nur für bestimmte Termine Tickets zu "
+#~ "verkaufen. Zum Beispiel möchten Sie vielleicht billigere Tickets für die "
+#~ "erste Veranstaltung anbieten."
+
+#~ msgid "Cap booking at %s places"
+#~ msgstr "Buchungen auf %s Orte beschränken"
+
+#~ msgid "Select a booking form:"
+#~ msgstr "Wähle ein Buchungsformular"
+
+#~ msgid "Please provide a custom field value."
+#~ msgstr "Bitte geben Sie einen Wert für das benutzerdefiniertes Feld ein."
+
+#~ msgid "Please provide a custom field name."
+#~ msgstr ""
+#~ "Bitte geben Sie einen Wert für das benutzerdefinierte Feld Name ein."
+
+#~ msgid "No bookings found."
+#~ msgstr "Keine Buchung gefunden"
+
+#~ msgid "View"
+#~ msgstr "Anzeigen"
+
+#~ msgid "Cancel booking"
+#~ msgstr "Buchung abbrechen"
+
+#~ msgid "Restore booking"
+#~ msgstr "Buchung wiederherstellen"
+
+#~ msgid "Restore Booking"
+#~ msgstr "Buchgun wiederherstellen"
+
+#~ msgid "Delete Booking"
+#~ msgstr "Buchung löschen"
+
+#~ msgid "Y/m/d g:i:s A"
+#~ msgstr "Y / m / dg: i: s A"
+
+#~ msgid "%s ago"
+#~ msgstr "vor %s"
+
+#~ msgid "Y/m/d"
+#~ msgstr "Y / m / d"
+
+#~ msgid "All"
+#~ msgstr "Alle"
+
+#~ msgid "Select an event:"
+#~ msgstr "Termin auswählen:"
+
+#~ msgid "Download bookings"
+#~ msgstr "Buchungen herunterladen"
+
+#~ msgid "Download tickets"
+#~ msgstr "Tickets herunterladen"
+
+#~ msgid "Delete cancelled bookings"
+#~ msgstr "Stornierte Buchungen löschen"
+
+#~ msgid "No confirmed attendees"
+#~ msgstr "Keine bestätigten Teilnehmer"
+
+#~ msgid "%s confirmed attendee"
+#~ msgid_plural "%s confirmed attendees"
+#~ msgstr[0] "%s bestätigter Teilnehmer"
+#~ msgstr[1] "%s bestätigte Teilnehmer"
+
+#~ msgid "No bookings"
+#~ msgstr "Keine Buchungen"
+
+#~ msgid "%s booking"
+#~ msgid_plural "%s bookings"
+#~ msgstr[0] "%s Buchung"
+#~ msgstr[1] "%s Buchungen"
+
+#~ msgid "Go to the first page"
+#~ msgstr "Gehe zur ersten Seite"
+
+#~ msgid "Go to the previous page"
+#~ msgstr "Gehen auf die vorherige Seite"
+
+#~ msgid "Go to the next page"
+#~ msgstr "Gehe zur nächsten Seite"
+
+#~ msgid "Go to the last page"
+#~ msgstr "Gehe zur letzten Seite"
+
+#~ msgid "Cancel Bookings"
+#~ msgstr "Buchungen abbrechen"
+
+#~ msgid "Email Bookees"
+#~ msgstr "E-Mail an Teilnehmer"
+
+#~ msgid "Confirm bookings"
+#~ msgstr "Buchungen bestätigen"
+
+#~ msgid "Restore Bookings"
+#~ msgstr "Buchung wiederherstellen"
+
+#~ msgid "Delete Bookings"
+#~ msgstr "Buchungen löschen"
+
+#~ msgid "1. Select custom fields"
+#~ msgstr "1. Wähle benutzerdefinierte Felder"
+
+#~ msgid "Select booking fields to be included in export"
+#~ msgstr ""
+#~ "Wählen Sie die Buchungs-Felder, die in den Export aufgenommen werden "
+#~ "sollen"
+
+#~ msgid "2. CSV Export Settings"
+#~ msgstr "2. CSV Export Settings"
+
+#~ msgid "Cell delimiter "
+#~ msgstr "Cell Delimiter"
+
+#~ msgid "Text delimiter "
+#~ msgstr "Text delimiter"
+
+#~ msgid "3. Download"
+#~ msgstr "3. Download"
+
+#~ msgid "Cancel"
+#~ msgstr "Abbrechen"
+
+#~ msgid "Download"
+#~ msgstr "Herunterladen"
+
+#~ msgid "Subject"
+#~ msgstr "Betreff"
+
+#~ msgid "E-mailing Bookees"
+#~ msgstr "E-Mail an Teilnehmer"
+
+#~ msgid "In the e-mail subject & body you can use the following tags"
+#~ msgstr ""
+#~ "Im E-Mail-Betreff und -Nachricht können Sie die folgenden Tags benutzen"
+
+#~ msgid "See full list"
+#~ msgstr "Vollständige Liste"
+
+#~ msgid ""
+#~ "<strong>Note:</strong> your hosting provider may limit the number of e-"
+#~ "mails you can send in a 24 hour period. Plug-ins are available that <a "
+#~ "href=\"%s\" target=\"_blank\">work around these restrictions.</a>"
+#~ msgstr ""
+#~ "<strong> Hinweis: </strong>Ihr Hosting-Provider kann die Anzahl der E-"
+#~ "Mails, die Sie in einem Zeitraum von 24 Stunden senden dürfen, begrenzen. "
+#~ "Zur Verfügung stehende <a href = \" %s \"target = \" _blank \">Plug-ins</"
+#~ "a>, um dies zu umgehen."
+
+#~ msgid "Ticket Reference"
+#~ msgstr "Ticket Referenz"
+
+#~ msgid "Event List"
+#~ msgstr "Terminliste"
+
+#~ msgid "Calendar"
+#~ msgstr "Kalenderansicht"
+
+#~ msgid "Venue Map"
+#~ msgstr "Karte"
+
+#~ msgid "Event Search"
+#~ msgstr "Terminsuche"
+
+#~ msgid "Display a list of events"
+#~ msgstr "Als Liste anzeigen"
+
+#~ msgid "Events starting after"
+#~ msgstr "Termine nach"
+
+#~ msgid "Events starting before"
+#~ msgstr "Termine vor"
+
+#~ msgid "Events ending before"
+#~ msgstr "Terminende vor"
+
+#~ msgid "You can use relative dates, e.g. 'now', 'next Tuesday'"
+#~ msgstr ""
+#~ "Sie können relative Datumsangaben verwenden, z. B. 'jetzt' ,  'nächsten "
+#~ "Dienstag'"
+
+#~ msgid "Events in categories"
+#~ msgstr "Termine in Kategorie"
+
+#~ msgid "Events at venues"
+#~ msgstr "Termine an Orten"
+
+#~ msgid "Display a calendar of events, similar to the admin calendar."
+#~ msgstr ""
+#~ "Zeigen Sie einen Veranstaltungskalender, ähnlich dem Admin Kalender."
+
+#~ msgid "Week"
+#~ msgstr "Woche"
+
+#, fuzzy
+#~ msgid "Time format"
+#~ msgstr "Datumsformat:"
+
+#~ msgid "Include tooltip"
+#~ msgstr "Tooltip hinzufügen"
+
+#~ msgid "Show only events current user is attending"
+#~ msgstr "Zeige nur Veranstaltungen, an denen der aktuelle Benutzer teilnimmt"
+
+#, fuzzy
+#~ msgid "Display a Google map of venue or venues"
+#~ msgstr "Zeigt einen Kalender mit Deinen Terminen"
+
+#~ msgid ""
+#~ "Leave blank for venue of current event (if this is being used on an "
+#~ "event's page"
+#~ msgstr ""
+#~ "Veranstaltungsort für die aktuelle Veranstaltung leer lassen (wenn dies "
+#~ "auf der Veranstaltungsseite verwendet wird)"
+
+#~ msgid "Width:"
+#~ msgstr "Breite:"
+
+#, fuzzy
+#~ msgid ""
+#~ "Allow your users to search events. Select which filters they can use."
+#~ msgstr ""
+#~ "Lassen Sie Ihre Benutzer nach Veranstaltungen suchen. Wählen Sie, welche "
+#~ "Filter sie verwenden können."
+
+#~ msgid "City"
+#~ msgstr "Stadt"
+
+#~ msgid "State"
+#~ msgstr "Bundesland"
+
+#~ msgid "Country"
+#~ msgstr "Land"
+
+#~ msgid ""
+#~ "You can view the full range of attributes for these shortcodes on the <a "
+#~ "href=\"%s\" target=\"_blank\">plug-in website</a>"
+#~ msgstr ""
+#~ "Sie können alle Attribute für diesen Shortcodes auf der <a href = \" %s "
+#~ "\"target = \" _blank \"> Plug-in-Website </a> ansehen "
+
+#~ msgid "Custom Fields"
+#~ msgstr "Benutzerdefinierte Felder"
+
+#~ msgid "Add New Custom Field:"
+#~ msgstr "Benutzerdefinierte Felder hinzufügen:"
+
+#, fuzzy
+#~ msgctxt "meta name"
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgid "Value"
+#~ msgstr "Wert"
+
+#, fuzzy
+#~ msgid "&mdash; Select &mdash;"
+#~ msgstr "— Keine Änderung —"
+
+#~ msgid "Enter new"
+#~ msgstr "Neu eingeben"
+
+#~ msgid "Add Custom Field"
+#~ msgstr "Benutzerdefinierte Felder"
+
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgid "Key"
+#~ msgstr "Schlüssel"
+
+#, fuzzy
+#~ msgid "Set featured image"
+#~ msgstr "Veranstaltungsbild festlegen"
+
+#, fuzzy
+#~ msgid "Booking Form"
+#~ msgstr "Buchung"
+
+#~ msgid "General"
+#~ msgstr "Allgemein"
+
+#~ msgid "PayPal"
+#~ msgstr "PayPal"
+
+#~ msgid "E-mail"
+#~ msgstr "E-Mail"
+
+#, fuzzy
+#~ msgid "Manage bookings"
+#~ msgstr "Veranstaltungsorte verwalten"
+
+#~ msgid "Manage other events' bookings"
+#~ msgstr "Andere aktuelle Buchungen bearbeiten"
+
+#, fuzzy
+#~ msgid "Booking management permissions"
+#~ msgstr "Terimverwaltungsfreigaben"
+
+#, fuzzy
+#~ msgid "Set permissions for booking management"
+#~ msgstr "Berechtigungen für Termine setzen und Veranstaltungsorte verwalten"
+
+#~ msgid "Role"
+#~ msgstr "Rolle"
+
+#~ msgid "Currency"
+#~ msgstr "Währung"
+
+#~ msgid "Currency Position"
+#~ msgstr "Währungszeichen Position"
+
+#~ msgid "Before"
+#~ msgstr "Vorher"
+
+#~ msgid "After"
+#~ msgstr "Nach"
+
+#, fuzzy
+#~ msgid "Particular Occurrence"
+#~ msgstr "Gruppenereignisse"
+
+#, fuzzy
+#~ msgid "Entire series"
+#~ msgstr "Bands mit %s"
+
+#~ msgid ""
+#~ "You can either sell tickets for individual dates of an event, or sell "
+#~ "tickets for the entire series - for example, places on a course"
+#~ msgstr ""
+#~ "Sie können entweder Tickets für einzelne Tage eines Events oder Tickets "
+#~ "für die gesamte Serie verkaufen - zum Beispiel Plätze in einem Kurs"
+
+#~ msgid "Reserve Pending Tickets"
+#~ msgstr "Ausstehende Tickets reservieren"
+
+#, fuzzy
+#~ msgid "Allow Logged-out Users to place bookings?"
+#~ msgstr "Nur eingeloggte Personen können Buchungen machen"
+
+#~ msgid "Yes but register an account for them"
+#~ msgstr "Ja, aber registrieren Sie einen Account für sie"
+
+#~ msgid "Yes, account is optional"
+#~ msgstr "Ja, das Konto ist optional"
+
+#~ msgid "Yes but do not register an account"
+#~ msgstr "Ja, aber registrieren Sie keinen Account für sie"
+
+#~ msgid "Notify me when"
+#~ msgstr "Benachrichtigen Sie mich, wenn"
+
+#~ msgid "A new booking is made"
+#~ msgstr "Neue Buchung erstellt"
+
+#~ msgid "A booking is confirmed"
+#~ msgstr "Eine Buchung wurde bestätigt"
+
+#~ msgid "Live Switch"
+#~ msgstr "Live-Schalten"
+
+#~ msgid "Sandbox Mode"
+#~ msgstr "Sandbox-Modus"
+
+#, fuzzy
+#~ msgid "Disable"
+#~ msgstr "CSS deaktivieren"
+
+#~ msgid "PayPal Email"
+#~ msgstr "PayPal E-Mail"
+
+#, fuzzy
+#~ msgid "PayPal page style"
+#~ msgstr "PayPal Seiten Stil"
+
+#, fuzzy
+#~ msgid ""
+#~ "PayPal allows you to tailor the booking payment page to you site. For "
+#~ "more information, <a href=\"%s\" target=\"_blank\">see this tutorial</a>"
+#~ msgstr ""
+#~ "PayPal ermöglicht es Ihnen, die Zahlungsseite anzupassen. Für weitere "
+#~ "Informationen, <a href = \" %s \"target = \" _blank \"> sehen Sie bitte "
+#~ "dieses Tutorial</a>."
+
+#~ msgid "PayPal Local Site"
+#~ msgstr "PayPal Länderseite"
+
+#~ msgid "Australia"
+#~ msgstr "Australien"
+
+#~ msgid "Austria"
+#~ msgstr "Österreich"
+
+#~ msgid "Belgium"
+#~ msgstr "Belgien"
+
+#~ msgid "Canada"
+#~ msgstr "Kanada"
+
+#~ msgid "China"
+#~ msgstr "China"
+
+#, fuzzy
+#~ msgid "France"
+#~ msgstr "Abbrechen"
+
+#~ msgid "Germany"
+#~ msgstr "Deutschland"
+
+#~ msgid "Italy"
+#~ msgstr "Italien"
+
+#~ msgid "Mexico"
+#~ msgstr "Mexiko"
+
+#~ msgid "Netherlands"
+#~ msgstr "Niederlande"
+
+#~ msgid "Philippines"
+#~ msgstr "Philippinen"
+
+#~ msgid "Poland"
+#~ msgstr "Polen"
+
+#~ msgid "Spain"
+#~ msgstr "Spanien"
+
+#~ msgid "Switzerland"
+#~ msgstr "Schweiz"
+
+#~ msgid "United Kingdom"
+#~ msgstr "Großbritannien"
+
+#, fuzzy
+#~ msgid "United States"
+#~ msgstr "Weitere Daten"
+
+#~ msgid "Offline Payment Instructions"
+#~ msgstr "Anweisungen für die Offline-Zahlung"
+
+#~ msgid ""
+#~ "This will appear on the booking form, informing the bookee on how to make "
+#~ "payment."
+#~ msgstr ""
+#~ "Dies wird auf dem Buchungsformular angezeigt werden, um die Käufer "
+#~ "darüber zu informieren, wie sie die Zahlung vornehmen können."
+
+#, fuzzy
+#~ msgid "E-mail template"
+#~ msgstr "Vorlagen aktivieren:"
+
+#, fuzzy
+#~ msgid "Custom Templates"
+#~ msgstr "Vorlagen"
+
+#~ msgid ""
+#~ "You can <a href=\"%s\" target=\"_blank\">create your own e-mail "
+#~ "templates</a> and add them to your theme."
+#~ msgstr ""
+#~ "Sie können <a href = \" %s \"target = \" _blank \"> Ihre eigene E-Mail-"
+#~ "Vorlagen erstellen</a> und zu Ihrem Theme hinzufügen."
+
+#~ msgid "Preview E-mail"
+#~ msgstr "Vorschau E-mail"
+
+#, fuzzy
+#~ msgid "Booking email"
+#~ msgstr "Buchung"
+
+#~ msgid "In the e-mail template you can use booking information placeholders"
+#~ msgstr ""
+#~ "In der E-Mail-Vorlage können Sie Platzhalter für Buchungsinformationen "
+#~ "verwenden"
+
+#, fuzzy
+#~ msgid "You can use the following placeholders"
+#~ msgstr "Terminliste Widget Platzhalter"
+
+#~ msgid "Preview Email"
+#~ msgstr "Vorschau Email"
+
+#, fuzzy
+#~ msgid "New event booking"
+#~ msgstr "Nicht gefunden"
+
+#, fuzzy
+#~ msgid "Username:"
+#~ msgstr "Benutzername / E-Mail"
+
+#, fuzzy
+#~ msgid "Email:"
+#~ msgstr "E-Mail"
+
+#, fuzzy
+#~ msgid "Booking form"
+#~ msgstr "Buchung"
+
+#~ msgid "Quantity"
+#~ msgstr "Menge"
+
+#~ msgid "Booking Confirmed"
+#~ msgstr "Buchung bestätigt"
+
+#, fuzzy
+#~ msgid "Please select an event."
+#~ msgstr "Termin erstellen"
+
+#~ msgid "Please provide a name."
+#~ msgstr "Bitte geben Sie einen Namen ein."
+
+#~ msgid "Please provide a valid email address."
+#~ msgstr "Bitte geben Sie eine gültige E-Mail-Adresse ein."
+
+#~ msgid ""
+#~ "This email is already registered, please choose another one or log-in "
+#~ "with that account"
+#~ msgstr ""
+#~ "Diese E-Mail ist bereits registriert, bitte wählen Sie eine andere oder "
+#~ "logge Sie sich mit diesem Konto ein"
+
+#, fuzzy
+#~ msgid "You must be logged in to place a booking"
+#~ msgstr "Nur eingeloggte Personen können Buchungen machen"
+
+#~ msgid "You have not selected any tickets"
+#~ msgstr "Sie haben keine Tickets ausgewählt"
+
+#~ msgid "The tickets you have selected are no longer available."
+#~ msgstr ""
+#~ "Die Tickets, die Sie ausgewählt haben, sind leider nicht mehr verfügbar."
+
+#~ msgid "Please select a ticket."
+#~ msgstr "Bitte wählen Sie ein Ticket."
+
+#~ msgid "Sorry, but the requested number of tickets is unavailable."
+#~ msgstr ""
+#~ "Es tut uns leid, aber die gewünschte Anzahl der Tickets ist nicht "
+#~ "verfügbar."
+
+#, fuzzy
+#~ msgid "The payment gateway you have chosen is invalid"
+#~ msgstr "Das Payment-Gateway den Sie gewählt haben ist ungültig"
+
+#~ msgid ""
+#~ "Registration failed. Please contact an <a href=\"mailto:%s"
+#~ "\">administrator</a>."
+#~ msgstr ""
+#~ "Anmeldung fehlgeschlagen. Bitte kontaktieren Sie den <a href = \"mailto: "
+#~ "%s \"> Administrator </a>."
+
+#, fuzzy
+#~ msgid "You do not have permission to cancel this booking."
+#~ msgstr "Du hast keine Berechtigung diesen Veranstaltungsort zu bearbeiten."
+
+#, fuzzy
+#~ msgid "You must be logged in to cancel bookings."
+#~ msgstr "Nur eingeloggte Personen können Buchungen machen"
+
+#~ msgid "This booking can no longer be cancelled."
+#~ msgstr "Diese Buchung kann nicht mehr storniert werden."
+
+#~ msgid ""
+#~ "<strong>Error:</strong> This event has non-free tickets and no gateway "
+#~ "has been enabled. Please enable a gateway in <em>Settings > Event "
+#~ "Organiser > Bookings </em>. This notice only appears to admins."
+#~ msgstr ""
+#~ "<strong>Fehler:</strong> Dieser Event hat keine kostenfreien Tickets und "
+#~ "der Gateway wurde nicht aktiviert. Bitte aktivieren Sie den Gateway in "
+#~ "<em>Einstellungen > Event Organiser > Buchungen </em>. Diese Nachricht "
+#~ "wird nur Administratoren angezeigt."
+
+#, fuzzy
+#~ msgid "Password Lost and Found"
+#~ msgstr "Passwort Lost and Found"
+
+#~ msgid "Lost your password?"
+#~ msgstr "Passwort vergessen?"
+
+#~ msgid "Ticket Quantity"
+#~ msgstr "Ticket Menge"
+
+#~ msgid "Total Price"
+#~ msgstr "Gesamtpreis"
+
+#~ msgid "Booking Date (UTC)"
+#~ msgstr "Buchungsdatum (UTC)"
+
+#, fuzzy
+#~ msgid "Booking Status"
+#~ msgstr "Buchung"
+
+#~ msgid "Ticket Price"
+#~ msgstr "Ticket Preis"
+
+#, fuzzy
+#~ msgid "Displays a list of events a user is attending"
+#~ msgstr "Zeigt eine Liste der Termine, gruppiert nach Datum"
+
+#, fuzzy
+#~ msgid "Events user is attending"
+#~ msgstr "'Event Organiser'-Einstellungen"
+
+#~ msgid "Ref."
+#~ msgstr "Ref. #"
+
+#~ msgid "Standard Fields"
+#~ msgstr "Standard-Felder"
+
+#~ msgid "Advanced Fields"
+#~ msgstr "Erweiterte Felder"
+
+#, fuzzy
+#~ msgid "You do not have permission to edit the booking forms"
+#~ msgstr "Du hast keine Berechtigung diesen Veranstaltungsort zu bearbeiten."
+
+#, fuzzy
+#~ msgid "Form not found"
+#~ msgstr "Nicht gefunden"
+
+#, fuzzy
+#~ msgid "Form not deleted"
+#~ msgstr "Nicht gefunden"
+
+#, fuzzy
+#~ msgid "You do not have permission to import forms."
+#~ msgstr "Sie haben keine Rechte, um Termine zu importieren."
+
+#, fuzzy
+#~ msgid "File not found"
+#~ msgstr "Nicht gefunden"
+
+#, fuzzy
+#~ msgid "Element type not given"
+#~ msgstr "Zeitplan wurde nicht erkannt"
+
+#, fuzzy
+#~ msgid "Element type \"%s\" not recognised"
+#~ msgstr "Zeitplan wurde nicht erkannt"
+
+#, fuzzy
+#~ msgid "The element ID \"%s\" is not allowed"
+#~ msgstr "Zeitplan wurde nicht erkannt"
+
+#~ msgid "What is %d + %d?"
+#~ msgstr "Wieviel ist %d + %d?"
+
+#~ msgid "<strong>ERROR</strong>: Please fill in all required fields"
+#~ msgstr ""
+#~ "<strong>FEHLER</strong>: Bitte füllen Sie alle erforderlichen Felder aus"
+
+#~ msgid "<strong>ERROR</strong>: Some fields are not valid"
+#~ msgstr "<strong>FEHLER</strong>: Einige Felder sind nicht gültig"
+
+#~ msgid "Input"
+#~ msgstr "Input"
+
+#, fuzzy
+#~ msgid "Select"
+#~ msgstr "Musikstil auswählen"
+
+#~ msgid "Label"
+#~ msgstr "Label"
+
+#, fuzzy
+#~ msgid "Textarea"
+#~ msgstr "Textfeld"
+
+#~ msgid "Radio Buttons"
+#~ msgstr "Radio-Buttons"
+
+#~ msgid "Checkbox"
+#~ msgstr "Kontrollkästchen"
+
+#~ msgid "Hook"
+#~ msgstr "Hook"
+
+#~ msgid "HTML"
+#~ msgstr "HTML"
+
+#, fuzzy
+#~ msgid "Section Break"
+#~ msgstr "Section Break"
+
+#~ msgid "Section"
+#~ msgstr "Sektion"
+
+#~ msgid "Fieldset"
+#~ msgstr "Fieldset"
+
+#~ msgid "Antispam maths question"
+#~ msgstr "Antispam Rechenaufgabe"
+
+#~ msgid "Last Name"
+#~ msgstr "Nachname"
+
+#, fuzzy
+#~ msgid "Please provide a first name"
+#~ msgstr "Bitte geben Sie einen Namen ein."
+
+#, fuzzy
+#~ msgid "Please provide a last name"
+#~ msgstr "Bitte geben Sie einen Namen ein."
+
+#~ msgid "Number"
+#~ msgstr "Anzahl"
+
+#~ msgid "Website"
+#~ msgstr "Website"
+
+#~ msgid "Hidden"
+#~ msgstr "Ausgeblendet"
+
+#~ msgid "Multiselect"
+#~ msgstr "Mehrfachauswahl"
+
+#, fuzzy
+#~ msgid "Street Address"
+#~ msgstr "Straße und Hausnummer"
+
+#, fuzzy
+#~ msgid "Address Line 2"
+#~ msgstr "Straße und Hausnummer"
+
+#, fuzzy
+#~ msgid "State/Province"
+#~ msgstr "Bundesland"
+
+#, fuzzy
+#~ msgid "Please enter a street address."
+#~ msgstr "Bitte geben Sie eine gültige E-Mail-Adresse ein."
+
+#, fuzzy
+#~ msgid "Please enter a city"
+#~ msgstr "Bitte wählen Sie ein Datum"
+
+#, fuzzy
+#~ msgid "Please enter a country"
+#~ msgstr "Termin erstellen"
+
+#~ msgid "Ticket picker"
+#~ msgstr "Ticket Picker"
+
+#~ msgid "Gateway picker"
+#~ msgstr "Gateway Auswahl"
+
+#, fuzzy
+#~ msgid "Select a payment gateway"
+#~ msgstr "Musikstil auswählen"
+
+#, fuzzy
+#~ msgid "Book"
+#~ msgstr "Buchung"
+
+#~ msgid "Create an account (optional)"
+#~ msgstr "Konto anlegen (optional)"
+
+#~ msgid "You have already made a booking for this event."
+#~ msgstr "Sie haben bereits eine Buchung für diese Veranstaltung gemacht."
+
+#~ msgid ""
+#~ "You are logged in as <strong>%s</strong>. <a href=\"%s\">Not you?</a>"
+#~ msgstr ""
+#~ "Sie sind als angemeldet <strong>%s</strong>. <a href=\"%s\">Nicht Sie?</a>"
+
+#~ msgid ""
+#~ "This form element only appears if there there are multiple gateways "
+#~ "enabled. It cannot be removed but can be placed anywhere in the booking "
+#~ "form."
+#~ msgstr ""
+#~ "Dieses Formularelement erscheint nur, wenn mehrere Gateways aktiviert "
+#~ "sind. Dies kann nicht entfernt aber dafür an jeder beliebigen Stelle im "
+#~ "Buchungsformular platziert werden."
+
+#, fuzzy
+#~ msgid ""
+#~ "This form element allows the user to select their ticket(s). It cannot be "
+#~ "removed but can be placed anywhere in the booking form."
+#~ msgstr ""
+#~ "Dieses Form Element ermöglicht es dem Benutzer sein Ticket zu wählen. Es "
+#~ "kann nicht entfernt aber an jeder beliebigen Stelle im Buchungsformular "
+#~ "platziert werden."
+
+#~ msgid ""
+#~ "This form element allows you to enter any HTML, to be displayed on the "
+#~ "form"
+#~ msgstr ""
+#~ "Dieses Formularelement erlaubt Ihnen HTML-Code im Formular anzuzeigen"
+
+#~ msgid ""
+#~ "This form element asks the user a simple random maths question in order "
+#~ "to help prevent spam"
+#~ msgstr ""
+#~ "Dieses Formularelement stellt dem Benutzer eine einfache zufällige "
+#~ "Rechenaufgabe, um Spam zu verhindern"
+
+#~ msgid ""
+#~ "You can add additional fields to your booking form using the buttons to "
+#~ "the right, and then arrange them by dragging the fields. Click the added "
+#~ "form field to reveal its options "
+#~ msgstr ""
+#~ "Sie können zusätzliche Felder zu Ihrem Buchungsformular mit den Buttons "
+#~ "auf der rechten Seite hinzufügen und dann durch Ziehen anordnen. Klicken "
+#~ "Sie auf die neuen Formularfelder, um die verfügbaren Optionen anzuzeigen"
+
+#, fuzzy
+#~ msgid "Create a new form"
+#~ msgstr "Termin erstellen"
+
+#~ msgid "Create New Form"
+#~ msgstr "Neues Formular erstellen"
+
+#, fuzzy
+#~ msgid "Select a form to edit:"
+#~ msgstr "Wähle ein Buchungsformular"
+
+#, fuzzy
+#~ msgid "Save Form"
+#~ msgstr "Datumsformat:"
+
+#~ msgid "Form"
+#~ msgstr "Formular"
+
+#, fuzzy
+#~ msgid "Delete this form"
+#~ msgstr "Dieses Ereignis löschen"
+
+#, fuzzy
+#~ msgid "Delete Form"
+#~ msgstr "Löschen"
+
+#, fuzzy
+#~ msgid "Export form"
+#~ msgstr "Export"
+
+#, fuzzy
+#~ msgid "All categories"
+#~ msgstr "Alle Musikstile"
+
+#~ msgid ""
+#~ "Thank you for your booking. You shall receive an e-mail containing your "
+#~ "tickets once we have confirmed payment"
+#~ msgstr ""
+#~ "Vielen Dank für die Buchung! Du bekommst in Kürze ein E-Mail mit weiteren "
+#~ "Informationen."
+
+#~ msgid "Add New Booking"
+#~ msgstr "Buchung hinzufügen"
+
+#~ msgid "Edit Bookings"
+#~ msgstr "Buchungen bearbeiten"
+
+#~ msgid "New Bookings"
+#~ msgstr "Neue Buchungen"
+
+#~ msgid "View Booking"
+#~ msgstr "Buchung anzeigen"
+
+#~ msgid "Search Bookings"
+#~ msgstr "Buchungen suchen"
+
+#~ msgid "No Bookings found"
+#~ msgstr "Keine Buchungen gefunden"
+
+#, fuzzy
+#~ msgid "No Bookings found in Trash"
+#~ msgstr "Keine Termine im Papierkorb gefunden"
+
+#, fuzzy
+#~ msgid "Cancelled"
+#~ msgstr "Abbrechen"
+
+#~ msgid "Add New Booking Form"
+#~ msgstr "Neues Buchungsformular hinzufügen"
+
+#, fuzzy
+#~ msgid "Edit Booking Forms"
+#~ msgstr "Nachricht"
+
+#~ msgid "New Booking Forms"
+#~ msgstr "Neue Buchungformulare"
+
+#, fuzzy
+#~ msgid "Booking Forms"
+#~ msgstr "Buchung"
+
+#~ msgid "View Booking Form"
+#~ msgstr "Buchungsformular ansehen "
+
+#, fuzzy
+#~ msgid "Search Booking Forms"
+#~ msgstr "Buchungsformulare suchen"
+
+#, fuzzy
+#~ msgid "No Booking Forms found"
+#~ msgstr "Keine Terminkategorien gefunden"
+
+#, fuzzy
+#~ msgid "No Booking Forms found in Trash"
+#~ msgstr "Keine Termine im Papierkorb gefunden"
+
+#, fuzzy
+#~ msgid "View all countries"
+#~ msgstr "Alle Terminkategorien"
+
+#, fuzzy
+#~ msgid "View all states"
+#~ msgstr "Alle Schlagworte ansehen"
+
+#, fuzzy
+#~ msgid "View all cities"
+#~ msgstr "Alle Terminkategorien"
+
+#, fuzzy
+#~ msgid "Hide dates"
+#~ msgstr "Weitere Daten"
+
+#~ msgid ""
+#~ "There has been an error with Event Organiser Pro. The "
+#~ "<code>eo_booking_tickets</code> table is missing. Please try re-"
+#~ "installing the plugin."
+#~ msgstr ""
+#~ "Ein Fehler mit der Event-Organizer Pro ist aufgetreten. Die <code> "
+#~ "eo_booking_tickets </ code> Tabelle fehlt. Bitte versuchen Sie erneut die "
+#~ "Installation des Plugins."
+
+#, fuzzy
+#~ msgid ""
+#~ "There has been an error with Event Organiser Pro. The "
+#~ "<code>eo_booking_ticketmeta</code> table is missing. Please try re-"
+#~ "installing the plugin."
+#~ msgstr ""
+#~ "Ein Fehler mit der Event-Organizer Pro ist aufgetreten. Die <code> "
+#~ "eo_booking_tickets </ code> Tabelle fehlt. Bitte versuchen Sie erneut die "
+#~ "Installation des Plugins."
+
+#~ msgid "Booking #%s has been successfully cancelled."
+#~ msgstr "Die Buchung %s wurde erfolgreich gelöscht:"
+
+#, fuzzy
+#~ msgid "Booking #%s could not be cancelled."
+#~ msgstr "Die Buchung #%s konnte nicht storniert werden."
+
+#, fuzzy
+#~ msgid "All tags"
+#~ msgstr "Alle Terminschlagworte"
+
+#, fuzzy
+#~ msgid "All cities"
+#~ msgstr "Alle Musikstile"
+
+#, fuzzy
+#~ msgid "All states"
+#~ msgstr "Alle Musikstile"
+
+#, fuzzy
+#~ msgid "All countries"
+#~ msgstr "Alle Musikstile"
+
+#~ msgid "on"
+#~ msgstr "on"
+
+#~ msgid "Sold out"
+#~ msgstr "Ausverkauft"
+
+#~ msgid "Dismiss"
+#~ msgstr "Verwerfen"
+
+#~ msgid "Street address"
+#~ msgstr "Anschrift"
+
+#~ msgid "Powered by"
+#~ msgstr "Ein Service von"
+
+#~ msgid "Please select a date"
+#~ msgstr "Bitte wählen Sie ein Datum"
+
+#, fuzzy
+#~ msgid "Booking ref"
+#~ msgstr "Buchung"
+
+#~ msgid "You have not made any bookings"
+#~ msgstr "Sie haben noch keine Buchungen gemacht"
+
+#~ msgid "You are not currently registered for any events"
+#~ msgstr "Sie sind zur Zeit für keine Veranstaltungen angemeldet"
+
+#~ msgid "Booking Form Name"
+#~ msgstr "Buchungs-Formularname"
+
+#~ msgid ""
+#~ "This is only used to help you identify the form on the event admin page."
+#~ msgstr ""
+#~ "Dies wird ausschliesslich dafür verwendet, um Ihnen dabei zu helfen, das "
+#~ "Formular auf der Administrations-Seite der Termine wiederzufinden."
+
+#~ msgid "Error classes"
+#~ msgstr "Fehler Klassen"
+
+#~ msgid "Notice classes"
+#~ msgstr "Klasse für Anmerkungen"
+
+#, fuzzy
+#~ msgid "Address includes"
+#~ msgstr "Straße und Hausnummer"
+
+#~ msgid "Second line"
+#~ msgstr "Zweite Zeile"
+
+#~ msgid "CSS Class"
+#~ msgstr "CSS Klasse"
+
+#~ msgid "Options"
+#~ msgstr "Optionen"
+
+#, fuzzy
+#~ msgid "Bookee name"
+#~ msgstr "Veranstaltungsortsname"
+
+#~ msgid "Text field"
+#~ msgstr "Textfeld"
+
+#~ msgid "Placeholder"
+#~ msgstr "Platzhalter"
+
+#~ msgid "Antispam"
+#~ msgstr "Antispam"
+
+#~ msgid "What is x + y?"
+#~ msgstr "Wieviel ist x + y?"
+
+#, fuzzy
+#~ msgid "Date format"
+#~ msgstr "Datumsformat:"
+
+#~ msgid "Opening date"
+#~ msgstr "Startdatum"
+
+#, fuzzy
+#~ msgid "Button"
+#~ msgstr "Radio-Buttons"
+
+#~ msgid "Range"
+#~ msgstr "Bereich"
+
+#~ msgid "Max"
+#~ msgstr "Max"
+
+#~ msgid "Radio"
+#~ msgstr "Radio"
+
+#~ msgid "Terms"
+#~ msgstr "AGB"
+
+#~ msgid "Checkbox label"
+#~ msgstr "Kontrollkästchen Label"
+
+#~ msgid "Use drop-down list"
+#~ msgstr "Auswahlmenü verwenden"
+
+#~ msgid "Date selection"
+#~ msgstr "Datumsauswahl"
+
+#~ msgid ""
+#~ "If checked a drop-down select menu is used for selecting a date, rather "
+#~ "than a datepicker."
+#~ msgstr ""
+#~ "Wenn Sie dieses anklicken, wird ein Auswahl-Menü anstatt des Kalenders "
+#~ "angezeigt."
+
+#~ msgid "Simple Booking Mode"
+#~ msgstr "Einfacher Buchungsmodus"
+
+#~ msgid ""
+#~ "Simple Booking Mode only comes into effect if:<ul><li>This option is "
+#~ "selected.</li><li>The event has only one ticket currently on sale.</"
+#~ "li><li>You are booking by series, or the event is non-recurring (no date "
+#~ "needs to be selected).</li></ul>Under those conditions the date and "
+#~ "ticket selection is hidden from the booking form, and the booking consist "
+#~ "of only one ticket."
+#~ msgstr ""
+#~ "Der einfache Buchungsmodus kommt nur zum Einsatz wenn:<ul><li>Diese "
+#~ "Option ausgewählt wurde</li><li>Der Event aktuell nur ein Ticket zum "
+#~ "Verkauf hat</li><li>Sie nach Serin buchen oder der Event nicht "
+#~ "wiederkehrend ist (es müssen keine Termine ausgewählt werden).</li></"
+#~ "ul>Unter diesen Umständen werden die Termine und die Auswahl der Tickets "
+#~ "im Buchungsformular nicht angezeigt und die Buchung besteht aus nur einem "
+#~ "Ticket."
+
+#~ msgid ""
+#~ "No form found... <a href=\"#\" title=\"Create a new form\" class=\"eo-bfc-"
+#~ "add-form-btn\">create new</a>"
+#~ msgstr ""
+#~ "Kein Formular gefunden... <a href=\"#\" title=\"Neues Formular\" class="
+#~ "\"eo-bfc-add-form-btn\">neues Formular</a>"
+
+#~ msgid " - "
+#~ msgstr " - "
+
+#~ msgid "Event Organiser Extensions"
+#~ msgstr "Erweiterungen für Event Organiser"
+
+#~ msgid "Extensions"
+#~ msgstr "Erweiterungen"
+
+#~ msgid ""
+#~ "Event Organiser offers a range of extension which add additional features "
+#~ "to the plug-in."
+#~ msgstr ""
+#~ "Event Organiser bietet eine Reihe von Erweiterungen an, welche "
+#~ "zusätzliche Funktionen zum Plug-in hinzufügen."
+
+#~ msgid "Find out more &hellip;"
+#~ msgstr "Erfahre mehr darüber ..."
+
+#~ msgid "You do not have permission to manage venues"
+#~ msgstr "Du hast nicht die Berechtigung Veranstaltungsorte zu verwalten."
+
+#~ msgid "You do not have permission to edit this venue."
+#~ msgstr ""
+#~ "Sie verfügen nicht über ausreichende Berechtigungen, um diesen Ort zu "
+#~ "bearbeiten."
+
+#~ msgid "Venue <strong>was not</strong> updated"
+#~ msgstr "Veranstaltungsort wurde <strong>nicht</strong> aktualisiert"
+
+#~ msgid "Venue <strong>was not</strong> created"
+#~ msgstr "Veranstaltungsort wurde <strong>nicht</strong> angelegt"
+
+#, fuzzy
+#~ msgid "You do not have permission to delete this venue"
+#~ msgstr "Du hast keine Rechte diesen Veranstaltungsort zu löschen."
+
+#~ msgid "Venue(s) <strong>were not </strong> deleted"
+#~ msgstr "Veranstaltungsort(e) <strong>wurde(n) nicht</strong> gelöscht"
+
+#~ msgid "Venue <strong>created</strong>"
+#~ msgstr "Veranstaltungsort <strong>erstellt</strong>"
+
+#~ msgid "Venue <strong>updated</strong>"
+#~ msgstr "Veranstaltungsort <strong>aktualisiert</strong>"
+
+#~ msgid "Venue(s) <strong>deleted</strong>"
+#~ msgstr "Veranstaltungsort(e) <strong>gelöscht</strong>"
+
+#~ msgid "Latitude/Longitude:"
+#~ msgstr "Geografische Breite/Länge:"
+
+#, fuzzy
+#~ msgid "Venue name"
+#~ msgstr "Veranstaltungsorte-Seite:"
+
+#~ msgid "Get Link"
+#~ msgstr "Link erhalten"
+
+#~ msgid "Slug"
+#~ msgstr "Titelform"
+
+#~ msgid "Permalinks"
+#~ msgstr "Permalinks"
+
+#, fuzzy
+#~ msgid "Import"
+#~ msgstr "Import"
+
+#, fuzzy
+#~ msgid "Export"
+#~ msgstr "Export"
+
+#, fuzzy
+#~ msgid "Event Organiser Settings"
+#~ msgstr "Gehe zu 'Event Organiser'- Einstellungen"
+
+#~ msgid "Event Organiser"
+#~ msgstr "Event Organiser"
+
+#~ msgid "Edit Events"
+#~ msgstr "Edit Events"
+
+#, fuzzy
+#~ msgid "Publish Events"
+#~ msgstr "Bands"
+
+#, fuzzy
+#~ msgid "Delete Events"
+#~ msgstr "Termine von anderen löschen"
+
+#~ msgid "Edit Others' Events"
+#~ msgstr "Termine von anderen bearbeiten"
+
+#~ msgid "Delete Other's Events"
+#~ msgstr "Termine von anderen löschen"
+
+#~ msgid "Read Private Events"
+#~ msgstr "Private Termine lesen"
+
+#, fuzzy
+#~ msgid "Manage Venues"
+#~ msgstr "Veranstaltungsorte verwalten"
+
+#~ msgid "Manage Event Categories & Tags"
+#~ msgstr "Terminkategorien und -schlagworte verwalten"
+
+#~ msgid "Add-on Licence keys"
+#~ msgstr "Lizenzschlüssel der Erweiterung"
+
+#~ msgid "Select which features events should support"
+#~ msgstr ""
+#~ "Wählen Sie, welche Funktionen in den Terminen unterstützt werden sollen."
+
+#~ msgid "Organiser"
+#~ msgstr "Organiser"
+
+#~ msgid "Event Tags"
+#~ msgstr "Terminschlagworte"
+
+#~ msgid "Show past events:"
+#~ msgstr "Vergangene Termine anzeigen:"
+
+#~ msgid ""
+#~ "Display past events on calendars, event lists and archives (this can be "
+#~ "over-ridden by shortcode attributes and widget options)."
+#~ msgstr ""
+#~ "Abgelaufene Ereignisse auf Kalender, Terminlisten und -archiven anzeigen "
+#~ "(kann von Shortcode-Attributen und Widget-Optionen übergangen werden)."
+
+#~ msgid "Add an 'events' link to the navigation menu:"
+#~ msgstr "Einen Termin-Link zum Navigationsmenü hinzufügen:"
+
+#~ msgid "dd-mm-yyyy"
+#~ msgstr "tt-mm-jjjj"
+
+#~ msgid "mm-dd-yyyy"
+#~ msgstr "mm-tt-jjjj"
+
+#~ msgid "yyyy-mm-dd"
+#~ msgstr "jjjj-mm-tt"
+
+#~ msgid "This alters the default format for inputting dates."
+#~ msgstr "Dies ändert die Standardformatierung für die Datumseingabe."
+
+#, fuzzy
+#~ msgid "Group occurrences"
+#~ msgstr "Eigene Wiederholung"
+
+#~ msgid ""
+#~ "If selected only one occurrence of an event will be displayed on event "
+#~ "lists and archives (this can be over-ridden by shortcode attributes and "
+#~ "widget options."
+#~ msgstr ""
+#~ "Bei Auswahl wird von wiederkehrenden Terminen nur ein Termin auf Event-"
+#~ "Listen und -Archiven angezeigt (dies kann überschrieben werden durch "
+#~ "Shortcode-Attribute und Widget-Optionen)."
+
+#~ msgid "Are current events past?"
+#~ msgstr ""
+#~ "Sind aktuell laufende Termine als bereits vergangen gewertet werden?"
+
+#~ msgid "Yes"
+#~ msgstr "Ja"
+
+#~ msgid ""
+#~ "If 'no' is selected, an occurrence of an event is only past when it has "
+#~ "finished. Otherwise, an occurrence is considered 'past' as soon as it "
+#~ "starts."
+#~ msgstr ""
+#~ "Ist 'Nein' gewählt, so ist ein Termin nur vorbei, wenn er vollständig "
+#~ "abgelaufen ist. Andernfalls wird ein Termin als bereits vergangen "
+#~ "gewertet, sobald er begonnen hat."
+
+#~ msgid "Delete expired events:"
+#~ msgstr "Abgelaufene Termine löschen:"
+
+#~ msgid ""
+#~ "If selected the event will be automatically trashed 24 hours after the "
+#~ "last occurrence finishes."
+#~ msgstr ""
+#~ "Falls ausgewählt, werden Termine automatisch 24 Stunden nach dem Ende des "
+#~ "letzten Terminereignisses gelöscht."
+
+#~ msgid "Enable events ICAL feed:"
+#~ msgstr "ICAL Feed für Termine aktivieren:"
+
+#~ msgid "If selected, visitors can subscribe to your events with the url: %s"
+#~ msgstr "Besucher können mit dieser URL Ihre Termine abonnieren: %s"
+
+#~ msgid "Exclude events from searches:"
+#~ msgstr "Termine von der Suche ausschließen:"
+
+#, fuzzy
+#~ msgid "Enable templates:"
+#~ msgstr "Vorlagen aktivieren:"
+
+#~ msgid ""
+#~ "For each of the pages, the corresponding template is used. To use your "
+#~ "own template simply give it the same name and store in your theme folder. "
+#~ "By default, if Event Organiser cannot find a template in your theme "
+#~ "directory, it will use its own default template. To prevent this, uncheck "
+#~ "this option. WordPress will then decide which template from your theme's "
+#~ "folder to use."
+#~ msgstr ""
+#~ "Für jede der Seiten wird die entsprechende Vorlage verwendet. Um eine "
+#~ "eigene Vorlage zu verwenden, geben Sie ihr einfach den gleichen Namen und "
+#~ "speichern Sie in Ihrem Theme-Ordner. Wenn 'Event Organiser' keine Vorlage "
+#~ "in Ihrem Theme findet, wird die voreingestellte Vorlage verwendet. Um das "
+#~ "zu verhindern entferne den Haken. Wordpress wird dann entscheiden, welche "
+#~ "Vorlage aus Deinem Theme-Ordner genutzt wird."
+
+#~ msgid "Events archives:"
+#~ msgstr "Terminarchive:"
+
+#, fuzzy
+#~ msgid "Event page:"
+#~ msgstr "Bands"
+
+#~ msgid "Venue page:"
+#~ msgstr "Veranstaltungsorte-Seite:"
+
+#~ msgid "Events Category page:"
+#~ msgstr "Veranstaltungskategorien-Seite:"
+
+#~ msgid ""
+#~ "For more information see documentation <a href='%s'>on editing the "
+#~ "templates</a>"
+#~ msgstr ""
+#~ "Für weitere Informationen siehe Dokumentation <a href='%s'>über das "
+#~ "Editieren der Templates</a>"
+
+#, fuzzy
+#~ msgid "Disable CSS:"
+#~ msgstr "CSS deaktivieren"
+
+#~ msgid ""
+#~ "Check this option to prevent any stylesheets from Event Organiser being "
+#~ "loaded on the front-end"
+#~ msgstr ""
+#~ "Setze den Haken, damit 'Event Organiser' keine CSS-Stylesheets mehr in "
+#~ "das Frontend lädt."
+
+#~ msgid "Enable event pretty permalinks:"
+#~ msgstr "Benutzerdefinierte Permalinks aktiviere:"
+
+#~ msgid ""
+#~ "If you have pretty permalinks enabled, select to have pretty premalinks "
+#~ "for events."
+#~ msgstr "Benutzerdefinierte Permalinks für Termine aktiviere."
+
+#, fuzzy
+#~ msgid "Event (single)"
+#~ msgstr "Bands"
+
+#, fuzzy
+#~ msgid "Events page"
+#~ msgstr "Bands"
+
+#, fuzzy
+#~ msgid "Event (date archive)"
+#~ msgstr "Bands mit %s"
+
+#~ msgid "Year archive"
+#~ msgstr "Jahresarchiv"
+
+#~ msgid "Month archive"
+#~ msgstr "Monatsarchiv"
+
+#, fuzzy
+#~ msgid "Event Categories"
+#~ msgstr "Bands mit %s"
+
+#, fuzzy
+#~ msgid "Event management permissions"
+#~ msgstr "Terimverwaltungsfreigaben"
+
+#, fuzzy
+#~ msgid "Set permissions for events and venue management"
+#~ msgstr "Berechtigungen für Termine setzen und Veranstaltungsorte verwalten"
+
+#~ msgid ""
+#~ "Choose a custom permalink structure for events, venues, event categories "
+#~ "and event tags."
+#~ msgstr ""
+#~ "Wählen Sie eine benutzerdefinierte Permalink-Struktur für Termine, "
+#~ "Veranstaltungsorte, Terminkategorien und Terminschlagworte."
+
+#~ msgid ""
+#~ "Please note to enable these structures you must first have pretty "
+#~ "permalinks enabled on WordPress in Settings > Permalinks."
+#~ msgstr ""
+#~ "Bitte beachten Sie: Permalinks müssen hierfür unter WordPress > "
+#~ "Einstellungen > Permalinks aktiviert sein."
+
+#~ msgid ""
+#~ "You may also need to go to WordPress Settings > Permalinks and click "
+#~ "'Save Changes' before any changes will take effect."
+#~ msgstr ""
+#~ "Möglicherweise müssen Sie dahin gehen: WordPress Einstellungen > "
+#~ "Permalinks und 'Save Changes' drücken, bevor irgendwelche Änderungen "
+#~ "wirksam werden."
+
+#~ msgid "Do not add to menu"
+#~ msgstr "Nicht zum Menü hinzufügen"
+
+#~ msgid "Page list (fallback)"
+#~ msgstr "Seitenliste (Sicherung)"
+
+#~ msgid "This is a reoccurring event"
+#~ msgstr "Dies ist ein sich wiederholender Termin"
+
+#~ msgid "Check to edit this event and its reoccurrences"
+#~ msgstr "Anwählen, um den Termin und all seine Vorkommen zu bearbeiten"
+
+#~ msgid "Ensure dates are entered in %1$s format and times in 24 hour format"
+#~ msgstr ""
+#~ "Stelle sicher, dass das Datum im Format %1$s und Uhrzeiten im 24-Stunden-"
+#~ "Format eingegeben wurden."
+
+#~ msgid "Ensure dates are entered in %1$s format and times in 12 hour format"
+#~ msgstr ""
+#~ "Stelle sicher, dass das Datum im Format %1$s und Uhrzeiten im 12-Stunden-"
+#~ "Format eingegeben wurden."
+
+#~ msgid "Start Date/Time"
+#~ msgstr "Start Datum / Zeit"
+
+#~ msgid "End Date/Time"
+#~ msgstr "Ende Datum / Zeit"
+
+#, fuzzy
+#~ msgid "All day"
+#~ msgstr "Ganztägig"
+
+#~ msgid "Reoccurence:"
+#~ msgstr "Wiederholung:"
+
+#~ msgid "daily"
+#~ msgstr "täglich"
+
+#~ msgid "weekly"
+#~ msgstr "wöchentlich"
+
+#~ msgid "monthly"
+#~ msgstr "monatlich"
+
+#~ msgid "yearly"
+#~ msgstr "jährlich"
+
+#~ msgid "custom"
+#~ msgstr "individuell"
+
+#~ msgid "Repeat every"
+#~ msgstr "Wiederholen alle"
+
+#~ msgid "day of month"
+#~ msgstr "Tag des Monats"
+
+#~ msgid "day of week"
+#~ msgstr "Tag der Woche"
+
+#~ msgid "until"
+#~ msgstr "bis"
+
+#~ msgid "Include/Exclude occurrences"
+#~ msgstr "Daten ein- und ausschliessen"
+
+#, fuzzy
+#~ msgid "Select a venue"
+#~ msgstr "Musikstil auswählen"
+
+#, fuzzy
+#~ msgid "Venue Name"
+#~ msgstr "Neuer Musikstil"
+
+#~ msgid "Event dates were not saved."
+#~ msgstr "Die Termindaten wurden nicht gespeichert."
+
+#~ msgid ""
+#~ "This page highlights useful information for debugging. If you're "
+#~ "reporting a bug, please include this information."
+#~ msgstr ""
+#~ "Diese Seite zeigt wichtige Informationen zur Fehlerfindung an. Wenn Sie "
+#~ "einen Bug melden, fügen Sie diese Informationen bitte an."
+
+#~ msgid ""
+#~ "The 'system info' link in under the Events admin tab is only visible to "
+#~ "admins and only when <code>WP_DEBUG</code> is set to <code>true</code>."
+#~ msgstr ""
+#~ "Der 'system info'-Link unter dem Events-Admin-Tab ist nur für Admins "
+#~ "sichtbar und nur dann, wenn <code>WP_DEBUG</code> auf  <code>true</code> "
+#~ "gesetzt ist."
+
+#~ msgid ""
+#~ "Most bugs arise from theme or plug-in conflicts. You can check this by "
+#~ "disabling all other plug-ins and switching to TwentyTweleve."
+#~ msgstr ""
+#~ "Die meisten Bugs entstehen auf Grund von Plugin- oder Theme-Konflikten. "
+#~ "Sie können das überprüfen, indem Sie alle Plugins deaktivieren und das "
+#~ "TwentyTwelve Theme aktivieren."
+
+#~ msgid ""
+#~ "To help speed things along, if you report a bug please indicate if you "
+#~ "have done so. Once the plug-in or theme has been identified it is often "
+#~ "easy to resolve the issue."
+#~ msgstr ""
+#~ "Um den Ablauf eines Fehlerreports zu beschleunigen, weisen Sie uns bitte "
+#~ "darauf hin. Ist das Plugin oder Theme, welches den Konflikt auslöst, erst "
+#~ "einmal identifiziert, ist es oft einfach, das Problem zu beheben."
+
+#~ msgid ""
+#~ "Below any <strong>known</strong> plug-in and theme conflicts are "
+#~ "highlighted in red."
+#~ msgstr ""
+#~ "Anstehend sind alle <strong>bekannten</strong> Plugin- und Theme-"
+#~ "Konflikte in rot hervorgehoben."
+
+#~ msgid "Download system information file"
+#~ msgstr "Herunterladen der Systeminfomationsdatei"
+
+#~ msgid ""
+#~ "Known plug-in & theme conflicts, highlighted in red, may be minor or have "
+#~ "a simple resolution. Please contact support."
+#~ msgstr ""
+#~ "Bekannte Plug-in- und Theme-Konflikte, markiert in rot, können kleinere "
+#~ "oder eine einfache Lösung haben. Bitte kontaktieren Sie den Support."
+
+#~ msgid "%s has only been tested up to %s %s"
+#~ msgstr "%s wurde nur bis Version %s %s getestet"
+
+#~ msgid "%s requires %s version %s or higher"
+#~ msgstr "%s benötigt %s Version %s oder höher"
+
+#, fuzzy
+#~ msgid "Calendar View"
+#~ msgstr "Kalenderansicht"
+
+#~ msgid "today"
+#~ msgstr "heute"
+
+#~ msgid "day"
+#~ msgstr "Tag"
+
+#~ msgid "week"
+#~ msgstr "Woche"
+
+#~ msgid "month"
+#~ msgstr "Monat"
+
+#~ msgid "go to date"
+#~ msgstr "Gehe zu Datum"
+
+#~ msgid "You do not have sufficient permissions to create events. "
+#~ msgstr ""
+#~ "Sie verfügen nicht über ausreichende Berechtigungen, um Termine anzulegen."
+
+#~ msgid "Occurrence deleted."
+#~ msgstr "Ereignis gelöscht"
+
+#~ msgid "Calendar options"
+#~ msgstr "Kalenderoptionen"
+
+#~ msgid "24 hour time"
+#~ msgstr "24-Stunden-Zeit"
+
+#~ msgid "Loading&#8230;"
+#~ msgstr "Laden&#8230;"
+
+#~ msgid "Current date/time"
+#~ msgstr "Aktuelle/s Datum / Zeit"
+
+#, fuzzy
+#~ msgid "Create an event"
+#~ msgstr "Termine erstellen"
+
+#~ msgid "When"
+#~ msgstr "Wann"
+
+#, fuzzy
+#~ msgid "Event Title"
+#~ msgstr "Terminliste"
+
+#~ msgid "Where"
+#~ msgstr "Wo"
+
+#~ msgid "Save Draft"
+#~ msgstr "Entwurf speichern"
+
+#~ msgid "Publish Event"
+#~ msgstr "Termin veröffentlichen"
+
+#~ msgid "Submit for Review"
+#~ msgstr "Zur Prüfung einreichen"
+
+#~ msgid "Get Event Organiser Pro Add-On"
+#~ msgstr "Hole Dir das 'Event Organiser Pro'-Add-On"
+
+#~ msgid "Go Pro"
+#~ msgstr "Hole Dir 'Pro'"
+
+#~ msgid "Get Event Organiser Pro"
+#~ msgstr "Hole Dir 'Event Organiser Pro'"
+
+#~ msgid ""
+#~ "Event Organiser Pro is a premium add-on bringing advanced booking "
+#~ "management to Event Organiser."
+#~ msgstr ""
+#~ "'Event Organiser Pro' ist ein Premium-Add-On, das den Event Organiser um "
+#~ "fortgeschrittene Buchungs-Management-Funktionen erweitert."
+
+#~ msgid "But that's not all &hellip;"
+#~ msgstr "Aber das ist noch nicht alles ..."
+
+#, fuzzy
+#~ msgid "Flexible Booking Options"
+#~ msgstr "Buchungen löschen"
+
+#~ msgid ""
+#~ "Sell tickets for specific dates or sell tickets for all dates of an event "
+#~ "- such as booking places on a course. You can offer multiple tickets, and "
+#~ "customise the booking form to suit your needs."
+#~ msgstr ""
+#~ "Verkaufe Tickets an einem bestimmten Zeitpunkt oder verkaufe Tickets für "
+#~ "alle Daten eines Termins - z.B. Plätze in einem Lehrgang. Du kannst "
+#~ "mehrere Tickets anbieten und das Buchungsformular Deinen  Anforderungen "
+#~ "anpassen."
+
+#~ msgid "Additional shortcodes & improved UI"
+#~ msgstr "Zusätzliche Shortcodes & verbesserte Benutzeroberfläche"
+
+#~ msgid ""
+#~ "Give your users the ability to search and filter through your events with "
+#~ "the event search shortcode. Event Organiser Pro also adds a text editor "
+#~ "button to make inserting and configuring your shortcodes that bit easier. "
+#~ msgstr ""
+#~ "Gebe deinen Benutzern mit dem Veranstaltungs-Such-Shortcode die "
+#~ "Möglichkeit Veranstaltungen zu suchen und zu filtern. Event Organiser Pro "
+#~ "bringt ebenfalls einen Button für den Texteditor mit, mit dem das "
+#~ "Einfügen und Konfigurieren der Shortcodes noch viel einfacher wird."
+
+#~ msgid "Venue custom fields & thumbnails"
+#~ msgstr ""
+#~ "Benutzerdefinierte Felder und Thumbnails\n"
+#~ "\t\t\tder Veranstaltungsorte"
+
+#~ msgid ""
+#~ "Add information on your venue pages with venue custom fields, or give "
+#~ "your venues more attentioned with their own 'featured image'"
+#~ msgstr ""
+#~ "Füge weitere Informationen zu Deinen Veranstaltungsort-Seiten mit "
+#~ "benutzerdefinierten Feldern hinzu oder verleihe ihnen mehr "
+#~ "Publikumsbeachtung durch eigene Feature-Bilder."
+
+#~ msgid "Go to Event Organiser settings"
+#~ msgstr "Gehe zu 'Event Organiser'- Einstellungen"
+
+#, fuzzy
+#~ msgid "Categories"
+#~ msgstr "Terminkategorien"
+
+#, fuzzy
+#~ msgid "Reoccurrence"
+#~ msgstr "Wiederholung:"
+
+#~ msgid "View all events"
+#~ msgstr "Alle Termine anzeigen"
+
+#~ msgid "Future events"
+#~ msgstr "Zukünftige Termine"
+
+#, fuzzy
+#~ msgid "Expired events"
+#~ msgstr "Bands"
+
+#~ msgid "Events within 24 hours"
+#~ msgstr "Termine innerhalb von 24 Stunden"
+
+#~ msgid "Events within 1 week"
+#~ msgstr "Termine innerhalb einer Woche"
+
+#, fuzzy
+#~ msgid "Events within %d weeks"
+#~ msgstr "Bands in %s"
+
+#~ msgid "Events within 1 month"
+#~ msgstr "Termine innerhalb eines Monats"
+
+#, fuzzy
+#~ msgid "Events within %d months"
+#~ msgstr "Bands in %s"
+
+#, fuzzy
+#~ msgid "Events within 1 year"
+#~ msgstr "Termine innerhalb einer Woche"
+
+#, fuzzy
+#~ msgid "&mdash; No Change &mdash;"
+#~ msgstr "— Keine Änderung —"
+
+#~ msgid "Later events <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "Spätere Termine <span class=\"meta-nav\">&rarr;</span>"
+
+#~ msgid " <span class=\"meta-nav\">&larr;</span> Newer events"
+#~ msgstr "<span class=\"meta-nav\">&larr;</span> Frühere Termine"
+
+#~ msgid "Apologies, but no results were found for the requested archive. "
+#~ msgstr "Leider wurden keine Ergebnisse für das angefragte Archiv gefunden."
+
+#~ msgid ""
+#~ "This event was posted in %1$s by <a href=\"%5$s\">%4$s</a>. Bookmark the "
+#~ "<a href=\"%2$s\" title=\"Permalink to %3$s\" rel=\"bookmark\">permalink</"
+#~ "a>."
+#~ msgstr ""
+#~ "Dieser Termin wurde veröffentlicht in %1$s by <a href=\"%5$s\">%4$s</a>. "
+#~ "Lesezeichen setzen für den <a href=\"%2$s\" title=\"Permalink to %3$s\" "
+#~ "rel=\"bookmark\">Permalink</a>."
+
+#~ msgid ""
+#~ "This event was posted by <a href=\"%5$s\">%4$s</a>. Bookmark the <a href="
+#~ "\"%2$s\" title=\"Permalink to %3$s\" rel=\"bookmark\">permalink</a>."
+#~ msgstr ""
+#~ "Dieser Termin wurde erstellt von <a href=\"%5$s\">%4$s</a>. Lesezeichen "
+#~ "setzen für den <a href=\"%2$s\" title=\"Permalink to %3$s\" rel=\"bookmark"
+#~ "\">Permalink</a>."
+
+#~ msgid "Apologies, but no events were found for the requested category. "
+#~ msgstr "Leider wurden keine Termine in der angefragten Kategorie gefunden."
+
+#~ msgid "Apologies, but no events were found for the requested tag. "
+#~ msgstr "Leider wurden keine Termine für das angefragte Schlagwort gefunden."
+
+#, fuzzy
+#~ msgid "Start"
+#~ msgstr "Startdatum"
+
+#~ msgid "Apologies, but no events were found for the requested venue. "
+#~ msgstr "Leider wurden keine Termine für diesen Veranstaltungsort gefunden."
+
+#~ msgid "A list or dropdown of event venues"
+#~ msgstr "Eine Liste oder Dropdown von Veranstaltungsorten"
+
+#, fuzzy
+#~ msgid "Event Venues"
+#~ msgstr "Bands"
+
+#~ msgid "A list or dropdown of event categories"
+#~ msgstr "Eine Liste der Terminkategorien"
+
+#, fuzzy
+#~ msgid "Select Category"
+#~ msgstr "Datum auswählen"
+
+#~ msgid "Show hierarchy"
+#~ msgstr "Stuktur anzeigen"
+
+#, fuzzy
+#~ msgid "Displays a list of events"
+#~ msgstr "Als Liste anzeigen"
+
+#~ msgid "Start date"
+#~ msgstr "Startdatum"
+
+#~ msgid "Publish date"
+#~ msgstr "Veröffentlichungsdatum"
+
+#~ msgid "ASC"
+#~ msgstr "ASC"
+
+#~ msgid "DESC"
+#~ msgstr "DESC"
+
+#~ msgid "Include past events"
+#~ msgstr "Abgelaufene Termine einschließen"
+
+#~ msgid "Template (leave blank for default)"
+#~ msgstr "Vorlage (leer lassen für Standard)"
+
+#, fuzzy
+#~ msgid "Event list widget placeholders"
+#~ msgstr "Terminliste Widget Platzhalter"
+
+#~ msgid ""
+#~ "You can use specified tags as placeholders for event information which "
+#~ "you want to appear in the widget. <a href=\"%s\" target=\"_blank\"> Find "
+#~ "out more</a>."
+#~ msgstr ""
+#~ "Sie können bestimmte Terminschlagworte als Platzhalter für "
+#~ "Termininformationen verwenden, welche bei Bedarf im Widget erscheinen. <a "
+#~ "href=\"%s\" target=\"_blank\">Erfahren Sie mehr</ a>."
+
+#~ msgid "'No events' message"
+#~ msgstr "'Keine Termine'-Nachricht"
+
+#, fuzzy
+#~ msgid "Displays a list of events, grouped by date"
+#~ msgstr "Zeigt eine Liste der Termine, gruppiert nach Datum"
+
+#, fuzzy
+#~ msgid "Events Agenda"
+#~ msgstr "Bands"
+
+#~ msgid "Group by"
+#~ msgstr "Gruppiere nach"
+
+#~ msgid "Group date format"
+#~ msgstr "Gruppen-Datumsformat"
+
+#~ msgid "Event date/time format"
+#~ msgstr "Datums- / Zeitformatdes Termin"
+
+#~ msgid "Include 'Add To Google' link"
+#~ msgstr "'Add To Google'-Link anzeigen"
+
+#~ msgid "There is no excerpt because this is a protected post."
+#~ msgstr "Es gibt keine Kurzfassung, da dies ein geschützter Artikel ist."
+
+#~ msgid ""
+#~ "Creates a custom post type 'events' with features such as reoccurring "
+#~ "events, venues, Google Maps, calendar views and events and venue pages"
+#~ msgstr ""
+#~ "Erstellt einen individuellen Termin mit Features wie wiederholende "
+#~ "Termine, Veranstaltungsorte, Google-Maps-Karte, Kalenderansichten und -"
+#~ "termine und Seiten für Veranstaltungsorte"
+
+#~ msgid "last"
+#~ msgstr "letzten"
+
+#~ msgid "first"
+#~ msgstr "ersten"
+
+#~ msgid "second"
+#~ msgstr "zweiten"
+
+#~ msgid "third"
+#~ msgstr "dritten"
+
+#~ msgid "fourth"
+#~ msgstr "vierten"
+
+#~ msgid "one time only"
+#~ msgstr "einmalig"
+
+#~ msgid "custom reoccurrence"
+#~ msgstr "Eigene Wiederholung"
+
+#~ msgid "every day"
+#~ msgstr "jeden Tag"
+
+#~ msgid "every %d days"
+#~ msgstr "alle %d Tage"
+
+#~ msgid "every week on"
+#~ msgstr "jede Woche am"
+
+#~ msgid "every %d weeks on"
+#~ msgstr "alle %d Wochen am"
+
+#~ msgid "every month on the"
+#~ msgstr "jeden Monat am"
+
+#~ msgid "every %d months on the"
+#~ msgstr "alle %d Monate am"
+
+#~ msgid "every year"
+#~ msgstr "jedes Jahr"
+
+#~ msgid "every %d years"
+#~ msgstr "alle %d Jahre"
+
+#~ msgid "All Day"
+#~ msgstr "Ganztägig"
+
+#, fuzzy
+#~ msgid "Schedule not recognised."
+#~ msgstr "Zeitplan wurde nicht erkannt"
+
+#~ msgid "Start date not provided."
+#~ msgstr "Startdatum nicht angegeben"
+
+#~ msgid "Start date occurs after end date."
+#~ msgstr "Startdatum liegt nach dem Enddatum"
+
+#~ msgid "Schedule end date is before is before the start date."
+#~ msgstr "Das geplante Enddatum ist vor dem Startdatum."
+
+#~ msgid "Invalid monthly schedule (invalid ordinal)"
+#~ msgstr "Ungültiger monatlicher Zeitplan (ungültige Ordnungszahl)"
+
+#~ msgid "Event does not contain any dates."
+#~ msgstr "Der Termin enthält keine Datumsangaben."
+
+#~ msgid "Occurrence not deleted. Occurrence not found."
+#~ msgstr "Ereignis nicht gelöscht bzw. nicht gefunden."
+
+#~ msgid "Show More"
+#~ msgstr "Mehr anzeigen"
+
+#~ msgid "Show Less"
+#~ msgstr "Weniger anzeigen"
+
+#~ msgid "days"
+#~ msgstr "Tage"
+
+#~ msgid "weeks"
+#~ msgstr "Wochen"
+
+#~ msgid "months"
+#~ msgstr "Monate"
+
+#~ msgid "year"
+#~ msgstr "Jahr"
+
+#~ msgid "years"
+#~ msgstr "Jahre"
+
+#~ msgid "every year on the"
+#~ msgstr "jeden Monat am"
+
+#~ msgid "every %d years on the"
+#~ msgstr "alle %d Jahre am"
+
+#, fuzzy
+#~ msgid "This event will repeat"
+#~ msgstr "Keine weiteren Buchungen mehr möglich."
+
+#~ msgid ""
+#~ "<h4>City & State Fields Added</h4>City and state / province fields for "
+#~ "venues have now been added. </br> If you'd like, Event Organiser can <a "
+#~ "href='%s'>attempt to auto-fill them</a>. You can always manually change "
+#~ "the details aftewards."
+#~ msgstr ""
+#~ "<h4>Stadt- & Bundesland-Felder hinzugefügt</h4>Stadt- und Bundesland-"
+#~ "Felder für Veranstaltungsorte wurden nun hinzugefügt. </br> Wenn Sie "
+#~ "möchten, kann 'Event Organiser' <a href='%s'>versuchen, sie automatisch "
+#~ "auszufüllen</a>. Es können danach jederzeit die Details manuell geändert "
+#~ "werden."
+
+#~ msgid ""
+#~ "<h4>The Default Templates Have Changed</h4>Don't panic! If you've set up "
+#~ "your own templates in your theme you won't notice any change. </br> If "
+#~ "you haven't and want the old templates back, <a href='http://wp-event-"
+#~ "organiser.com/blog/new-default-templates-in-1-7'>see this post<a/>."
+#~ msgstr ""
+#~ "<h4>Die Standardvorlagen haben sich geändert</h4>Keine Panik! Wenn Sie "
+#~ "Ihre eigenen Vorlagen (Templates) in Ihrem Theme eingestellt haben, wird "
+#~ "sich nichts verändern. </br> Falls Sie keine eigenen Vorlagen (Templates) "
+#~ "erstellt haben und dennoch die alten Vorlagen zurück haben wollen, <a "
+#~ "href='http://wp-event-organiser.com/blog/new-default-templates-"
+#~ "in-1-7'>schauen Sie sich diesen Beitrag an<a/>."
+
+#, fuzzy
+#~ msgid "State / Province"
+#~ msgstr "Bundesland"
+
+#, fuzzy
+#~ msgid "Post Code"
+#~ msgstr "PLZ"
+
+#~ msgid "File Error encountered: %d"
+#~ msgstr "Dateifehler aufgetreten: % d"
+
+#~ msgid "No file detected."
+#~ msgstr "Keine Datei gefunden."
+
+#~ msgid ""
+#~ "Invalid file uploaded. The file must be a ics calendar file of type 'text/"
+#~ "calendar', no larger than 2MB."
+#~ msgstr ""
+#~ "Ungültige Datei hochgeladen. Die Datei muss eine ICS-Kalender-Datei vom "
+#~ "Typ \"text/calendar\" und nicht größer als 2MB sein."
+
+#~ msgid "File size: %s. File type: %s"
+#~ msgstr "Dateigröße: %s. Dateityp: %s"
+
+#~ msgid ""
+#~ "The export button below generates an ICS file of your events that can be "
+#~ "imported in to other calendar applications such as Google Calendar."
+#~ msgstr ""
+#~ "Der Export-Button (unten) erzeugt eine ICS-Datei Ihrer Termine, die in "
+#~ "andere Anwendungen wie Google-Kalender importiert werden kann."
+
+#, fuzzy
+#~ msgid "Download Export File"
+#~ msgstr "Tickets herunterladen"
+
+#, fuzzy
+#~ msgid "Import Events"
+#~ msgstr "Bands"
+
+#~ msgid "Import an ICS file."
+#~ msgstr "ICS Datei importieren"
+
+#~ msgid "Import venues"
+#~ msgstr "Veranstaltungsorte importieren"
+
+#~ msgid "Import categories"
+#~ msgstr "Terminkategorien importieren"
+
+#, fuzzy
+#~ msgid "You do not have sufficient permissions to import events."
+#~ msgstr ""
+#~ "Sie verfügen nicht über ausreichende Berechtigungen, um Termine anzulegen."
+
+#~ msgid "No events were imported."
+#~ msgstr "Keine Termine wurden importiert"
+
+#~ msgid "Warning:"
+#~ msgstr "Warnung:"
+
+#~ msgid "1 event was successfully imported"
+#~ msgstr "Ein Termin wurde erfolgreich importiert"
+
+#~ msgid "%d events were successfully imported"
+#~ msgstr "%d Termine wurden erfolgreich importiert"
+
+#~ msgid "1 venue was created"
+#~ msgstr "1 Veranstaltungsort wurde erstellt"
+
+#~ msgid "%d venues were created"
+#~ msgstr "%d Veranstaltungsorte wurden erstellt"
+
+#~ msgid "1 category was created"
+#~ msgstr "1 Terminkategorie wurde erstellt"
+
+#~ msgid "%d categories were created"
+#~ msgstr "%d Terminkategorien wurden erstellt"
+
+#~ msgid "Protected"
+#~ msgstr "Geschützt"
+
+#~ msgid "Draft"
+#~ msgstr "Entwurf"
+
+#, fuzzy
+#~ msgid "Edit Event"
+#~ msgstr "Musikstil bearbeiten"
+
+#, fuzzy
+#~ msgid "Delete this occurrence"
+#~ msgstr "Dieses Ereignis löschen"
+
+#~ msgid "Break this series"
+#~ msgstr "Serie unterbrechen"
+
+#~ msgid "Add To Google Calendar"
+#~ msgstr "Zum Google-Kalender hinzufügen"
+
+#, fuzzy
+#~ msgid "Event not found"
+#~ msgstr "Benutzer nicht gefunden"
+
+#, fuzzy
+#~ msgid "You do not have permission to edit this event"
+#~ msgstr ""
+#~ "Sie verfügen nicht über ausreichende Berechtigungen, um diesen Termin zu "
+#~ "bearbeiten."
+
+#, fuzzy
+#~ msgid "Event not created: %s"
+#~ msgstr "Bands in %s"
+
+#, fuzzy
+#~ msgid "There was an error detecting iCal source."
+#~ msgstr "Es gab ein Problem beim Hinzufügen eines neuen %s"
+
+#~ msgid "Unable to read iCal file"
+#~ msgstr "Die iCal-Datei konnte nicht gelesen werden"
+
+#, fuzzy
+#~ msgid "Feed not found"
+#~ msgstr "Nicht gefunden"
+
+#~ msgid "There was an error fetching the feed. Response code: %s."
+#~ msgstr "Fehler beim Einspeisen des Feeds. Fehler-Code: %s. "
+
+#~ msgid "There was an error opening the ICAL file."
+#~ msgstr "Fehler beim öffnen der iCal-Datei."
+
+#~ msgid "[Lines %1$d-%2$d]"
+#~ msgstr "[Zeilen %1$d-%2$d]"
+
+#~ msgid "[Line %1$d]"
+#~ msgstr "[Zeile %1$d]"
+
+#~ msgid "Invalid date \"%s\". Date expected in YYYYMMDD format."
+#~ msgstr ""
+#~ "Falsche Angabe für das Datum \"%s\". Datum wird im YYYYMMDD-Format "
+#~ "erwartet."
+
+#~ msgid ""
+#~ "Invalid datetime \"%s\". Date expected in YYYYMMDDTHHiissZ or "
+#~ "YYYYMMDDTHHiiss format."
+#~ msgstr ""
+#~ "Falsche Angabe für  datetime \"%s\". Datum muss entweder im "
+#~ "YYYYMMDDTHHiissZ- oder  YYYYMMDDTHHiiss-Format vorliegen."
+
+#, fuzzy
+#~ msgid "Search Venues"
+#~ msgstr "Musikstile suchen"
+
+#, fuzzy
+#~ msgid "View Venue"
+#~ msgstr "Musikstil anzeigen"
+
+#, fuzzy
+#~ msgid "Edit Venue"
+#~ msgstr "Musikstil bearbeiten"
+
+#, fuzzy
+#~ msgid "Update Venue"
+#~ msgstr "Musikstil aktualisieren"
+
+#, fuzzy
+#~ msgid "Add New Venue"
+#~ msgstr "Neuer Musikstil hinzufügen"
+
+#, fuzzy
+#~ msgid "New Venue Name"
+#~ msgstr "Neuer Musikstil"
+
+#~ msgid "No venues found"
+#~ msgstr "Keine Veranstaltungsorte gefunden"
+
+#, fuzzy
+#~ msgid "Add or remove venues"
+#~ msgstr "Musikstile hinzufügen oder entfernen"
+
+#, fuzzy
+#~ msgid "Separate venues with commas"
+#~ msgstr "Musikstile mit Kommas trennen"
+
+#, fuzzy
+#~ msgid "Venue Location"
+#~ msgstr "Ort"
+
+#, fuzzy
+#~ msgid "View all venues"
+#~ msgstr "Musikstil anzeigen"
+
+#, fuzzy
+#~ msgid "Venue:"
+#~ msgstr "Ort"
+
+#~ msgid "No Venue"
+#~ msgstr "Keine Veranstaltungsort"
+
+#, fuzzy
+#~ msgctxt "taxonomy singular name"
+#~ msgid "Category"
+#~ msgstr "Terminkategorien"
+
+#, fuzzy
+#~ msgid "Search Categories"
+#~ msgstr "Musikstile suchen"
+
+#, fuzzy
+#~ msgid "Parent Category"
+#~ msgstr "Musikstil aktualisieren"
+
+#, fuzzy
+#~ msgid "Edit Category"
+#~ msgstr "Musikstil bearbeiten"
+
+#, fuzzy
+#~ msgid "Update Category"
+#~ msgstr "Musikstil aktualisieren"
+
+#, fuzzy
+#~ msgid "Add New Category"
+#~ msgstr "Neuer Musikstil"
+
+#, fuzzy
+#~ msgid "New Category Name"
+#~ msgstr "Neuer Musikstil"
+
+#, fuzzy
+#~ msgid "No categories found"
+#~ msgstr "Keine Veranstaltungsorte gefunden"
+
+#, fuzzy
+#~ msgid "View all categories"
+#~ msgstr "Alle Terminkategorien"
+
+#, fuzzy
+#~ msgctxt "taxonomy singular name"
+#~ msgid "Tag"
+#~ msgstr "Terminschlagworte"
+
+#, fuzzy
+#~ msgid "All Tags"
+#~ msgstr "Alle Terminschlagworte"
+
+#, fuzzy
+#~ msgid "Popular Tags"
+#~ msgstr "Beliebte Musikstile"
+
+#~ msgid "Edit Tag"
+#~ msgstr "Schlagwort bearbeiten"
+
+#, fuzzy
+#~ msgid "No tags found"
+#~ msgstr "Keine Buchungen gefunden"
+
+#, fuzzy
+#~ msgid "Separate tags with commas"
+#~ msgstr "Musikstile mit Kommas trennen"
+
+#, fuzzy
+#~ msgid "View all tags"
+#~ msgstr "Alle Schlagworte ansehen"
+
+#, fuzzy
+#~ msgctxt "post"
+#~ msgid "Add New"
+#~ msgstr "Hinzufügen"
+
+#, fuzzy
+#~ msgid "Add New Event"
+#~ msgstr "Neuer Musikstil hinzufügen"
+
+#, fuzzy
+#~ msgid "New Event"
+#~ msgstr "Bands"
+
+#, fuzzy
+#~ msgid "All events"
+#~ msgstr "Alle Musikstile"
+
+#, fuzzy
+#~ msgid "View Event"
+#~ msgstr "Musikstil anzeigen"
+
+#, fuzzy
+#~ msgid "No events found"
+#~ msgstr "Keine Veranstaltungsorte gefunden"
+
+#, fuzzy
+#~ msgid "No events found in Trash"
+#~ msgstr "Keine Termine im Papierkorb gefunden"
+
+#~ msgid "Event updated. <a href=\"%s\">View event</a>"
+#~ msgstr "Termin aktualisiert. <a href=\"%s\">Termin zeigen</a>"
+
+#~ msgid "Custom field updated."
+#~ msgstr "Benutzerdefiniertes Feld aktualisiert."
+
+#~ msgid "Custom field deleted."
+#~ msgstr "Benutzerdefiniertes Feld gelöscht."
+
+#~ msgid "Event updated."
+#~ msgstr "Termin aktualisiert."
+
+#~ msgid "Event restored to revision from %s"
+#~ msgstr "Termin wiederhergestellt zu Revision aus %s"
+
+#~ msgid "Event published. <a href=\"%s\">View event</a>"
+#~ msgstr "Termin veröffentlicht. <a href=\"%s\">Termin anzeigen</a>"
+
+#, fuzzy
+#~ msgid "Event saved."
+#~ msgstr "Bands"
+
+#~ msgid "Event submitted. <a target=\"_blank\" href=\"%s\">Preview event</a>"
+#~ msgstr ""
+#~ "Termin abgesendet. <a target=\"_blank\" href=\"%s\">Termin-Vorschau</a>"
+
+#~ msgid ""
+#~ "Event scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+#~ "\"%2$s\">Preview event</a>"
+#~ msgstr ""
+#~ "Termin geplant für: <strong>%1$s</strong>. <a target=\"_blank\" href="
+#~ "\"%2$s\">Termin-Vorschau</a>"
+
+#~ msgid "M j, Y @ G:i"
+#~ msgstr "M j, Y @ G:i"
+
+#~ msgid ""
+#~ "Event draft updated. <a target=\"_blank\" href=\"%s\">Preview event</a>"
+#~ msgstr ""
+#~ "Termin-Entwurf aktualisiert. <a target=\"_blank\" href=\"%s\">Event "
+#~ "Vorschau</a>"
+
+#, fuzzy
+#~ msgid "This event has been broken from a recurring event."
+#~ msgstr "Dies ist ein sich wiederholender Termin"
+
+#~ msgid "Creating events"
+#~ msgstr "Termine erstellen"
+
+#~ msgid "Creating events:"
+#~ msgstr "Termine erstellen:"
+
+#~ msgid ""
+#~ "The start date is the date the event starts. If the event is a reoccuring "
+#~ "event, this is the start date of the first occurrence."
+#~ msgstr ""
+#~ "Das Startdatum ist das Datum an dem der Termin beginnt. Wenn der Termin "
+#~ "wiederkehrend ist, ist es das Startdatum des ersten Terminereignisses."
+
+#~ msgid ""
+#~ "The end date is the date the event finishes. If the event is a reoccuring "
+#~ "event, this is the end date of the first occurrence."
+#~ msgstr ""
+#~ "Das Enddatum ist das Datum, an dem der Termin endet. Wenn der Termin "
+#~ "wiederkehrend ist, ist es das Enddatum des ersten Terminereignisses."
+
+#~ msgid ""
+#~ "All dates and times must be entered in the specified format. This format "
+#~ "can changed in the settings page."
+#~ msgstr ""
+#~ "Alle Daten und Zeiten müssen in einem bestimmten Format eingegeben "
+#~ "werden. Dieses Format kann unter \"Einstellungen\" geändert werden."
+
+#~ msgid "Repeating events"
+#~ msgstr "Wiederkehrende Termine"
+
+#~ msgid ""
+#~ "To repeat an event according to some regular pattern, use the "
+#~ "reoccurrence dropdown menu to select how the event is to repeat. Further "
+#~ "options then appear, "
+#~ msgstr ""
+#~ "Wenn Sie einen Termin nach einem regelmäßigen Muster wiederholen lassen "
+#~ "möchten, verwenden Sie das Dropdown-Menü \"Wiederholung\". Weitere "
+#~ "Optionen erscheinen dann."
+
+#~ msgid "Specify how regularly the event should repeat (default 1)"
+#~ msgstr "Gibt an, wie oft ein Termin wiederholt werden soll (Standard 1)"
+
+#~ msgid ""
+#~ "Choose the reoccurrence end date. No further occurrences are added after "
+#~ "this date, but an occurrence that starts before may finish after this "
+#~ "date."
+#~ msgstr ""
+#~ "Wählen Sie das Enddatum der Wiederholung. Es werden keine weiteren "
+#~ "Wiederholungen nach diesem Datum hinzugefügt, aber eine Wiederholung, die "
+#~ "vorher startet, kann nach diesem Zeitpunkt enden."
+
+#~ msgid ""
+#~ "If monthly reoccurrence is selected, select whether this should repeat on "
+#~ "that date of the month (e.g. on the 24th) or on the day of the month (e."
+#~ "g. on the third Tuesday) "
+#~ msgstr ""
+#~ "Wenn monatliche Wiederholung ausgewählt ist, wählen Sie, ob diese an dem "
+#~ "Datum des Monats (z.B. am 24.) oder am Tag des Monats zu wiederholen ist "
+#~ "(z. B. am dritten Dienstag)."
+
+#~ msgid ""
+#~ "If weekly reoccurrence is selected, select which days of the week the "
+#~ "event should be repeated. If no days are selected, the day of the start "
+#~ "date is used"
+#~ msgstr ""
+#~ "Wenn wöchentliche Wiederholung ausgewählt ist, wählen Sie, welche Tage "
+#~ "der Woche wiederholt werden. Wenn keine Tage ausgewählt sind, wird der "
+#~ "Tag des Startdatums verwendet."
+
+#, fuzzy
+#~ msgid "Selecting a venue"
+#~ msgstr "Musikstil auswählen"
+
+#~ msgid "Use the venues input field to search for existing venues"
+#~ msgstr ""
+#~ "Benutzen Sie das Eingabefeld für Unterrichtsorte um nach vorhandenen "
+#~ "Unterrichtsorten zu suchen"
+
+#~ msgid ""
+#~ "Only pre-existing venues can be selected. To add a venue, go to the "
+#~ "venues page."
+#~ msgstr ""
+#~ "Nur bereits bestehende Unterrichtsorte können ausgewählt werden. Um einen "
+#~ "Ort hinzuzufügen, gehen Sie zur Seite \"Unterrichtsorte\"."
+
+#~ msgid "Overview"
+#~ msgstr "Übersicht"
+
+#~ msgid ""
+#~ "This is the list of all saved events. Note that <strong> reoccurring "
+#~ "events appear as a single row </strong> in the table and the start and "
+#~ "end date refers to the first occurrence of that event."
+#~ msgstr ""
+#~ "Das ist die Liste aller Termine. Beachten Sie, dass "
+#~ "<strong>wiederkehrende Termine</strong> in der Tabelle einzeilig "
+#~ "angezeigt werden und sich das Start- und Enddatum  auf das erste "
+#~ "Terminereignis beziehen."
+
+#~ msgid ""
+#~ "Hovering over a row in the venues list will display action links that "
+#~ "allow you to manage that venue. You can perform the following actions:"
+#~ msgstr ""
+#~ "Bewegen Sie die Maus über eine Zeile in der Liste, und sie sehen Links, "
+#~ "mit denen Sie die Veranstaltungsorte verwalten können. Sie können "
+#~ "folgende Aktionen durchführen:"
+
+#~ msgid ""
+#~ "Edit takes you to the editing screen for that venue. You can also reach "
+#~ "that screen by clicking on the venue title."
+#~ msgstr ""
+#~ "Um den Veranstaltungsort zu bearbeiten, klicken sie 'Bearbeiten' oder den "
+#~ "Titel des Ortes."
+
+#~ msgid "Delete will permanently remove the venue"
+#~ msgstr "'Löschen' wird diesen Veranstaltungsort dauerhaft entfernen."
+
+#~ msgid "View will take you to the venue's page"
+#~ msgstr "'Ansehen' bringt Sie zur Seite des Veranstaltungsortes."
+
+#~ msgid ""
+#~ "This page shows all (occurrances of) events. You can view the summary of "
+#~ "an event by clicking on it. If you have the necessary permissions, a link "
+#~ "to the event's edit page will appear also."
+#~ msgstr ""
+#~ "Diese Seite zeigt alle Terminereignisse an. Sie können die "
+#~ "Zusammenfassung eines Termins sehen, wenn Sie auf den Termin klicken. "
+#~ "Wenn Sie die erforderlichen Berechtigungen haben, sehen Sie einen Link "
+#~ "zum Bearbeiten des Termins."
+
+#~ msgid ""
+#~ "By clicking the relevant tab, you can view events in Month, Week or Day "
+#~ "mode. You can also filter the events by events by category and venue. The "
+#~ "'go to date' button allows you to quickly jump to a specific date."
+#~ msgstr ""
+#~ "Durch einen Klick auf den entsprechenden Reiter können Sie Termine im "
+#~ "Modus Monat, Woche oder Tag sehen. Sie können die Termine auch nach "
+#~ "Terminkategorie und Veranstaltungsort filtern. Über die Schaltfläche "
+#~ "'Gehe zu Datum' können Sie schnell zu einem bestimmten Datum springen."
+
+#, fuzzy
+#~ msgid "Add Event"
+#~ msgstr "Neuer Musikstil hinzufügen"
+
+#~ msgid ""
+#~ "You can create an event on this Calendar, by clicking on day or dragging "
+#~ "over multiple days (in Month view) or multiple times (in Week and Day "
+#~ "view). You can give the event a title, specify a venue and provide a "
+#~ "descripton. The event can be immediately published or saved as a draft. "
+#~ "In any case, the event is created and you are forwarded to that event's "
+#~ "edit page."
+#~ msgstr ""
+#~ "Sie können einen Termin in diesem Kalender erstellen, indem Sie auf einen "
+#~ "Tag klicken oder die Maus über mehrere Tage ziehen (in der Monatsansicht) "
+#~ "oder mehrmals klicken (in Wochen-und Tagesansicht). Sie können dem Termin "
+#~ "einen Titel geben, den Unterrichtsort zuordnen und eine Beschreibung "
+#~ "eingeben. Der Termin kann sofort veröffentlicht oder als Entwurf "
+#~ "gespeichert werden. In jedem Fall wird der Termin erstellt, und Sie "
+#~ "werden auf die Bearbeiten-Seite weitergeleitet."
+
+#~ msgid "See the <a %s> documentation</a>"
+#~ msgstr "In der <a %s> Dokumentation</a> nachsehen"
+
+#~ msgid "Debugging Event Organiser"
+#~ msgstr "Debugge 'Event Organiser'"
+
+#~ msgid "Go Pro!"
+#~ msgstr "Jetzt Pro-Version!"
+
+#~ msgid "Color"
+#~ msgstr "Farbe"
+
+#~ msgid "Assign the category a colour."
+#~ msgstr "Der Unterrichtskategorie eine Farbe zuweisen."
+
+#, fuzzy
+#~ msgid "1 booking updated."
+#~ msgid_plural "%d bookings updated."
+#~ msgstr[0] "Keine Buchung gefunden"
+#~ msgstr[1] "Keine Buchung gefunden"
+
+#, fuzzy
+#~ msgid "1 booking deleted."
+#~ msgid_plural "%d bookings deleted."
+#~ msgstr[0] "Keine Buchung gefunden"
+#~ msgstr[1] "Keine Buchung gefunden"
+
+#, fuzzy
+#~ msgid "1 booking cancelled."
+#~ msgid_plural "%d bookings cancelled."
+#~ msgstr[0] "Diese Buchung kann nicht mehr storniert werden."
+#~ msgstr[1] "Diese Buchung kann nicht mehr storniert werden."
+
+#, fuzzy
+#~ msgid "1 booking restored."
+#~ msgid_plural "%d bookings restored."
+#~ msgstr[0] "Eine Buchung wurde bestätigt"
+#~ msgstr[1] "Eine Buchung wurde bestätigt"
+
+#, fuzzy
+#~ msgid "1 booking emailed."
+#~ msgid_plural "%d bookings emailed."
+#~ msgstr[0] "Buchung"
+#~ msgstr[1] "Buchung"
+
+#, fuzzy
+#~ msgid "1 booking confirmed."
+#~ msgid_plural "%d bookings confirmed."
+#~ msgstr[0] "Eine Buchung wurde bestätigt"
+#~ msgstr[1] "Eine Buchung wurde bestätigt"
