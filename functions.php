@@ -951,6 +951,47 @@ function rabe_shortname() {
 	echo $title;
 }
 
+function opengraph_tags() {
+
+    // defaults
+    $title = get_bloginfo( 'title' );
+    $img_src = get_stylesheet_directory_uri() . '/images/mfb_logo.jpg';
+    $excerpt = get_bloginfo( 'description' );
+    // for non posts/pages, like /blog, just use the current URL
+    $permalink = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+
+    if ( is_single() || is_page()) {
+
+        global $post;
+        setup_postdata( $post );
+
+        $title = get_the_title();
+        $permalink = get_the_permalink();
+
+        if ( has_post_thumbnail( $post->ID ) ) {
+            $img_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' )[0];
+        }
+
+        $excerpt = get_the_excerpt();
+
+        if ($excerpt) {
+            $excerpt = strip_tags( $excerpt );
+            $excerpt = str_replace( "", "'", $excerpt );
+        }
+    }
+    ?>
+
+<meta property="og:title" content="<?php echo $title; ?>"/>
+<meta property="og:description" content="<?php echo $excerpt; ?>"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="<?php echo  $permalink; ?>"/>
+<meta property="og:site_name" content="<?php echo get_bloginfo(); ?>"/>
+<meta property="og:image" content="<?php echo $img_src; ?>"/>
+
+<?php
+}
+add_action( 'wp_head', 'opengraph_tags', 5 );
+
 /***********************************************************************
  * RaBe specific functions
  **********************************************************************/
