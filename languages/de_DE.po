@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RaBe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-01 10:14+0100\n"
-"PO-Revision-Date: 2017-12-01 10:15+0100\n"
+"POT-Creation-Date: 2017-12-21 08:56+0100\n"
+"PO-Revision-Date: 2017-12-21 08:57+0100\n"
 "Last-Translator: Sebastian L. <sebastian@abelo.ch>\n"
 "Language-Team: Sebastian L., Marius G. <webmaster@momou.ch>\n"
 "Language: de_DE\n"
@@ -1252,24 +1252,37 @@ msgstr "Du musst eine Anleitung für Sendungen einstellen."
 msgid "Remove help notices"
 msgstr "Anleitungen nicht mehr anzeigen"
 
-#: includes/player-functions.php:48
-msgid "Live!"
-msgstr "Live!"
+#: includes/player-functions.php:49 includes/player-functions.php:453
+msgid "on air"
+msgstr "auf Sendung"
 
-#: includes/player-functions.php:132
+#: includes/player-functions.php:63
+#, fuzzy
+msgid "Event organiser plugin not active."
+msgstr "Die Termindaten wurden nicht gespeichert."
+
+#: includes/player-functions.php:207
 msgid "No fallback broadcast set! Check"
 msgstr "Keine Standard-Sendung gesetzt! Siehe"
 
-#: includes/player-functions.php:134 includes/player-functions.php:319
+#: includes/player-functions.php:209 includes/player-functions.php:359
 #: includes/settings.php:82
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: includes/player-functions.php:254
+#: includes/player-functions.php:266
+msgid "No artist"
+msgstr "Kein Act"
+
+#: includes/player-functions.php:266
+msgid "No title"
+msgstr "Kein Titel"
+
+#: includes/player-functions.php:294
 msgid "Couldn't retrieve songticker song data."
 msgstr "Konnte keine Songtickerdaten holen."
 
-#: includes/player-functions.php:317
+#: includes/player-functions.php:357
 msgid "No stream URL set! Check"
 msgstr "Kein Stream-URL gesetzt! Siehe"
 
@@ -1859,6 +1872,9 @@ msgstr "So"
 msgid "Search for:"
 msgstr "Suchen nach:"
 
+#~ msgid "Live!"
+#~ msgstr "Live!"
+
 #~ msgid "Amount"
 #~ msgstr "Menge"
 
@@ -2197,9 +2213,6 @@ msgstr "Suchen nach:"
 #~ "<p class=\"description indicator-hint\">Noch keine Band angegeben! Bitte "
 #~ "<a href=\""
 
-#~ msgid "No artist chosen"
-#~ msgstr "Keine Band ausgewählt"
-
 #~ msgid "Displays a calendar of the bands only in august"
 #~ msgstr "Zeigt den Kalender vom Le son d'été im August 2015"
 
@@ -2491,9 +2504,6 @@ msgstr "Suchen nach:"
 
 #~ msgid "Price (%s)"
 #~ msgstr "Preis (%s)"
-
-#~ msgid "No tickets"
-#~ msgstr "Keine Tickets"
 
 #~ msgid "Add Ticket"
 #~ msgstr "Ticket hinzufügen"
@@ -4041,9 +4051,6 @@ msgstr "Suchen nach:"
 #, fuzzy
 #~ msgid "Venue Name"
 #~ msgstr "Neuer Musikstil"
-
-#~ msgid "Event dates were not saved."
-#~ msgstr "Die Termindaten wurden nicht gespeichert."
 
 #~ msgid ""
 #~ "This page highlights useful information for debugging. If you're "
