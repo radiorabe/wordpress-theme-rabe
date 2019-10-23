@@ -1,6 +1,22 @@
 <?php
 /**
- * Prepares the programm schedule and ticker
+ * CAUTION: This is somehow complicated because the ticker gets 
+ * different information from different sources ...
+ * 
+ * - Event organiser plugin for the running broadcasts
+ * - Old songticker for song title and artist
+ * 
+ * There are workarounds needed for getting and setting the ticker 
+ * because the information in the old songticker is often outdated and 
+ * doesn't change when there is a new broadcast schedule.
+ * 
+ * And then there is the fallback_broadcast which gets in action 
+ * (actual songtickering) in two situations, when there is no planned 
+ * event running OR/AND when the fallback_broadcast is chosen as event.
+ * 
+ */
+/**
+ * Prepares the programm schedule and displays player with ticker
  * 
  * Depending on a real broadcast running or the fallback broadcast 
  * running, a different title is displayed in the player.
@@ -9,56 +25,54 @@
  * @since version 1.0.0
  * @uses get_rabe_songticker() Gets ticker with song
  * 		 get_broadcast_link() Gets link of broadcast
- * 		 rabe_player_links() Displays links from the player
+ * 		 get_rabe_player_links() Displays links from the player
  * 		 get_rabe_current_event() Gets currently running event
  * @return string $ticker HTML of Broadcast and link
  */
 function get_rabe_schedule() {
 
-	$ticker = false;
+	if ( function_exists( 'eventorganiser_load_textdomain' ) ) {
 
-	if ( function_exists('eventorganiser_load_textdomain') ) {
+		$running_event = get_rabe_current_event();
 
-		$running_event= get_rabe_current_event();
-
-		// Get fallback broadcast id
-		$rabe_options = get_option( 'rabe_option_name' );
-		$fallback_broadcast = ( isset( $rabe_options['fallback_broadcast'] ) ) ? (int) $rabe_options['fallback_broadcast'] : false;
-		
-		// There is a running event which is not the fallback_broadcast
-		if ( $running_event && $running_event !== $fallback_broadcast ) {
-		
-			// Ok, we're on air. Save broadcast to transient and  get infos about running broadcast
-			set_transient( 'rabe_event_schedule_save', $running_event );
-			
+		if ( false !== $running_event ) {
+								
 			// Check if all day, set format accordingly
-			$format = ( eo_is_all_day( $running_event ) ? get_option( 'date_format' ) : get_option( 'date_format' ) . ' ' . get_option( 'time_format' ) );
+			$format = ( eo_is_all_day( $running_event['id'] ) ? get_option( 'date_format' ) : get_option( 'date_format' ) . ' ' . get_option( 'time_format' ) );
 			
 			// Is event/broadcast linked to event page or broadcast page?
-			$broadcast_link = (int) get_post_meta( $running_event, 'rabe_broadcast_link', true );
-			$ticker_url = ( 1 === $broadcast_link ) ? get_broadcast_link( get_broadcast( $running_event ) ) : eo_get_permalink( $running_event, false );
-			
+			$broadcast_link = (int) get_post_meta( $running_event['id'], 'rabe_broadcast_link', true );
+			$ticker_url = ( 1 === $broadcast_link ) ? get_broadcast_link( get_broadcast( $running_event['id'] ) ) : eo_get_permalink( $running_event['id'], false );
+
 			// Ticker of running broadcast
-			$ticker = '<div class="broadcast-show"><a href="' . $ticker_url . '">' . get_the_title( $running_event ) . '</a></div>
-				<div class="live">' . __( 'Live!', 'rabe' ) . '</div>
+			$ticker = '<div class="broadcast-show"><a href="' . $ticker_url . '">' . get_the_title( $running_event['id'] ) . '</a></div>
+				<div class="live">' . __( 'on air', 'rabe' ) . '</div>
 				' . get_rabe_player_links();
 
 		} else {
-
-			$ticker = get_rabe_songticker( $fallback_broadcast );
-	
+			
+			// Get fallback broadcast id
+			$rabe_options = get_option( 'rabe_option_name' );
+			$fallback_broadcast_id = ( isset( $rabe_options['fallback_broadcast'] ) ) ? (int) $rabe_options['fallback_broadcast'] : false;
+			$ticker = get_rabe_songticker( $fallback_broadcast_id );
+			
 		}	
+		
+	} else {
+		
+		$ticker = __( 'Event organiser plugin not active.', 'rabe' );
+
 	}
 	
 	return $ticker;
 }
 
+
 /**
- * Displays player with ticker
+ * Prints ticker
  * 
  * @package rabe
  * @since version 1.1.0
- * @uses get_rabe_schedule() Gets live player ticker
  */
 function rabe_schedule() {
 	echo get_rabe_schedule();
@@ -68,68 +82,121 @@ function rabe_schedule() {
 /**
  * Gets currently running event
  * 
- * There should be only be one event
+ * There should be only be one event. Return false, when the fallback 
+ * broadcast or no broadcast is running.
  * 
  * @package rabe
  * @since version 1.1.0
- * @return mixed $running_event Integer or false of currently running event
+ * @return mixed $running_event Array with event information of 
+ * 				 currently running event or false 
  */
 function get_rabe_current_event() {
 	
-	$running_event = false;
+	if ( false === ( $running_event = get_transient( 'rabe_event_schedule_running' ) ) ) {
 	
-	// Get only currently running events
-	$running_events = eo_get_events(
-		array(
-			'numberposts'			=> 1,
-			'event_start_before'	=> 'now',
-			'event_end_after'		=> 'now'
-		)
-	);
-	
-	if ( $running_events ) {
+		// Get only currently running events
+		$running_events = eo_get_events(
+			array(
+				'numberposts'			=> 1,
+				'event_start_before'	=> 'now',
+				'event_end_after'		=> 'now'
+			)
+		);
 		
-		// Get event ID
-		$running_event = (int) $running_events[0]->ID;
-		
-		// Calculate how long to save schedule in transient
-		$now = time();
-		$end = eo_get_the_end( 'U', $running_event, $running_events[0]->occurrence_id );
-		$seconds = $end - $now;
+		if ( $running_events ) {
+			
+			// Get event ID
+			$running_event['id'] = (int) $running_events[0]->ID;
+			
+			// Get event name
+			$running_event['name'] = get_the_title( $running_event['id'] );
+			
+			// Get event url
+			$broadcast_link = (int) get_post_meta( $running_event['id'], 'rabe_broadcast_link', true );
+			$running_event['url'] = ( 1 === $broadcast_link ) ? get_broadcast_link( get_broadcast( $running_event['id'] ) ) : eo_get_permalink( $running_event['id'], false );
 
-		// Save running event id to transient
-		set_transient( 'rabe_event_schedule_running', $running_event, $seconds );
-		
-		// Not anymore songticker, see get_rabe_songticker_song()
-		delete_transient( 'rabe_songticker_song_save' );
+			// Calculate how long to save schedule in transient
+			$now = time();
+			$end = eo_get_the_end( 'U', $running_event['id'], $running_events[0]->occurrence_id );
+			$seconds = $end - $now;
 
+			// Check if it's the fallback broadcast, then delete running and saved event
+			$rabe_options = get_option( 'rabe_option_name' );
+			$fallback_broadcast = ( isset( $rabe_options['fallback_broadcast'] ) ) ? (int) $rabe_options['fallback_broadcast'] : false;
+			
+			if ( get_broadcast( $running_event['id'] ) === $fallback_broadcast ) {
+				
+				$running_event = false;
+				delete_transient( 'rabe_event_schedule_running' );
+				
+			} else {
+
+				delete_transient( 'rabe_songticker_song_temp' );
+				delete_transient( 'rabe_songticker_song_save' );
+
+				// Save running event id to transient
+				set_transient( 'rabe_event_schedule_running', $running_event, $seconds );
+			}
+		}
 	}
 	
 	return $running_event;
 }
 
 /**
- * Gets ticker with currently played song
- * 
- * Checks for broadcast, else don't link stuff
+ * Gets fallback broadcast info (which is rarely changed) and saves it
+ * to transient for later usage
  * 
  * @package rabe
  * @since version 1.1.0
- * @uses get_broadcast_link() Gets link of broadcast
+ * @return array broadcast name, broadcast link and broadcast id of
+ * 				 fallback broadcast
+ */
+function get_rabe_fallback_broadcast() {
+	
+	if ( false === ( $fallback_broadcast_info = get_transient( 'rabe_fallback_broadcast_save' ) ) ) {
+
+		// Get fallback broadcast id
+		$rabe_options = get_option( 'rabe_option_name' );
+		$fallback_broadcast_id = ( isset( $rabe_options['fallback_broadcast'] ) ) ? (int) $rabe_options['fallback_broadcast'] : false;
+
+		$fallback_broadcast_info = array(
+			'id' => $fallback_broadcast_id,
+			'name' => get_broadcast_name( $fallback_broadcast_id ),
+			'url' => get_broadcast_link( $fallback_broadcast_id )
+		);
+
+		// Save fallback broadcast infos in transient for later usage
+		set_transient( 'rabe_fallback_broadcast_save', $fallback_broadcast_info, DAY_IN_SECONDS );
+
+	}
+	
+	return $fallback_broadcast_info;
+}
+
+/**
+ * Gets ticker with currently played song
+ * 
+ * @package rabe
+ * @since version 1.1.0
+ * @uses get_broadcast_link() Gets link of broadcas
  *		 get_broadcast_name() Gets name of broadcast
- *		 get_rabe_songticker_html() Gets ticker with song information
+ *		 get_rabe_songticker_html() Gets ticker html with song info
  * 		 get_rabe_player_links() Gets links from the player
  * @param int $fallback_broadcast Broadcast term ID of fallback broadcast
  * @return $string HTML code of songticker
  */
-function get_rabe_songticker( $fallback_broadcast = '' ) {
+function get_rabe_songticker( $fallback_broadcast_id = '' ) {
 
-	if ( $fallback_broadcast ) {
+	if ( $fallback_broadcast_id ) {
+		
+		$link = get_broadcast_link( $fallback_broadcast_id );
+		$name = get_broadcast_name( $fallback_broadcast_id );
 
 		$songticker = sprintf( 
 			'<div class="broadcast-show ticker"><a href="%1s">%2s</a></div>%3s%4s',
-			get_broadcast_link( $fallback_broadcast ),
-			get_broadcast_name( $fallback_broadcast ),
+			$link,
+			$name,
 			get_rabe_songticker_song_html(),
 			get_rabe_player_links()
 		);
@@ -148,8 +215,6 @@ function get_rabe_songticker( $fallback_broadcast = '' ) {
 
 /**
  * Prints songticker
- * 
- * Needs to have div or span tags with title- and artist class
  * 
  * @package rabe
  * @since version 1.0.0
@@ -170,77 +235,46 @@ function rabe_songticker( $fallback_broadcast = '' ) {
  * @return array $song Array of artist and song title
  */
 function get_rabe_songticker_song() {
-	
-	// Ok we are running a song, so delete schedule, see get_rabe_current_event()
-	delete_transient( 'rabe_event_schedule_save' );
-	
-	// Get songticker url ant retrieve url
-	$rabe_options = get_option( 'rabe_option_name' );
-	$response = ( isset( $rabe_options['rabe_songticker_url'] ) ) ? wp_remote_get( $rabe_options['rabe_songticker_url'] ): wp_remote_get( get_stylesheet_directory_uri() . '/includes/songticker.php' );
-	$response_code = wp_remote_retrieve_response_code( $response );
-
-	if ( $response_code == 200 ) {
+	if ( false === ( $song = get_transient( 'rabe_songticker_song_temp' ) ) ) {
 		
-		// Parse songticker
-		$xml = simplexml_load_string( wp_remote_retrieve_body( $response ) ) or die( 'Error: No valid songticker source.' );
-		$title = $xml->track->title->__toString();
-		$artist = $xml->track->artist->__toString();
-		$song = array( $title, $artist );
+		// Get songticker url
+		$rabe_options = get_option( 'rabe_option_name' );
+		// FIXME
+		$response_args = array( 
+			'timeout' => 2,
+			'redirect' => 1
+		);
 
-		// Save song info to transient
+		$response = ( isset( $rabe_options['rabe_songticker_url'] ) ) ? wp_remote_get( $rabe_options['rabe_songticker_url'], $response_args ): wp_remote_get( get_stylesheet_directory_uri() . '/includes/songticker.php', $response_args );
+		$response_code = wp_remote_retrieve_response_code( $response );
+		
 		$rabe_options = get_option( 'rabe_option_name' );
 		$seconds = ( isset( $rabe_options['rabe_songticker_interval'] ) ) ? (int) $rabe_options['rabe_songticker_interval'] : 10; //  Default caching of song: 10 seconds
-		set_transient( 'rabe_songticker_song', $song, $seconds );
 		
-		// Save song info to another transient
-		if ( false === get_transient( 'rabe_songticker_song_save' ) ) {
+		// Songticker has changed!
+		if ( $response_code == 200 ) {
 			
-			set_transient( 'rabe_songticker_song_save', $song );
-			
+			$xml = simplexml_load_string( wp_remote_retrieve_body( $response ) ) or die( 'Error: No valid songticker source.' );
+			$song['song'] = $xml->track->title->__toString();
+			$song['artist'] = $xml->track->artist->__toString();
+			$song['expires'] = time() + $seconds;
+
+			set_transient( 'rabe_songticker_song_temp', $song, $seconds );
+
+		// We didn't receive new song data, so get old song and save it for 10 seconds
+		} elseif ( false !== ( $song = get_transient( 'rabe_songticker_song_save' ) ) ) {
+
+			set_transient( 'rabe_songticker_song_temp', $song, $seconds );
+	
+		} else {
+
+			$song = array( __( 'No artist', 'rabe' ), __( 'No title', 'rabe' ) );
+
 		}
 
-
-	} else {
-		
-		$song = get_transient( 'rabe_songticker_song_save' );
-		
 	}
 	
 	return $song;
-}
-
-
-/**
- * Has song in ticker changed?
- * 
- * @package rabe
- * @since version 1.1.0
- * @return boolean $changed Boolean if song has changed
- */
-function rabe_songticker_song_changed() {
-	
-	$changed = false;
-
-	// Save song to transient rabe_songticker_song_save for later usage
-	if ( false !== ( $song = get_transient( 'rabe_songticker_song' ) ) ) {
-		
-		set_transient( 'rabe_songticker_song_save', $song );
-		
-	} else {
-		
-		$song = get_rabe_songticker_song();
-		
-		$old_song = get_transient( 'rabe_songticker_song_save' );
-		
-		if ( $song !== $old_song ) {
-			
-			delete_transient( 'rabe_songticker_song_save' );
-			$changed = true;
-			
-		}
-	}
-	
-	return $changed;
 }
 
 
@@ -254,15 +288,12 @@ function rabe_songticker_song_changed() {
  */
 function get_rabe_songticker_song_html() {
 	
-	$song = ( get_transient( 'rabe_songticker_song_save' ) ) ? get_transient( 'rabe_songticker_song_save' ) : get_rabe_songticker_song();
+	$song = ( get_transient( 'rabe_songticker_song_temp' ) ) ? get_transient( 'rabe_songticker_song_temp' ) : get_rabe_songticker_song(); 			
 
 	if ( $song ) {
 		
-		$song_html = sprintf( '<span class="title ticker">%1s</span> - <span class="artist ticker">%1s</span>',
-			$song[0], // title
-			$song[1] // artist
-		);
-		
+		$song_html = '<div class="live"> ' . $song['song'] . ' - ' . $song['artist'] . ' </div>';
+	
 	} else {
 		
 		$song_html = '<small>' . __( 'Couldn\'t retrieve songticker song data.', 'rabe' ) . '</small>';
@@ -318,11 +349,43 @@ function rabe_live_player() {
 		'loop'		=> 'on',
 		'autoplay'	=> $autoplay
 	);
-		
+	
+
+// 20181227: sl: quick fix
+/*
+$stream_context = stream_context_create(array('http' => array(
+    'method' => 'HEAD',
+    'timeout' => 1
+)));
+
+$response = file_get_contents($stream_url, false, $context);
+$stream_exists = ($response !== false);
+*/
 	// Display player only, when URL is set
+	// if ( $stream_exists ) {
 	if ( $stream_url ) {
-		
-		echo wp_audio_shortcode( $attr );
+
+		// 20181227: sl: quick fix
+		/*
+		$stream_context = stream_context_create(array('http' => array(
+		    'method' => 'HEAD',
+		    'timeout' => 1
+		)));
+
+		$response = file_get_contents($stream_url, false, $context);
+		$stream_exists = ($response !== false);
+
+		*/
+		/*
+		// https://stackoverflow.com/questions/981954/how-can-one-check-to-see-if-a-remote-file-exists-using-php
+		if ( true === file_get_contents( $stream_url, 0, null, 0, 1 ) ) {
+			echo wp_audio_shortcode( $attr );
+		} else {
+			echo __( 'No stream available.', 'rabe' );
+		}
+		*/
+
+	 	echo wp_audio_shortcode( $attr );
 		
 	} else {
 		
@@ -332,9 +395,36 @@ function rabe_live_player() {
 			admin_url( 'admin.php?page=rabe_settings' ),
 			__( 'Settings', 'rabe' )
 		);
-		
 		echo $no_stream;
 	}
+}
+
+function remoteFileExists($url) {
+    $curl = curl_init($url);
+
+    //don't fetch the actual page, you only want to check the connection is ok
+    curl_setopt($curl, CURLOPT_NOBODY, true);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 2); 
+
+
+    //do request
+    $result = curl_exec($curl);
+
+    $ret = false;
+
+    //if request did not fail
+    if ($result !== false) {
+        //if request was ok, check response code
+        $statusCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);  
+
+        if ($statusCode == 200) {
+            $ret = true;   
+        }
+    }
+
+    curl_close($curl);
+
+    return $ret;
 }
 
 
@@ -347,10 +437,12 @@ function rabe_live_player() {
  * @since version 1.0.0
  */
 function get_rabe_player_links() {
+	
 	$player_links = '<div id="live-player-links">
-		<a target="popup" <a target="popup" onclick="window.open(\'\', \'popup\', \'width=440,height=120,scrollbars=no,toolbar=no,status=no,resizable=yes,menubar=no,location=no,directories=no,top=10,left=10\')" href="' . site_url( '/player' ) . '">Player</a>
+		<a target="popup" onclick="window.open(\'\', \'popup\', \'width=440,height=120,scrollbars=no,toolbar=no,status=no,resizable=yes,menubar=no,location=no,directories=no,top=10,left=10\')" href="' . site_url( '/player' ) . '">Player</a>
 		<a href="' . site_url( '/playlist' ) . '">Playlist</a>
 		</div>';
+
 	return $player_links;
 }
 
@@ -369,17 +461,18 @@ function rabe_player_links() {
 /**
  * Enqueue ticker scripts
  * 
- * Ticker scripts for songticker and for broadcast ticker (@see rabe_schedule())
+ * Ticker scripts for songticker and for ticker (@see rabe_schedule())
  *
  * @package rabe
  * @since version 1.0.0
  */
 function rabe_ticker_scripts() {
 
-	// Eventorganiser/Broadcast ticker
-	wp_enqueue_script( 'broadcast-ticker', get_stylesheet_directory_uri() . '/js/broadcast-ticker.js', array( 'jquery' ), '1.0', true );
+	// Ticker script
+	wp_enqueue_script( 'rabe-ticker', get_stylesheet_directory_uri() . '/js/ticker.min.js', array( 'jquery' ), '1.0', true );
+
 	wp_localize_script( 
-		'broadcast-ticker',
+		'rabe-ticker',
 		'LivePlayer',
 		array(
 			'ajax_url'		=> admin_url( 'admin-ajax.php' ),
@@ -394,63 +487,53 @@ add_action( 'wp_enqueue_scripts', 'rabe_ticker_scripts' );
  * Ajax call for getting currently running broadcast
  * 
  * @package rabe
- * @since version 1.0.0
- * @uses rabe_schedule() Generates HTML div with currently running broadcast
+ * @since version 1.1.0
+ * @uses get_rabe_schedule() Generates HTML div with currently running broadcast
+ * 		 get_rabe_current_event() Gets currently running event
+ * 		 get_rabe_songticker() Gets songticker
+ * @return array JSON formatted array with actaul ticker html string and expriation time in seconds
  */
 function rabe_liveplayer_ajax() {
 	
 	// Check nonce
 	$nonce = $_REQUEST['ticker_nonce'];
 	if ( ! wp_verify_nonce( $nonce, 'liveplayer-nonce' ) ) {
-		wp_die( 'Error: No valid nonce.' );
+		wp_send_json_error( 'Error: No valid nonce.' );
 	}
 
 	// Check event organiser plugin
 	if ( ! function_exists( 'eventorganiser_load_textdomain' ) ) {
-		wp_die( 'Error: Event organiser plugin not active.');
+		wp_send_json_error( 'Error: Event organiser plugin not active.');
 	}
-
+	
 	// Get currently running event
-	$running_event = ( get_transient( 'rabe_event_schedule_running' ) ) ? get_transient( 'rabe_event_schedule_running' ) : get_rabe_current_event();
+	$running_event = ( get_transient( 'rabe_event_schedule_running' ) ) ? (array) get_transient( 'rabe_event_schedule_running' ) : get_rabe_current_event();
 
-	// Get saved event
-	$saved_event = ( get_transient( 'rabe_event_schedule_save' ) ) ? get_transient( 'rabe_event_schedule_save' ) : false;
-
-	// FIXME: Somehow wp_die() isn't working here in these ajax responses?!
-	// Check https://wordpress.stackexchange.com/questions/250280/best-way-to-end-wordpress-ajax-request-and-why/250282
-	// wp_die( 'Ajax call rabe_liveplayer_ajax ended.' );
-
-	// There is actually a running broadcast and it hasn't changed (== and != because $running event can be int or bool)
-	if ( false !== $running_event && $running_event === $saved_event ) {
-		header( 'HTTP/1.1 304 Not Modified' );
-		die;
-
-	// There is no running broadcast, so get songticker
-	} elseif ( false === $running_event ) {
+	// There is actually a running broadcast and it hasn't changed
+	if ( false !== $running_event ) {
 		
-		// Only put a not modified there there is also no saved_event
-		if ( false === rabe_songticker_song_changed() && false === $saved_event ) {
-			
-			header( 'HTTP/1.1 304 Not Modified' );
-			die;
-			
-		} else {
-			
-			$rabe_options = get_option( 'rabe_option_name' );
-			$fallback_broadcast = ( $rabe_options['fallback_broadcast'] ) ? (int) $rabe_options['fallback_broadcast'] : false;	
-			header( 'Content-Type: text/html; charset=utf-8' );
-			rabe_songticker( $fallback_broadcast );
-			die;
-			
-		}
-
-	// Update schedule
+		$response['broadcast'] = $running_event['name'];
+		$response['link'] = $running_event['url'];
+		$response['song' ] = __( 'on air', 'rabe' );
+		$response['artist' ] = '';
+		$response['expires'] = get_option( '_transient_timeout_rabe_event_schedule_running' );
+		
+	// There is no running broadcast, so get songticker
 	} else {
-		header( 'Content-Type: text/html; charset=utf-8' );
-		rabe_schedule();
-		die;
 
+		$fallback_broadcast = get_rabe_fallback_broadcast();
+		$song = get_rabe_songticker_song();
+
+		$response['broadcast'] = $fallback_broadcast['name'];
+		$response['link'] = $fallback_broadcast['url'];
+		$response['song' ] = $song['song'];
+		$response['artist' ] = $song['artist'];
+		$response['expires'] = $song['expires'];
 	}
+
+	// Send JSON response
+	wp_send_json( $response );
+
 }
 add_action( 'wp_ajax_ajax-liveplayer', 'rabe_liveplayer_ajax' );
 add_action( 'wp_ajax_nopriv_ajax-liveplayer', 'rabe_liveplayer_ajax' );

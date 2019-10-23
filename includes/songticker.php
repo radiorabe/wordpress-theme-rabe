@@ -25,36 +25,38 @@ $context = stream_context_create(
         )
     )
 );
+if ( file_get_contents( 'https://intranet.rabe.ch/songticker/0.9.3/current.xml', false, $context ) ) {
+	$res = file_get_contents( 'https://intranet.rabe.ch/songticker/0.9.3/current.xml', false, $context );
 
-$res = file_get_contents( 'https://intranet.rabe.ch/songticker/0.9.3/current.xml', false, $context );
-
-foreach ( $http_response_header as $header ) {
-	if ( substr( $header, 0, 5 ) == 'ETag:' ) {
-		$etag = substr( $header, 6 );
+	foreach ( $http_response_header as $header ) {
+		if ( substr( $header, 0, 5 ) == 'ETag:' ) {
+			$etag = substr( $header, 6 );
+		}
 	}
-}
 
-if ( $http_response_header[0] == 'HTTP/1.1 304 Not Modified' ) {
-	header( $http_response_header[0] );
+
+	if ( $http_response_header[0] == 'HTTP/1.1 304 Not Modified' ) {
+		header( $http_response_header[0] );
+		header( 'ETag: ' . $etag );
+		exit( 'No change in songticker.' );
+	}
+
+	header( 'Content-Type: application/xml' );
+	$http_origin = $_SERVER['HTTP_ORIGIN'];
+
+	if ( $http_origin == "https://rabe.ch" 
+		|| $http_origin == 'https://www.rabe.ch'
+		|| $http_origin == 'https://dev.rabe.ch' ) {
+		header( 'Access-Control-Allow-Origin: ' . $http_origin );
+	}
+	header( 'Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, If-None-Match' );
+	header( 'Access-Control-Allow-Methods: GET' );
 	header( 'ETag: ' . $etag );
-	exit( 'No change in songticker.' );
+
+	// Print XML
+	echo $res;
+} else {
+	//die;
+	echo 'No songticker data available.';
 }
-
-header( 'Content-Type: application/xml' );
-$http_origin = $_SERVER['HTTP_ORIGIN'];
-
-if ( $http_origin == "http://rabe.ch" 
-	|| $http_origin == 'http://www.rabe.ch'
-	|| $http_origin == 'http://dev.rabe.ch'
-	|| $http_origin == 'https://rabe.ch'
-	|| $http_origin == 'https://www.rabe.ch'
-	|| $http_origin == 'https://dev.rabe.ch' ) {
-    header( 'Access-Control-Allow-Origin: ' . $http_origin );
-}
-header( 'Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, If-None-Match' );
-header( 'Access-Control-Allow-Methods: GET' );
-header( 'ETag: ' . $etag );
-
-// Print XML
-echo $res;
 ?>
