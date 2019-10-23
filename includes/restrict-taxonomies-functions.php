@@ -32,14 +32,15 @@ add_action( 'admin_menu', 'add_permissions_menu' , 13);
 function broadcast_user_profile_fields( $user ) {
 
 	// Don't display for those with manage_categories capability
-    if( user_can( $user, 'manage_categories' ) ) {
-        return false;
+    if( ! current_user_can( 'manage_categories' ) ) {
+        return;
 	}
 
 	// If taxonomy "broadcast" isn't controlled by Restrict Taxonomies, stop
 	$rc_broadcast = get_option('RestrictTaxs_post_type_options');
-	if ( ! in_array( 'broadcast', $rc_broadcast['taxonomies'] ) )
+	if ( ! in_array( 'broadcast', $rc_broadcast['taxonomies'] ) ) {
 		return;
+	}
 
     // Get all user restrictions from Restrict Taxonomies
     $all_restrictions = get_option( 'RestrictTaxs_user_options' );
@@ -111,7 +112,6 @@ function broadcast_user_profile_fields( $user ) {
 
 	// END: dirty copy divs/html-code
 	?>
-	<input type="hidden" name="broadcast[]" value="RestrictCategoriesDefault">
 	</ul></div></div></div></div></div>
 
 <?php
@@ -157,16 +157,15 @@ add_action('profile_update', 'save_broadcast_user_profile_fields', 12 );
  */
 function update_user_broadcast_restrictions( $user_id ) {
 
-    if( ! current_user_can( 'manage_categories' ) )
-        return false;
+    if( ! current_user_can( 'manage_categories' ) ) {
+        return;
+	}
     
 	// If taxonomy "broadcast" isn't controlled by Restrict Taxonomies, stop
 	$restricted_post_types = get_option('RestrictTaxs_post_type_options');
-	if ( ! in_array( 'broadcast', $restricted_post_types['taxonomies'] ) )
+	if ( ! in_array( 'broadcast', $restricted_post_types['taxonomies'] ) ) {
 		return;
-
-	if ( empty( get_user_meta( $user_id, 'broadcast', true ) ) )
-		return;
+	}
 
     // Get all user restrictions
     // FIXME: What to do, when there are no RestrictTaxs_user_options set?
@@ -210,8 +209,8 @@ function update_user_broadcast_restrictions( $user_id ) {
 		update_option( 'RestrictTaxs_user_options', $all_restrictions );
 	}
 }
-add_action('user_register', 'update_user_broadcast_restrictions', 13);
-add_action('profile_update', 'update_user_broadcast_restrictions', 13);
+add_action( 'user_register', 'update_user_broadcast_restrictions', 13 );
+add_action( 'profile_update', 'update_user_broadcast_restrictions', 13 );
 
 
 /**
@@ -223,11 +222,12 @@ add_action('profile_update', 'update_user_broadcast_restrictions', 13);
  * @param int $term_id ID of broadcast term (actual broadcast slug name)
  * @param int $tt_id Taxonomy ID (ID of taxonomy "broadcast")
  */
-function rabe_staff_restrictions( $term_id, $tt_id ) {
+function rabe_staff_broadcast_restrictions( $term_id, $tt_id ) {
 
 	// Are roles existing?
-	if ( ! get_role( 'rabe_staff' ) && ! get_role( 'rabe_webteam' ) && ! get_role( 'administrator' ) )
-		return;
+	if ( ! get_role( 'rabe_staff' ) && ! get_role( 'rabe_webteam' ) && ! get_role( 'administrator' ) ) {
+		return false;
+	}
 
 	$role_restrictions = get_option( 'RestrictTaxs_options' );
 
@@ -262,8 +262,8 @@ function rabe_staff_restrictions( $term_id, $tt_id ) {
 	update_option( 'RestrictTaxs_options', $role_restrictions );
 
 }
-add_action( 'delete_broadcast', 'rabe_staff_restrictions', 10, 2 );
-add_action( 'created_broadcast', 'rabe_staff_restrictions', 10, 2 );
+add_action( 'delete_broadcast', 'rabe_staff_broadcast_restrictions', 11, 2 );
+add_action( 'created_broadcast', 'rabe_staff_broadcast_restrictions', 11, 2 );
 
 
 /**
@@ -275,7 +275,7 @@ add_action( 'created_broadcast', 'rabe_staff_restrictions', 10, 2 );
  * @param int $term_id ID of broadcast term (actual broadcast slug name)
  * @param int $tt_id Taxonomy ID (ID of taxonomy "category")
  */
-function administrator_restrictions( $term_id, $tt_id ) {
+function rabe_admin_category_restrictions( $term_id, $tt_id ) {
 
 	if ( ! get_role( 'rabe_webteam' ) )
 		return;
@@ -310,6 +310,6 @@ function administrator_restrictions( $term_id, $tt_id ) {
 	update_option( 'RestrictTaxs_options', $role_restrictions );
 	
 }
-add_action( 'delete_category', 'rabe_staff_restrictions', 10, 2 );
-add_action( 'created_category', 'rabe_staff_restrictions', 10, 2 );
+add_action( 'delete_category', 'rabe_admin_category_restrictions', 11, 2 );
+add_action( 'created_category', 'rabe_admin_category_restrictions', 11, 2 );
 ?>
