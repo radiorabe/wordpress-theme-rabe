@@ -314,7 +314,6 @@ function broadcast_info() {
 		$term_id = get_broadcast();
 	} else {
 		echo '<pre>' . __( 'No $term_id specified in broadcast_info()', 'rabe' ) . '</pre>';
-		break;
 	}
 	
 	// Get "general" broadcast
