@@ -450,6 +450,14 @@ if ( is_admin() ) {
 		<?php
 	}
 	add_action( 'broadcast_edit_form_fields', 'add_tinymce_description', 10, 2);
+
+	// Allow html tags in term_description.
+	foreach ( array( 'pre_term_description' ) as $filter ) {
+		remove_filter( $filter, 'wp_filter_kses' );
+	}
+	foreach ( array( 'term_description' ) as $filter ) {
+		remove_filter( $filter, 'wp_kses_data' );
+	}
 }
 
 
