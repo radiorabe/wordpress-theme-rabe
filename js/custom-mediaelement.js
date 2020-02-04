@@ -37,20 +37,35 @@ jQuery(document).ready(function() {
 	 */
 	var liveplayer = jQuery('#webplayer audio')[0];
 	var button = jQuery('.mejs-playpause-button');
-	var source = jQuery( liveplayer ).attr('src');
+	var sourceUrl = jQuery( liveplayer ).attr('src');
 	var playpause = document.querySelector('.mejs-playpause-button');
 	playpause.addEventListener('click', function() {
 		if ( liveplayer.paused ) {
 			button.removeClass('mejs-pause').addClass('mejs-play');
 		} else {
-			var i = Math.floor( ( Math.random() * 100000 ) + 1)
-			liveplayer.player.setSrc(source + '?nocache=' + i);
+			var i = Math.floor( ( Math.random() * 100000 ) + 1 );
+			// Add or replace nocache query parameter.
+			sourceUrl = replaceUrlParam( sourceUrl, 'nocache', i );
+			liveplayer.player.setSrc( sourceUrl );
 			liveplayer.player.load();
 			liveplayer.player.play();
 			button.removeClass('mejs-play').addClass('mejs-pause');
 		}
 	});
 
+	// Solution from https://stackoverflow.com/a/20420424
+	function replaceUrlParam(url, paramName, paramValue)
+	{
+		if (paramValue == null) {
+			paramValue = '';
+		}
+		var pattern = new RegExp('\\b('+paramName+'=).*?(&|#|$)');
+		if (url.search(pattern)>=0) {
+			return url.replace(pattern,'$1' + paramValue + '$2');
+		}
+		url = url.replace(/[?#]$/,'');
+		return url + (url.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue;
+	}
 	/**
 	 * Add download button to audio files
 	 * 
