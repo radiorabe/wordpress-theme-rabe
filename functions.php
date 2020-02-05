@@ -637,10 +637,10 @@ add_action( 'future_to_publish', 'rabe_auto_thumbnail' );
  */
 function outbound_links( $content ) {
 	$siteurl = site_url('/');
-	$return = str_replace( 'href=\"http', 'target=\"_blank\" href=\"http', $content );
-	$return = str_replace( 'target=\"_blank\" href=\"' . $siteurl, 'href=\"' . $siteurl, $return );
-	$return = str_replace( 'target=\"_blank\" href=\"#', 'href=\"#', $return );
-	$return = str_replace( ' target=\"_blank\">', '>', $return );
+	$return = str_replace( 'href=\"http', 'target=\"_blank\" rel=\"noopener\" href=\"http', $content );
+	$return = str_replace( 'target=\"_blank\" rel=\"noopener\" href=\"' . $siteurl, 'href=\"' . $siteurl, $return );
+	$return = str_replace( 'target=\"_blank\" rel=\"noopener\" href=\"#', 'href=\"#', $return );
+	$return = str_replace( ' target=\"_blank\" rel=\"noopener\">', '>', $return );
 	return $return;
 }
 add_filter( 'content_save_pre', 'outbound_links' );

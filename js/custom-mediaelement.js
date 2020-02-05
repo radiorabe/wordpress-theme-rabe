@@ -20,8 +20,9 @@ jQuery(document).ready(function() {
 
 	jQuery(player).on("play", function(event) {
 
-		// Links in new tabs
+		// Links in new tabs because media is playing
 		jQuery("a").attr("target", "_blank");
+		jQuery("a").attr("rel", "noopener");
 
 	});
 
