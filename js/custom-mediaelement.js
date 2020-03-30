@@ -1,16 +1,16 @@
 /**
  * mediaelement.js customizations
- * 
+ *
  * @package rabe
  * @since version 1.0.0
  */
 jQuery(document).ready(function() {
 	/**
 	 * Don't stop the radio
-	 * 
+	 *
 	 * Very nice workaround for not interrupting playback
 	 * Adds target="_blank" to links, when some player was started
-	 * 
+	 *
 	 * @package rabe
 	 * @since version 1.0.0
 	 * @https://css-tricks.com/dont-stop-the-audio/
@@ -21,16 +21,16 @@ jQuery(document).ready(function() {
 	jQuery(player).on("play", function(event) {
 
 		// Links in new tabs because media is playing
-		jQuery("a").attr("target", "_blank");
+		jQuery("a:not(a.mejs-horizontal-volume-slider)").attr("target", "_blank");
 		jQuery("a").attr("rel", "noopener");
 
 	});
 
 	/**
 	 * Refresh audio Stream
-	 * 
+	 *
 	 * Get fresh stream, don't start where stopped
-	 * 
+	 *
 	 * @package rabe
 	 * @since version 1.0.0
 	 * @link https://github.com/johndyer/mediaelement/issues/1321
@@ -69,20 +69,19 @@ jQuery(document).ready(function() {
 	}
 	/**
 	 * Add download button to audio files
-	 * 
+	 *
 	 * @package rabe
 	 * @since version 1.0.0
 	 * @link http://alexmansfield.com/hacks/wordpress-audio-download-button
 
     jQuery('audio').each( function(index) {
- 
+
         var source = jQuery(this).find('source').attr('src');
- 
+
         if ( source != '' ) {
             jQuery(this).after('<a href="' + source + '" class="audio-download" download="' + source + '">Download</a>');
         }
- 
+
     });
     */
 });
-
