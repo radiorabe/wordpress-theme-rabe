@@ -48,7 +48,6 @@ Changelog
 - Lots of fixes and cleanups
 - Fixed and update Restricted Taxonomies Plugin
 - New songticker (sessionStorage in Browser)
-- Fix php compatibility
 
 1.1.0 - 2017-11-27
 - Lots of fixes and cleanups

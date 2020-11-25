@@ -346,8 +346,7 @@ function rabe_live_player() {
 	$attr = array(
 		'src'		=> $stream_url,
 		'preload'	=> 'metadata',
-		'loop'		=> 'on',
-		'autoplay'	=> $autoplay
+		'autoplay'	=> $autoplay,
 	);
 	
 

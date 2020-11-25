@@ -44,7 +44,10 @@ if ( file_get_contents( 'https://intranet.rabe.ch/songticker/0.9.3/current.xml',
 	header( 'Content-Type: application/xml' );
 	$http_origin = $_SERVER['HTTP_ORIGIN'];
 
-	if ( $http_origin == "https://rabe.ch" 
+	if ( $http_origin == "http://rabe.ch" 
+		|| $http_origin == 'http://www.rabe.ch'
+		|| $http_origin == 'http://dev.rabe.ch'
+		|| $http_origin == 'https://rabe.ch'
 		|| $http_origin == 'https://www.rabe.ch'
 		|| $http_origin == 'https://dev.rabe.ch' ) {
 		header( 'Access-Control-Allow-Origin: ' . $http_origin );
