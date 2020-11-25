@@ -25,8 +25,8 @@ $context = stream_context_create(
         )
     )
 );
-if ( file_get_contents( 'https://intranet.rabe.ch/songticker/0.9.3/current.xml', false, $context ) ) {
-	$res = file_get_contents( 'https://intranet.rabe.ch/songticker/0.9.3/current.xml', false, $context );
+if ( file_get_contents( 'https://songticker.rabe.ch/songticker/0.9.3/current.xml', false, $context ) ) {
+	$res = file_get_contents( 'https://songticker.rabe.ch/songticker/0.9.3/current.xml', false, $context );
 
 	foreach ( $http_response_header as $header ) {
 		if ( substr( $header, 0, 5 ) == 'ETag:' ) {
